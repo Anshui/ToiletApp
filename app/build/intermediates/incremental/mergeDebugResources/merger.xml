@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res"/><source path="D:\AndroidStudioProjects\ToiletApp\app\build\generated\res\rs\debug"/><source path="D:\AndroidStudioProjects\ToiletApp\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res"><file name="text_scale_in" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\anim\text_scale_in.xml" qualifiers="" type="anim"/><file name="text_scale_out" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\anim\text_scale_out.xml" qualifiers="" type="anim"/><file name="button_selector" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\button_selector.xml" qualifiers="" type="drawable"/><file name="edit_box_bg" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\edit_box_bg.xml" qualifiers="" type="drawable"/><file name="health_button_corner_blue" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\health_button_corner_blue.xml" qualifiers="" type="drawable"/><file name="health_button_corner_green" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\health_button_corner_green.xml" qualifiers="" type="drawable"/><file name="health_button_corner_red" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\health_button_corner_red.xml" qualifiers="" type="drawable"/><file name="health_button_corner_yellow" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\health_button_corner_yellow.xml" qualifiers="" type="drawable"/><file name="health_selector" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\health_selector.xml" qualifiers="" type="drawable"/><file name="ic_menu_archive" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\ic_menu_archive.png" qualifiers="" type="drawable"/><file name="my_select" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\my_select.xml" qualifiers="" type="drawable"/><file name="normal_btn_bg" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\normal_btn_bg.xml" qualifiers="" type="drawable"/><file name="remote_item_selector" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\remote_item_selector.xml" qualifiers="" type="drawable"/><file name="selector_reg_corners_button" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\selector_reg_corners_button.xml" qualifiers="" type="drawable"/><file name="shape_info_entering_edit" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\shape_info_entering_edit.xml" qualifiers="" type="drawable"/><file name="shape_reg_corners_button" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\shape_reg_corners_button.xml" qualifiers="" type="drawable"/><file name="shape_reg_corners_button_pressed" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\shape_reg_corners_button_pressed.xml" qualifiers="" type="drawable"/><file name="submit_circle_shape_sel" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\submit_circle_shape_sel.xml" qualifiers="" type="drawable"/><file name="textview_corner" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable\textview_corner.xml" qualifiers="" type="drawable"/><file name="baby_icon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\baby_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="back" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\back.png" qualifiers="hdpi-v4" type="drawable"/><file name="back_ico" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\back_ico.png" qualifiers="hdpi-v4" type="drawable"/><file name="bath" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\bath.png" qualifiers="hdpi-v4" type="drawable"/><file name="battery" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\battery.png" qualifiers="hdpi-v4" type="drawable"/><file name="bluetooth_icon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\bluetooth_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="bluetooth_icon1" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\bluetooth_icon1.png" qualifiers="hdpi-v4" type="drawable"/><file name="cs" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\cs.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_cs" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_cs.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_fgdk" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_fgdk.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_fx" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_fx.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_hg" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_hg.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_ptfw" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_ptfw.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_xb" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_xb.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_ydcs" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_ydcs.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_yd_off" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_yd_off.png" qualifiers="hdpi-v4" type="drawable"/><file name="c_yd_on" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\c_yd_on.png" qualifiers="hdpi-v4" type="drawable"/><file name="default_image" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\default_image.gif" qualifiers="hdpi-v4" type="drawable"/><file name="demo_image" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\demo_image.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="demo_image_circle" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\demo_image_circle.png" qualifiers="hdpi-v4" type="drawable"/><file name="fw_tj" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\fw_tj.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr02" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr02.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr04" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr04.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr05" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr05.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr06" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr06.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr08" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr08.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr09" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr09.png" qualifiers="hdpi-v4" type="drawable"/><file name="gr10" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\gr10.png" qualifiers="hdpi-v4" type="drawable"/><file name="health_black" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\health_black.png" qualifiers="hdpi-v4" type="drawable"/><file name="health_blue" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\health_blue.png" qualifiers="hdpi-v4" type="drawable"/><file name="heart_rate" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\heart_rate.png" qualifiers="hdpi-v4" type="drawable"/><file name="home_1" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\home_1.png" qualifiers="hdpi-v4" type="drawable"/><file name="honggan" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\honggan.png" qualifiers="hdpi-v4" type="drawable"/><file name="icon_empty" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\icon_empty.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="jianyi" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\jianyi.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_image" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\loading_image.gif" qualifiers="hdpi-v4" type="drawable"/><file name="massage" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\massage.png" qualifiers="hdpi-v4" type="drawable"/><file name="message_no" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\message_no.png" qualifiers="hdpi-v4" type="drawable"/><file name="my_bn" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\my_bn.png" qualifiers="hdpi-v4" type="drawable"/><file name="my_bn_select" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\my_bn_select.png" qualifiers="hdpi-v4" type="drawable"/><file name="password" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\password.png" qualifiers="hdpi-v4" type="drawable"/><file name="power" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\power.png" qualifiers="hdpi-v4" type="drawable"/><file name="power_close" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\power_close.png" qualifiers="hdpi-v4" type="drawable"/><file name="publicity" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\publicity.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="quit_icon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\quit_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="remote_icon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\remote_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="search_icon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\search_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="search_temp" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\search_temp.png" qualifiers="hdpi-v4" type="drawable"/><file name="search_weight" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\search_weight.png" qualifiers="hdpi-v4" type="drawable"/><file name="seat_temp" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\seat_temp.png" qualifiers="hdpi-v4" type="drawable"/><file name="seat_temp_blue" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\seat_temp_blue.png" qualifiers="hdpi-v4" type="drawable"/><file name="seat_temp_green" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\seat_temp_green.png" qualifiers="hdpi-v4" type="drawable"/><file name="seat_temp_red" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\seat_temp_red.png" qualifiers="hdpi-v4" type="drawable"/><file name="sw_tj" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\sw_tj.png" qualifiers="hdpi-v4" type="drawable"/><file name="sy_tj" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\sy_tj.png" qualifiers="hdpi-v4" type="drawable"/><file name="tz" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\tz.png" qualifiers="hdpi-v4" type="drawable"/><file name="user" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\user.png" qualifiers="hdpi-v4" type="drawable"/><file name="username" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\username.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_press" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_press.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_press_blue" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_press_blue.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_press_green" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_press_green.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_press_red" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_press_red.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_temp" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_temp.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_temp_blue" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_temp_blue.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_temp_green" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_temp_green.png" qualifiers="hdpi-v4" type="drawable"/><file name="water_temp_red" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\water_temp_red.png" qualifiers="hdpi-v4" type="drawable"/><file name="weight_icon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\weight_icon.png" qualifiers="hdpi-v4" type="drawable"/><file name="wind_temp" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\wind_temp.png" qualifiers="hdpi-v4" type="drawable"/><file name="wind_temp_blue" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\wind_temp_blue.png" qualifiers="hdpi-v4" type="drawable"/><file name="wind_temp_green" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\wind_temp_green.png" qualifiers="hdpi-v4" type="drawable"/><file name="wind_temp_red" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\wind_temp_red.png" qualifiers="hdpi-v4" type="drawable"/><file name="zdcs_tj" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\zdcs_tj.png" qualifiers="hdpi-v4" type="drawable"/><file name="zdfg_tj" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\zdfg_tj.png" qualifiers="hdpi-v4" type="drawable"/><file name="zw_tj" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\zw_tj.png" qualifiers="hdpi-v4" type="drawable"/><file name="zy26" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-hdpi\zy26.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="actionbar_indeterminate_progress" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\actionbar_indeterminate_progress.xml" qualifiers="" type="layout"/><file name="activity_cropped_photo" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\activity_cropped_photo.xml" qualifiers="" type="layout"/><file name="activity_main" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="activity_photo" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\activity_photo.xml" qualifiers="" type="layout"/><file name="ad_goal_weight" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\ad_goal_weight.xml" qualifiers="" type="layout"/><file name="ad_max_weight" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\ad_max_weight.xml" qualifiers="" type="layout"/><file name="ble_spp" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\ble_spp.xml" qualifiers="" type="layout"/><file name="body_compositon" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\body_compositon.xml" qualifiers="" type="layout"/><file name="chart" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\chart.xml" qualifiers="" type="layout"/><file name="custom_action_bar" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\custom_action_bar.xml" qualifiers="" type="layout"/><file name="device_scan" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\device_scan.xml" qualifiers="" type="layout"/><file name="dialog_step_target_enter" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\dialog_step_target_enter.xml" qualifiers="" type="layout"/><file name="entries" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\entries.xml" qualifiers="" type="layout"/><file name="entry" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\entry.xml" qualifiers="" type="layout"/><file name="export_png" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\export_png.xml" qualifiers="" type="layout"/><file name="fragment_remote" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\fragment_remote.xml" qualifiers="" type="layout"/><file name="fun_settings" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\fun_settings.xml" qualifiers="" type="layout"/><file name="health_center" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\health_center.xml" qualifiers="" type="layout"/><file name="heart_rate_activity" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\heart_rate_activity.xml" qualifiers="" type="layout"/><file name="height" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\height.xml" qualifiers="" type="layout"/><file name="layout_tempseat" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\layout_tempseat.xml" qualifiers="" type="layout"/><file name="legend" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\legend.xml" qualifiers="" type="layout"/><file name="listitem_device" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\listitem_device.xml" qualifiers="" type="layout"/><file name="login" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\login.xml" qualifiers="" type="layout"/><file name="progress_dialog" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\progress_dialog.xml" qualifiers="" type="layout"/><file name="prompt" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\prompt.xml" qualifiers="" type="layout"/><file name="register" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\register.xml" qualifiers="" type="layout"/><file name="remote_item" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\remote_item.xml" qualifiers="" type="layout"/><file name="row" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\row.xml" qualifiers="" type="layout"/><file name="settings" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\settings.xml" qualifiers="" type="layout"/><file name="urine_text" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\urine_text.xml" qualifiers="" type="layout"/><file name="user" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\user.xml" qualifiers="" type="layout"/><file name="user_info" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\user_info.xml" qualifiers="" type="layout"/><file name="user_settings" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\layout\user_settings.xml" qualifiers="" type="layout"/><file name="chart" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\menu\chart.xml" qualifiers="" type="menu"/><file name="entries" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\menu\entries.xml" qualifiers="" type="menu"/><file name="entry" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\menu\entry.xml" qualifiers="" type="menu"/><file name="gatt_services" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\menu\gatt_services.xml" qualifiers="" type="menu"/><file name="main" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\menu\main.xml" qualifiers="" type="menu"/><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="ColorArcProgressBar">
+        <attr format="color" name="back_color"/>
+        <attr format="color" name="front_color1"/>
+        <attr format="color" name="front_color2"/>
+        <attr format="color" name="front_color3"/>
+        <attr format="dimension" name="back_width"/>
+        <attr format="dimension" name="front_width"/>
+        <attr format="boolean" name="is_need_title"/>
+        <attr format="boolean" name="is_need_content"/>
+        <attr format="boolean" name="is_need_unit"/>
+        <attr format="boolean" name="is_need_dial"/>
+        <attr format="string" name="string_title"/>
+        <attr format="string" name="string_unit"/>
+        <attr format="integer" name="total_engle"/>
+        <attr format="float" name="current_value"/>
+        <attr format="float" name="max_value"/>
+        <attr format="dimension" name="diameter"/>
+    </declare-styleable><declare-styleable name="AVLoadingIndicatorView">
+        <attr format="dimension" name="minWidth"/>
+        <attr format="dimension" name="maxWidth"/>
+        <attr format="dimension" name="minHeight"/>
+        <attr format="dimension" name="maxHeight"/>
+        <attr format="string" name="indicatorName"/>
+        <attr format="color" name="indicatorColor"/>
+    </declare-styleable><declare-styleable name="MaterialRefreshLayout">
+        <attr format="boolean" name="overlay"/>
+        
+        <attr format="enum" name="wave_height_type">
+            <enum name="normal" value="0"/>
+            <enum name="higher" value="1"/>
+        </attr>
+        <attr format="color" name="wave_color"/>
+        <attr format="boolean" name="wave_show"/>
+        
+        <attr format="reference" name="progress_colors"/>
+        <attr format="dimension" name="progress_stoke_width"/>
+        <attr format="color" name="progress_backgroud_color"/>
+        <attr format="boolean" name="progress_show_arrow"/>
+        <attr format="dimension" name="progress_arrow_width"/>
+        <attr format="dimension" name="progress_arrow_height"/>
+        <attr format="boolean" name="progress_show_circle_backgroud"/>
+        <attr format="integer" name="progress_value"/>
+        <attr format="integer" name="progress_max_value"/>
+        <attr format="dimension" name="progress_text_size"/>
+        <attr format="color" name="progress_text_color"/>
+        <attr format="enum" name="progress_text_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+        <attr format="enum" name="progress_size_type">
+            <enum name="normal" value="0"/>
+            <enum name="big" value="1"/>
+        </attr>
+        <attr format="boolean" name="isLoadMore"/>
+    </declare-styleable><declare-styleable name="CircleProgressBar">
+        <attr format="dimension" name="mlpb_inner_radius"/>
+        <attr format="color" name="mlpb_background_color"/>
+        <attr format="color" name="mlpb_progress_color"/>
+        <attr format="dimension" name="mlpb_progress_stoke_width"/>
+        <attr format="boolean" name="mlpb_show_arrow"/>
+        <attr format="boolean" name="mlpb_enable_circle_background"/>
+        <attr format="dimension" name="mlpb_arrow_width"/>
+        <attr format="dimension" name="mlpb_arrow_height"/>
+        <attr format="integer" name="mlpb_progress"/>
+        <attr format="integer" name="mlpb_max"/>
+        <attr format="dimension" name="mlpb_progress_text_size"/>
+        <attr format="color" name="mlpb_progress_text_color"/>
+        
+        <attr format="enum" name="mlpb_progress_text_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable><declare-styleable name="PagerSlidingTabStrip">
+        <attr format="color" name="pstsIndicatorColor"/>
+        <attr format="color" name="pstsUnderlineColor"/>
+        <attr format="color" name="pstsDividerColor"/>
+        <attr format="dimension" name="pstsIndicatorHeight"/>
+        <attr format="dimension" name="pstsUnderlineHeight"/>
+        <attr format="dimension" name="pstsDividerPadding"/>
+        <attr format="dimension" name="pstsTabPaddingLeftRight"/>
+        <attr format="dimension" name="pstsScrollOffset"/>
+        <attr format="reference" name="pstsTabBackground"/>
+        <attr format="boolean" name="pstsShouldExpand"/>
+        <attr format="boolean" name="pstsTextAllCaps"/>
+        <attr format="color" name="selectedTabTextColor"/>
+    </declare-styleable><declare-styleable name="JazzyListView">
+        <attr format="enum" name="effect">
+            <enum name="standard" value="0"/>
+            <enum name="grow" value="1"/>
+            <enum name="cards" value="2"/>
+            <enum name="curl" value="3"/>
+            <enum name="wave" value="4"/>
+            <enum name="flip" value="5"/>
+            <enum name="fly" value="6"/>
+            <enum name="reverse_fly" value="7"/>
+            <enum name="helix" value="8"/>
+            <enum name="fan" value="9"/>
+            <enum name="tilt" value="10"/>
+            <enum name="zipper" value="11"/>
+            <enum name="fade" value="12"/>
+            <enum name="twirl" value="13"/>
+            <enum name="slide_in" value="14"/>
+        </attr>
+        <attr format="boolean" name="only_animate_new_items"/>
+        <attr format="boolean" name="only_animate_fling"/>
+        <attr format="boolean" name="simulate_grid_with_list"/>
+        <attr format="integer" name="max_velocity"/>
+    </declare-styleable><declare-styleable name="PracticalRecyclerView">
+        <attr format="reference" name="empty_layout"/>
+        <attr format="reference" name="error_layout"/>
+        <attr format="reference" name="loading_layout"/>
+        <attr format="reference" name="load_more_layout"/>
+        <attr format="reference" name="no_more_layout"/>
+        <attr format="reference" name="load_more_failed_layout"/>
+    </declare-styleable><declare-styleable name="BGABanner">
+
+        
+        <attr format="reference|color" name="banner_pointContainerBackground"/>
+        
+        <attr format="reference" name="banner_pointDrawable"/>
+        
+        <attr format="dimension" name="banner_pointContainerLeftRightPadding"/>
+        
+        <attr format="dimension" name="banner_pointTopBottomMargin"/>
+        
+        <attr format="dimension" name="banner_pointLeftRightMargin"/>
+        
+ -                                                                                        <attr name="banner_indicatorGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_horizontal" value="0x01"/>
+        </attr>
+        
+        <attr format="boolean" name="banner_pointAutoPlayAble"/>
+        
+        <attr format="integer" name="banner_pointAutoPlayInterval"/>
+        
+        <attr format="integer" name="banner_pageChangeDuration"/>
+        
+ -                                                                                        <attr format="enum" name="banner_transitionEffect">
+            <enum name="defaultEffect" value="0"/>
+            <enum name="alpha" value="1"/>
+            <enum name="rotate" value="2"/>
+            <enum name="cube" value="3"/>
+            <enum name="flip" value="4"/>
+            <enum name="accordion" value="5"/>
+            <enum name="zoomFade" value="6"/>
+            <enum name="fade" value="7"/>
+            <enum name="zoomCenter" value="8"/>
+            <enum name="zoomStack" value="9"/>
+            <enum name="stack" value="10"/>
+            <enum name="depth" value="11"/>
+            <enum name="zoom" value="12"/>
+        </attr>
+        
+        <attr format="reference|color" name="banner_tipTextColor"/>
+        
+        <attr format="dimension" name="banner_tipTextSize"/>
+        
+        <attr format="reference" name="banner_placeholderDrawable"/>
+        
+        <attr format="boolean" name="banner_isNumberIndicator"/>
+        
+        <attr format="reference|color" name="banner_numberIndicatorTextColor"/>
+        
+        <attr format="dimension" name="banner_numberIndicatorTextSize"/>
+        
+        <attr format="reference" name="banner_numberIndicatorBackground"/>
+        
+        <attr format="boolean" name="banner_isNeedShowIndicatorOnOnlyOnePage"/>
+    </declare-styleable><declare-styleable name="PtrFrameLayout">
+
+        
+        <attr format="reference" name="ptr_header"/>
+        <attr format="reference" name="ptr_content"/>
+
+        
+        <attr format="float" name="ptr_resistance"/>
+
+        
+        <attr format="float" name="ptr_ratio_of_header_height_to_refresh"/>
+        <attr format="integer" name="ptr_duration_to_close"/>
+        <attr format="integer" name="ptr_duration_to_close_header"/>
+
+        
+        <attr format="boolean" name="ptr_pull_to_fresh"/>
+
+        
+        <attr format="boolean" name="ptr_keep_header_when_refresh"/>
+    </declare-styleable><declare-styleable name="PtrClassicHeader">
+        <attr format="integer" name="ptr_rotate_ani_time"/>
+    </declare-styleable><declare-styleable name="WaveView">
+        <attr format="color" name="above_wave_color"/>
+        <attr format="color" name="blow_wave_color"/>
+        <attr format="integer" name="progress"/>
+        <attr format="enum" name="wave_length">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr format="enum" name="wave_height">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr>
+        <attr format="enum" name="wave_hz">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr>
+    </declare-styleable><declare-styleable name="Themes">
+        <attr format="reference" name="waveViewStyle"/>
+    </declare-styleable><declare-styleable name="MetroLoadingView">
+        <attr name="indicator">
+            <flag name="rectangle" value="0"/>
+            <flag name="circle" value="1"/>
+        </attr>
+        <attr format="color" name="indicator_color"/>
+        <attr format="dimension" name="indicator_width"/>
+        <attr format="dimension" name="indicator_height"/>
+        <attr format="dimension" name="indicator_radius"/>
+        <attr format="boolean" name="has_shadow"/>
+        <attr format="color" name="shadow_color"/>
+        <attr format="integer" name="number"/>
+        <attr format="integer" name="duration_in_mills"/>
+        <attr format="integer" name="interval_in_mills"/>
+        <attr format="boolean" name="transform"/>
+        <attr format="dimension" name="transform_height"/>
+        <attr format="dimension" name="transform_width"/>
+        <attr format="dimension" name="transform_radius"/>
+        <attr format="color" name="transform_color"/>
+        <attr name="transform_color_mode">
+            <flag name="none" value="0"/>
+            <flag name="linear" value="1"/>
+            <flag name="symmetry" value="2"/>
+        </attr>
+        <attr format="boolean" name="fade"/>
+    </declare-styleable><declare-styleable name="RealtimeBlurView">
+        <attr format="dimension" name="realtimeBlurRadius"/>
+        <attr format="float" name="realtimeDownsampleFactor"/>
+        <attr format="color" name="realtimeOverlayColor"/>
+    </declare-styleable><declare-styleable name="SwipeMenu">
+        <attr format="integer" name="sml_scroller_duration"/>
+        <attr format="float" name="sml_auto_open_percent"/>
+        <attr format="reference" name="sml_scroller_interpolator"/>
+    </declare-styleable><declare-styleable name="CustomActionBar">
+        <attr format="reference|integer" name="title_background_color"/>
+        <attr format="boolean" name="left_button_visible"/>
+        <attr format="boolean" name="right_button_visible"/>
+        <attr format="string" name="title_text"/>
+        <attr format="color" name="title_text_color"/>
+        <attr format="reference|integer" name="title_text_drawable"/>
+        <attr format="string" name="right_button_text"/>
+        <attr format="color" name="right_button_text_color"/>
+        <attr format="reference|integer" name="right_button_drawable"/>
+        <attr format="reference|integer" name="left_button_drawable"/>
+    </declare-styleable></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values\colors.xml" qualifiers=""><color name="backgound_blue">#0FC6DC</color><color name="transparent">#00000000</color><color name="white">#ffffffff</color><color name="black">#ff000000</color><color name="grayblack">#EEEEEE</color><color name="black_text">#373737</color><color name="green">#13AC40</color><color name="blue">#28DCB7</color><color name="gray_new">#B4B4B4</color><color name="line_new">#DCDCDC</color><color name="yellow_new">#ffa200</color><color name="blue_new">#00cbf6</color><color name="yellow">#FABE1D</color><color name="caolv_text">#7DCA00</color><color name="translucence">#ff4e4752</color><color name="item_content_character">#ff9933</color><color name="contentbackground">#ffcffc</color><color name="menubackground">#ccffcc</color><color name="chattextviewindexhou">#ffffff</color><color name="chattextviewindexqian">#00ffcc</color><color name="line">#ffd3dde6</color><color name="agronet_title">#10AD44</color><color name="agronet_title_dark">#0F9D3E</color><color name="agronet_titlebar">#fff3f3f3</color><color name="red">#FF0000</color><color name="gray">#aaaaaa</color><color name="lowgray">#bfbfbfbf</color><color name="graywhite">#f0f0f0f0</color><color name="gray_line">#B8B8B8</color><color name="light_blue">#6593cb</color><color name="light_gray">#E9E9E9</color><color name="blue_text">#13AC40</color><color name="light_blue_green">#008B45</color><color name="help_view">#ff404040</color><color name="orangetitle">#FF4800</color><color name="no_color">#00000000</color><color name="normal_bg_color">#f2f2f2</color><color name="sscf_bg">#39B44A</color><color name="sscf_title_bg">#39B44A</color><color name="sscf_type_bg">#DCE6D2</color><color name="sscf_food_whitebg">#E6F1DA</color><color name="sscf_food_bg">#CFE4B8</color><color name="green_text">#3489E3</color><color name="bottom_normal_textcolor">#333333</color><color name="normal_member_name_color">#484848</color><color name="index_task_time_color">#b5b5b5</color><color name="index_task_item_manfen">#458be9</color><color name="index_task_item_jingbiao_count_color">#009944</color><color name="gray_text">#999999</color><color name="image_tianchong_color">#dddddd</color><color name="contents_text">#ff000000</color><color name="encode_view">#ffffffff</color><color name="possible_result_points">#c0ffbd21</color><color name="result_minor_text">#ffc0c0c0</color><color name="result_points">#c099cc00</color><color name="result_text">#ffffffff</color><color name="result_view">#b0000000</color><color name="status_text">#ffffffff</color><color name="viewfinder_laser">#ffcc0000</color><color name="viewfinder_mask">#60000000</color><color name="lightgreen">#90ee90</color><color name="colorPrimary">#3F51B5</color><color name="colorPrimaryDark">#303F9F</color><color name="colorAccent">#FF4081</color><color name="text_normal">#FF4081</color><color name="text_press">#bbFF4081</color><color name="color_accent">#7c4dff</color><color name="color_success">#3CCD88</color><color name="color_error">#f44336</color><color name="material_red">#ffF44336</color><color name="material_green">#ff4CAF50</color><color name="material_blue">#ff03A9F4</color><color name="material_yellow">#ffFFEB3B</color><color name="orange">#ff7e00</color><color name="light_grey">#dadada</color><color name="index_green">#86d52a</color><color name="index_yellow">#ffc602</color><color name="background_gray">#F8F8F8</color><color name="que_line">#e9e9e9</color><color name="que_background">#f5f5f5</color><integer-array name="material_colors">
+        <item>@color/material_red</item>
+        <item>@color/material_green</item>
+        <item>@color/material_blue</item>
+        <item>@color/material_yellow</item>
+    </integer-array></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="view_normal_margin">10dp</dimen><dimen name="view_small_margin">5dp</dimen><dimen name="large_text_size">22sp</dimen><dimen name="medium_text_size">18sp</dimen><dimen name="small_text_size">14sp</dimen></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">智能马桶</string><string name="hello_world">Hello world!</string><string name="action_settings">Settings</string><string name="ble_not_supported">BLE is not supported</string><string name="label_data">Data:</string><string name="label_device_address">Device address:</string><string name="label_state">State:</string><string name="no_data">No data</string><string name="connected">断开</string><string name="disconnected">连接</string><string name="title_devices">设备列表</string><string name="error_bluetooth_not_supported">Bluetooth not supported.</string><string name="unknown_device">Unknown device</string><string name="unknown_characteristic">Unknown characteristic</string><string name="unknown_service">Unknown service</string><string name="health_center_action_bar_title">个人健康中心</string><string name="weight_manager">体重管理</string><string name="body_composition_detection">体成分检测</string><string name="urine_test">尿检单元</string><string name="heart_rate">心率监测</string><string name="start_test">开始检测</string><string name="test_result">检测结果:</string><string name="life_advice">生活建议:</string><string name="zhidaoyijian"/><string name="menu_connect">Connect</string><string name="menu_disconnect">Disconnect</string><string name="menu_scan">Scan</string><string name="menu_stop">Stop</string><string name="device_name_default">Device Name</string><string name="receive_byte">Recv Bytes：</string><string name="data_format_default">Ascii</string><string name="data_format_hex">Hex</string><string name="clean">clean</string><string name="send_byte">Send Bytes：</string><string name="send">send</string><string name="scan_ble_device">Scan BLE Device</string><string name="device_name">name</string><string name="device_address">address</string><string name="scanning">Scanning......</string><string name="zero">0</string><string name="speed">0 B/s</string><string name="ble_need_location">Android6.0蓝牙需要开启</string><string name="about_weight_chart">About Weight Chart</string><string name="add">Add</string><string name="all_entries_deleted">All entries are now deleted</string><string name="average">Average of last seven days</string><string name="bmi_value">BMI: %.2f</string><string name="bmi_with_height">BMI (height: %s)</string><string name="cancel">Cancel</string><string name="close">Close</string><string name="cm">cm</string><string name="count_entries">Count entries</string><string name="date_legend">Day of week and day of month</string><string name="delete">Delete</string><string name="delete_all_entries">Delete all entries</string><string name="drag_chart_to_scroll">Drag chart to scroll</string><string name="edit">Edit</string><string name="end_date_input">End date:</string><string name="entries">Entries</string><plurals name="entry_count">
+        <item quantity="one">1 entry</item>
+        <item quantity="other">%d entries</item>
+    </plurals><string name="entry_edited">Entry edited</string><string name="export">Export</string><string name="export_csv">Export entries as CSV</string><string name="export_ods">Export entries as ODS</string><string name="export_png">Export chart as PNG</string><string name="exported_to">Exported to %s</string><string name="failed_open_file">Failed to open or read from file %s</string><string name="failed_save_file">Failed to create or write to file %s</string><string name="file_input">File:</string><string name="file_not_found">File not found: %s</string><string name="free_software_license">Free software license</string><string name="ft">ft</string><string name="height">Height</string><string name="height_cm">%d cm</string><string formatted="false" name="height_ft">%d ft %d in</string><string name="height_input">Height:</string><string name="height_unit">Height unit</string><string name="height_unit_input">Height unit:</string><string-array name="height_unit_labels">
+        <item>centimeter</item>
+        <item>foot</item>
+    </string-array><string-array name="height_unit_values">
+        <item>cm</item>
+        <item>ft</item>
+    </string-array><string name="import_">Import</string><string name="import_csv">Import entries from CSV</string><string name="imported_from">Imported from %s</string><string name="in">in</string><string name="invalid_days">Invalid number of days</string><string name="invalid_file_format">Invalid file format</string><string name="invalid_height">Invalid height</string><string name="invalid_size">Invalid size</string><string name="invalid_weight">Invalid weight</string><string name="kg">kg</string><string name="lb">lb</string><string name="legend">Legend</string><string name="license_description">Weight Chart v2\nCopyright 2011\n\nWeight Chart is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nWeight Chart is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nSee http://www.gnu.org/licenses/</string><string name="license_summary">GNU General Public License version 3 or later</string><string name="media_not_available">SD card is not available</string><string name="menu_file">File</string><string name="no_entries">No entries</string><string name="days_input">Number of days to show:</string><string name="ok">OK</string><string name="preferences">Preferences</string><string name="question_delete_all">Delete all entries? This cannot be undone.</string><string name="set_manually">Set manually</string><string name="share_file">Share file</string><string name="size_input">Size:</string><string name="skip">Skip</string><string name="st">st</string><string name="tap_to_open_menu">Tap to open menu</string><string name="time">Time</string><string name="transparency">Transparency</string><string name="view">View</string><string name="view_14_days">View 14 days</string><string name="view_21_days">View 21 days</string><string name="view_30_days">View 30 days</string><string name="view_60_days">View 60 days</string><string name="view_90_days">View 90 days</string><string name="view_7_days">View 7 days</string><string name="website">Website</string><string name="website_url">http://www.senselesssolutions.com/android/weightchart</string><string name="website_url_origin">http://fredrik.jemla.eu/weightchart</string><string-array name="weekdays">
+        <item>mo</item>
+        <item>tu</item>
+        <item>we</item>
+        <item>th</item>
+        <item>fr</item>
+        <item>sa</item>
+        <item>su</item>
+    </string-array><string name="weight">Weight</string><string name="weight_goal">Weight goal</string><string name="weight_max">Weight alert (maximum weight)</string><string name="weight_goal_input">Input your goal weight</string><string name="weight_max_input">Input your maximum weight</string><string name="ad_goal_weight_title">Goal Weight</string><string name="ad_max_weight_title">Maximum Weight</string><string name="alert_dialog_ok">Accept</string><string name="alert_dialog_cancel">Cancel</string><string name="watch_weight">Watch your weight!</string><string name="max_weight_label">Max Weight</string><string name="max_weight_alert">You are over the weight!</string><string name="goal_weight_label">Goal Weight</string><string name="market_url">market://details?id=es.senselesssolutions.gpl.weightchart</string><string name="market">Weight Chart on Android Market</string><string name="market_url_author">market://search?q=pub:aitorTheRed@senselesssolutions</string><string name="market_author">More from this developer</string><string name="about_wc_summary">Based on a GPL source code</string><string name="about_wc">About Weight Chart</string><string formatted="false" name="about_description">    	This application is a modification of a GNU-license application:\n
+    	http://fredrik.jemla.eu/weightchart\n
+    	I just wanted to add a few features, so I downloaded the code and added them :-).
+    	If you have any problem, please, contact the developer:
+    	weightchart@senselesssolutions.com</string><string name="translate_summary">Do you want Weight Chart in your own language? Press here to help us translate
+    	the texts (you will appear in the credits)</string><string name="translate">Help us translate!</string><string name="translate_email">translate-weightchart@senselesssolutions.com</string><string name="translate_email_subject">Translate to [your language] [Weight Chart]</string><string formatted="false" name="translate_email_text">Hello! I want to help you translate Weight Chart to my language.
+    		Just drop me an email and I will answer as soon as possible :-)</string><string name="weight_added">Weight added</string><string name="weight_kg">%.1f kg</string><string name="weight_kg_legend">First weight of the day (kg)</string><string name="weight_lb">%.1f lb</string><string name="weight_lb_legend">First weight of the day (lb)</string><string formatted="false" name="weight_st">%d st %.1f lb</string><string name="weight_st_legend">First weight of the day (st)</string><string name="weight_unit">Weight unit</string><string-array name="weight_unit_labels">
+        <item>kilogram</item>
+        <item>pound</item>
+        <item>stone</item>
+    </string-array><string-array name="weight_unit_values">
+        <item>kg</item>
+        <item>lb</item>
+        <item>st</item>
+    </string-array></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppBaseTheme" parent="@android:style/Theme.Light">
+        
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style><style name="home_my_text">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">18sp</item>
+    </style><style name="my_info_type">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style><style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        
+    </style></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style></file><file path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="preferences" path="D:\AndroidStudioProjects\ToiletApp\app\src\main\res\xml\preferences.xml" qualifiers="" type="xml"/></source><source path="D:\AndroidStudioProjects\ToiletApp\app\build\generated\res\rs\debug"/><source path="D:\AndroidStudioProjects\ToiletApp\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="D:\AndroidStudioProjects\ToiletApp\app\src\debug\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\AndroidStudioProjects\ToiletApp\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="PtrFrameLayout"><attr format="reference" name="ptr_header"/><attr format="reference" name="ptr_content"/><attr format="float" name="ptr_resistance"/><attr format="float" name="ptr_ratio_of_header_height_to_refresh"/><attr format="integer" name="ptr_duration_to_close"/><attr format="integer" name="ptr_duration_to_close_header"/><attr format="boolean" name="ptr_pull_to_fresh"/><attr format="boolean" name="ptr_keep_header_when_refresh"/></declare-styleable><declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/><attr format="color" name="selectedTabTextColor"/></declare-styleable><declare-styleable name="SwipeMenu"><attr format="integer" name="sml_scroller_duration"/><attr format="float" name="sml_auto_open_percent"/><attr format="reference" name="sml_scroller_interpolator"/></declare-styleable><declare-styleable name="RealtimeBlurView"><attr format="dimension" name="realtimeBlurRadius"/><attr format="float" name="realtimeDownsampleFactor"/><attr format="color" name="realtimeOverlayColor"/></declare-styleable><declare-styleable name="WaveView"><attr format="color" name="above_wave_color"/><attr format="color" name="blow_wave_color"/><attr format="integer" name="progress"/><attr format="enum" name="wave_length">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr><attr format="enum" name="wave_height">
+            <enum name="large" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="little" value="3"/>
+        </attr><attr format="enum" name="wave_hz">
+            <enum name="fast" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="slow" value="3"/>
+        </attr></declare-styleable><declare-styleable name="MaterialRefreshLayout"><attr format="boolean" name="overlay"/><attr format="enum" name="wave_height_type">
+            <enum name="normal" value="0"/>
+            <enum name="higher" value="1"/>
+        </attr><attr format="color" name="wave_color"/><attr format="boolean" name="wave_show"/><attr format="reference" name="progress_colors"/><attr format="dimension" name="progress_stoke_width"/><attr format="color" name="progress_backgroud_color"/><attr format="boolean" name="progress_show_arrow"/><attr format="dimension" name="progress_arrow_width"/><attr format="dimension" name="progress_arrow_height"/><attr format="boolean" name="progress_show_circle_backgroud"/><attr format="integer" name="progress_value"/><attr format="integer" name="progress_max_value"/><attr format="dimension" name="progress_text_size"/><attr format="color" name="progress_text_color"/><attr format="enum" name="progress_text_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr><attr format="enum" name="progress_size_type">
+            <enum name="normal" value="0"/>
+            <enum name="big" value="1"/>
+        </attr><attr format="boolean" name="isLoadMore"/></declare-styleable><declare-styleable name="Themes"><attr format="reference" name="waveViewStyle"/></declare-styleable><declare-styleable name="CircleProgressBar"><attr format="dimension" name="mlpb_inner_radius"/><attr format="color" name="mlpb_background_color"/><attr format="color" name="mlpb_progress_color"/><attr format="dimension" name="mlpb_progress_stoke_width"/><attr format="boolean" name="mlpb_show_arrow"/><attr format="boolean" name="mlpb_enable_circle_background"/><attr format="dimension" name="mlpb_arrow_width"/><attr format="dimension" name="mlpb_arrow_height"/><attr format="integer" name="mlpb_progress"/><attr format="integer" name="mlpb_max"/><attr format="dimension" name="mlpb_progress_text_size"/><attr format="color" name="mlpb_progress_text_color"/><attr format="enum" name="mlpb_progress_text_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr></declare-styleable><declare-styleable name="MetroLoadingView"><attr name="indicator">
+            <flag name="rectangle" value="0"/>
+            <flag name="circle" value="1"/>
+        </attr><attr format="color" name="indicator_color"/><attr format="dimension" name="indicator_width"/><attr format="dimension" name="indicator_height"/><attr format="dimension" name="indicator_radius"/><attr format="boolean" name="has_shadow"/><attr format="color" name="shadow_color"/><attr format="integer" name="number"/><attr format="integer" name="duration_in_mills"/><attr format="integer" name="interval_in_mills"/><attr format="boolean" name="transform"/><attr format="dimension" name="transform_height"/><attr format="dimension" name="transform_width"/><attr format="dimension" name="transform_radius"/><attr format="color" name="transform_color"/><attr name="transform_color_mode">
+            <flag name="none" value="0"/>
+            <flag name="linear" value="1"/>
+            <flag name="symmetry" value="2"/>
+        </attr><attr format="boolean" name="fade"/></declare-styleable><declare-styleable name="JazzyListView"><attr format="enum" name="effect">
+            <enum name="standard" value="0"/>
+            <enum name="grow" value="1"/>
+            <enum name="cards" value="2"/>
+            <enum name="curl" value="3"/>
+            <enum name="wave" value="4"/>
+            <enum name="flip" value="5"/>
+            <enum name="fly" value="6"/>
+            <enum name="reverse_fly" value="7"/>
+            <enum name="helix" value="8"/>
+            <enum name="fan" value="9"/>
+            <enum name="tilt" value="10"/>
+            <enum name="zipper" value="11"/>
+            <enum name="fade" value="12"/>
+            <enum name="twirl" value="13"/>
+            <enum name="slide_in" value="14"/>
+        </attr><attr format="boolean" name="only_animate_new_items"/><attr format="boolean" name="only_animate_fling"/><attr format="boolean" name="simulate_grid_with_list"/><attr format="integer" name="max_velocity"/></declare-styleable><declare-styleable name="PtrClassicHeader"><attr format="integer" name="ptr_rotate_ani_time"/></declare-styleable><declare-styleable name="PracticalRecyclerView"><attr format="reference" name="empty_layout"/><attr format="reference" name="error_layout"/><attr format="reference" name="loading_layout"/><attr format="reference" name="load_more_layout"/><attr format="reference" name="no_more_layout"/><attr format="reference" name="load_more_failed_layout"/></declare-styleable><declare-styleable name="AVLoadingIndicatorView"><attr format="dimension" name="minWidth"/><attr format="dimension" name="maxWidth"/><attr format="dimension" name="minHeight"/><attr format="dimension" name="maxHeight"/><attr format="string" name="indicatorName"/><attr format="color" name="indicatorColor"/></declare-styleable><declare-styleable name="CustomActionBar"><attr format="reference|integer" name="title_background_color"/><attr format="boolean" name="left_button_visible"/><attr format="boolean" name="right_button_visible"/><attr format="string" name="title_text"/><attr format="color" name="title_text_color"/><attr format="reference|integer" name="title_text_drawable"/><attr format="string" name="right_button_text"/><attr format="color" name="right_button_text_color"/><attr format="reference|integer" name="right_button_drawable"/><attr format="reference|integer" name="left_button_drawable"/></declare-styleable><declare-styleable name="ColorArcProgressBar"><attr format="color" name="back_color"/><attr format="color" name="front_color1"/><attr format="color" name="front_color2"/><attr format="color" name="front_color3"/><attr format="dimension" name="back_width"/><attr format="dimension" name="front_width"/><attr format="boolean" name="is_need_title"/><attr format="boolean" name="is_need_content"/><attr format="boolean" name="is_need_unit"/><attr format="boolean" name="is_need_dial"/><attr format="string" name="string_title"/><attr format="string" name="string_unit"/><attr format="integer" name="total_engle"/><attr format="float" name="current_value"/><attr format="float" name="max_value"/><attr format="dimension" name="diameter"/></declare-styleable><declare-styleable name="BGABanner"><attr format="reference|color" name="banner_pointContainerBackground"/><attr format="reference" name="banner_pointDrawable"/><attr format="dimension" name="banner_pointContainerLeftRightPadding"/><attr format="dimension" name="banner_pointTopBottomMargin"/><attr format="dimension" name="banner_pointLeftRightMargin"/><attr name="banner_indicatorGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_horizontal" value="0x01"/>
+        </attr><attr format="boolean" name="banner_pointAutoPlayAble"/><attr format="integer" name="banner_pointAutoPlayInterval"/><attr format="integer" name="banner_pageChangeDuration"/><attr format="enum" name="banner_transitionEffect">
+            <enum name="defaultEffect" value="0"/>
+            <enum name="alpha" value="1"/>
+            <enum name="rotate" value="2"/>
+            <enum name="cube" value="3"/>
+            <enum name="flip" value="4"/>
+            <enum name="accordion" value="5"/>
+            <enum name="zoomFade" value="6"/>
+            <enum name="fade" value="7"/>
+            <enum name="zoomCenter" value="8"/>
+            <enum name="zoomStack" value="9"/>
+            <enum name="stack" value="10"/>
+            <enum name="depth" value="11"/>
+            <enum name="zoom" value="12"/>
+        </attr><attr format="reference|color" name="banner_tipTextColor"/><attr format="dimension" name="banner_tipTextSize"/><attr format="reference" name="banner_placeholderDrawable"/><attr format="boolean" name="banner_isNumberIndicator"/><attr format="reference|color" name="banner_numberIndicatorTextColor"/><attr format="dimension" name="banner_numberIndicatorTextSize"/><attr format="reference" name="banner_numberIndicatorBackground"/><attr format="boolean" name="banner_isNeedShowIndicatorOnOnlyOnePage"/></declare-styleable></configuration></mergedItems></merger>

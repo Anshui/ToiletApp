@@ -1,0 +1,190 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\237e72b1159ab991edad67c096869d22\AndroidManifest.xml:14:4-17:12
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-56:12
+	package
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\237e72b1159ab991edad67c096869d22\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\237e72b1159ab991edad67c096869d22\AndroidManifest.xml:15:5-42
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
+INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
+	android:targetSdkVersion
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:7:9-35
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:10:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:11:2-87
+	android:required
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:11:61-84
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:11:16-60
+uses-feature#android.bluetooth.le
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:12:5-80
+	android:required
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:12:55-78
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:12:19-54
+uses-permission#android.permission.BLUETOOTH_PRIVILEGED
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:15:5-74
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:15:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:16:22-65
+application
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:17:5-54:19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\237e72b1159ab991edad67c096869d22\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\237e72b1159ab991edad67c096869d22\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:20:9-41
+	android:icon
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:19:9-45
+	android:allowBackup
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:21:10-41
+activity#cn.hfiti.toiletapp.bluetooth.DeviceScanActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:22:9-29:20
+	android:label
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:24:13-45
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:23:13-75
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:27:27-74
+activity#cn.hfiti.toiletapp.HeartRateActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:30:9-72
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:30:19-70
+activity#cn.hfiti.toiletapp.UrineTestActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:31:9-72
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:31:19-70
+activity#cn.hfiti.toiletapp.BodyCompositionActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:32:9-78
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:32:19-76
+activity#cn.hfiti.toiletapp.HealthActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:33:9-69
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:33:19-67
+activity#cn.hfiti.toiletapp.MainActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:34:9-67
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:34:19-65
+activity#cn.hfiti.toiletapp.SettingsActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:35:9-71
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:35:19-69
+activity#cn.hfiti.toiletapp.FunSettingsActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:36:9-74
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:36:19-72
+activity#cn.hfiti.toiletapp.LoginActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:37:9-68
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:37:19-66
+activity#cn.hfiti.toiletapp.RegisterActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:38:9-71
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:38:19-69
+activity#cn.hfiti.toiletapp.UserActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:39:9-67
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:39:19-65
+activity#cn.hfiti.toiletapp.UserInfoActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:40:9-71
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:40:19-69
+activity#cn.hfiti.toiletapp.UserSetupActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:41:9-72
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:41:19-70
+activity#cn.hfiti.toiletapp.CroppedPhotoActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:42:9-75
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:42:19-73
+activity#cn.hfiti.toiletapp.BaseActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:43:9-67
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:43:19-65
+activity#cn.hfiti.toiletapp.bluetooth.BleSppActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:44:9-79
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:44:19-77
+service#cn.hfiti.toiletapp.bluetooth.BluetoothLeService
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:45:9-105
+	android:enabled
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:45:81-103
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:45:18-80
+activity#es.senselesssolutions.gpl.weightchart.ChartActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:48:9-87
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:48:19-85
+activity#es.senselesssolutions.gpl.weightchart.EntryActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:49:9-87
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:49:19-85
+activity#es.senselesssolutions.gpl.weightchart.EntryListActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:50:9-91
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:50:19-89
+activity#es.senselesssolutions.gpl.weightchart.LegendActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:51:9-88
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:51:19-86
+activity#es.senselesssolutions.gpl.weightchart.PreferencesActivity
+ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:52:9-93
+	android:name
+		ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:52:19-91

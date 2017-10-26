@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="10">
+    
+    <cn.hfiti.toiletapp.view.CustomActionBar
+        android:id="@+id/urine_test_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:left_button_drawable="@drawable/back"
+        app:right_button_visible="false"
+        app:title_background_color="@color/blue_new"
+        app:title_text="@string/urine_test"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/start_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_weight="0.6"
+        android:background="@drawable/button_selector"
+        android:text="@string/start_test" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:text="@string/test_result"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"/>
+    
+    <TextView 
+        android:id="@+id/test_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/textview_corner"
+        android:padding="5dp"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center_vertical"
+        android:text="@string/life_advice"
+        android:layout_marginStart="20dp"/>
+    
+    <TextView 
+        android:id="@+id/life_advice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/textview_corner"
+        android:padding="5dp"/>
+
+</LinearLayout>

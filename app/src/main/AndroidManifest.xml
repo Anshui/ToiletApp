@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.hfiti.toiletapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+    <uses-feature android:name="android.bluetooth.le" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         android:theme="@style/AppTheme">
+        <activity
+            android:name="cn.hfiti.toiletapp.bluetooth.DeviceScanActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.hfiti.toiletapp.activity.HeartRateActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.UrineTestActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.BodyCompositionActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.HealthActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.MainActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.SettingsActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.FunSettingsActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.LoginActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.RegisterActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.UserActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.UserInfoActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.UserSetupActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.CroppedPhotoActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.activity.BaseActivity"/>
+        <activity android:name="cn.hfiti.toiletapp.bluetooth.BleSppActivity"/>
+        <service android:name="cn.hfiti.toiletapp.bluetooth.BluetoothLeService" android:enabled="true"/>
+        
+        
+        <activity android:name="es.senselesssolutions.gpl.weightchart.ChartActivity"/>
+        <activity android:name="es.senselesssolutions.gpl.weightchart.EntryActivity"/>
+        <activity android:name="es.senselesssolutions.gpl.weightchart.EntryListActivity"/>
+        <activity android:name="es.senselesssolutions.gpl.weightchart.LegendActivity"/>
+        <activity android:name="es.senselesssolutions.gpl.weightchart.PreferencesActivity"/>
+        
+    </application>
+
+</manifest>

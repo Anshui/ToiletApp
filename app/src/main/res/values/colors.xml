@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="backgound_blue">#0FC6DC</color>
+   <color name="transparent">#00000000</color>
+   
+   <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grayblack">#EEEEEE</color>
+    <color name="black_text">#373737</color>
+    <color name="green">#13AC40</color>
+    <color name="blue">#28DCB7</color>
+    <color name="gray_new">#B4B4B4</color>
+    <color name="line_new">#DCDCDC</color>
+    <color name="yellow_new">#ffa200</color>
+    <color name="blue_new">#00cbf6</color>
+    <color name="yellow">#FABE1D</color>
+    <color name="caolv_text">#7DCA00</color>
+    <color name="translucence">#ff4e4752</color>
+    <color name="item_content_character">#ff9933</color>
+    <color name="contentbackground">#ffcffc</color>
+    <color name="menubackground">#ccffcc</color>
+    <color name="chattextviewindexhou">#ffffff</color>
+    <color name="chattextviewindexqian">#00ffcc</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="agronet_title">#10AD44</color>
+    <color name="agronet_title_dark">#0F9D3E</color>
+    <color name="agronet_titlebar">#fff3f3f3</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="lowgray">#bfbfbfbf</color>
+    <color name="graywhite">#f0f0f0f0</color>
+    <color name="gray_line">#B8B8B8</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="light_gray">#E9E9E9</color>
+    <color name="blue_text">#13AC40</color>
+    <color name="light_blue_green">#008B45</color>
+    <color name="help_view">#ff404040</color>
+    <color name="orangetitle">#FF4800</color>
+    <color name="no_color">#00000000</color>
+    <!-- 2016-01-26 新增 -->
+    <color name="normal_bg_color">#f2f2f2</color>
+    <color name="sscf_bg">#39B44A</color>
+    <color name="sscf_title_bg">#39B44A</color>
+    <color name="sscf_type_bg">#DCE6D2</color>
+    <color name="sscf_food_whitebg">#E6F1DA</color>
+    <color name="sscf_food_bg">#CFE4B8</color>
+    <!-- 淡灰色背景 -->
+    <color name="green_text">#3489E3</color>
+    <!-- 淡蓝色 -->
+    <color name="bottom_normal_textcolor">#333333</color>
+    <color name="normal_member_name_color">#484848</color>
+    <color name="index_task_time_color">#b5b5b5</color>
+    <color name="index_task_item_manfen">#458be9</color>
+    <color name="index_task_item_jingbiao_count_color">#009944</color>
+    <color name="gray_text">#999999</color>
+
+    <!-- 统一图片背景颜色 -->
+    <color name="image_tianchong_color">#dddddd</color>
+    <!-- 统一图片背景颜色 -->
+
+
+    <!-- 二维码扫描 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="lightgreen">#90ee90</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_normal">#FF4081</color>
+    <color name="text_press">#bbFF4081</color>
+    
+    <color name="color_accent">#7c4dff</color>
+    <color name="color_success">#3CCD88</color>
+    <color name="color_error">#f44336</color>
+    
+    <color name="material_red">#ffF44336</color>
+    <color name="material_green">#ff4CAF50</color>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="material_yellow">#ffFFEB3B</color>
+    
+    
+    <color name="orange">#ff7e00</color>
+    <color name="light_grey">#dadada</color>
+    
+    <!-- 美工图片颜色 -->
+    <color name="index_green">#86d52a</color>
+    <color name="index_yellow">#ffc602</color>
+    <color name="background_gray">#F8F8F8</color>
+    <color name="que_line">#e9e9e9</color>
+    <color name="que_background">#f5f5f5</color>
+    
+    <integer-array name="material_colors">
+        <item>@color/material_red</item>
+        <item>@color/material_green</item>
+        <item>@color/material_blue</item>
+        <item>@color/material_yellow</item>
+    </integer-array>
+</resources>
