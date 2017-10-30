@@ -44,21 +44,80 @@ public class RemoteFragment extends Fragment {
     
 	private List<Map<String, Object>> mDataList;
 	private SimpleAdapter remoteAdapter;
-	private int[] icon = { R.drawable.c_xb, R.drawable.c_fx,
-			R.drawable.c_ptfw, R.drawable.c_hg, R.drawable.c_ydcs,
-			R.drawable.c_ydcs, R.drawable.c_cs, R.drawable.c_fgdk,
-			R.drawable.c_yd_off, R.drawable.cs,R.drawable.tz,
-			R.drawable.search_temp,R.drawable.search_weight,R.drawable.power,
-			R.drawable.baby_icon,R.drawable.bath,R.drawable.massage,R.drawable.water_temp_green,
-			R.drawable.wind_temp_green,R.drawable.water_press_green,R.drawable.seat_temp_green};
-	private int[] icon_yd = {R.drawable.c_yd_on,R.drawable.c_yd_off};
-	private int[] icon_wind_temp = {R.drawable.wind_temp,R.drawable.wind_temp_blue,R.drawable.wind_temp_green,R.drawable.wind_temp_red};
-	private int[] icon_water_temp = {R.drawable.water_temp,R.drawable.water_temp_blue,R.drawable.water_temp_green,R.drawable.water_temp_red};
-	private int[] icon_water_press = {R.drawable.water_press,R.drawable.water_press_blue,R.drawable.water_press_green,R.drawable.water_press_red};
-	private int[] icon_seat_temp = {R.drawable.seat_temp,R.drawable.seat_temp_blue,R.drawable.seat_temp_green,R.drawable.seat_temp_red};
-	
-	private String[] iconName = { "ͨ臀部清洗", "女用清洗", "喷头自洁", "烘干", "喷头前移", "喷头后移", "冲水",
-			"翻盖", "夜灯", "功能设置", "停止","查询座温","查询体重","电源 ","儿童清洗","坐浴","按摩","水温","风温","水压","座温"};	
+	private int[] icon = {
+			R.drawable.c_xb,
+			R.drawable.c_fx,
+			R.drawable.c_ptfw,
+			R.drawable.c_hg,
+			R.drawable.c_ydcs,
+			R.drawable.c_ydcs,
+			R.drawable.c_cs,
+			R.drawable.c_fgdk,
+			R.drawable.c_yd_off,
+			R.drawable.cs,
+			R.drawable.tz,
+			R.drawable.search_temp,
+			R.drawable.search_weight,
+			R.drawable.power,
+			R.drawable.baby_icon,
+			R.drawable.bath,
+			R.drawable.massage,
+			R.drawable.water_temp_green,
+			R.drawable.wind_temp_green,
+			R.drawable.water_press_green,
+			R.drawable.seat_temp_green
+	};
+	private int[] icon_yd = {
+			R.drawable.c_yd_on,
+			R.drawable.c_yd_off
+	};
+	private int[] icon_wind_temp = {
+			R.drawable.wind_temp,
+			R.drawable.wind_temp_blue,
+			R.drawable.wind_temp_green,
+			R.drawable.wind_temp_red
+	};
+	private int[] icon_water_temp = {
+			R.drawable.water_temp,
+			R.drawable.water_temp_blue,
+			R.drawable.water_temp_green,
+			R.drawable.water_temp_red
+	};
+	private int[] icon_water_press = {
+			R.drawable.water_press,
+			R.drawable.water_press_blue,
+			R.drawable.water_press_green,
+			R.drawable.water_press_red
+	};
+	private int[] icon_seat_temp = {
+			R.drawable.seat_temp,
+			R.drawable.seat_temp_blue,
+			R.drawable.seat_temp_green,
+			R.drawable.seat_temp_red
+	};
+	private String[] iconName = {
+			"ͨ臀部清洗",
+			"女用清洗",
+			"喷头自洁",
+			"烘干",
+			"喷头前移",
+			"喷头后移",
+			"冲水",
+			"翻盖",
+			"夜灯",
+			"功能设置",
+			"停止",
+			"查询座温",
+			"查询体重",
+			"电源 ",
+			"儿童清洗",
+			"坐浴",
+			"按摩",
+			"水温",
+			"风温",
+			"水压",
+			"座温"
+	};
 	private int waterTempFlag = 3;
 	private int windTempFlag = 3;
 	private int waterPressFlag = 3;

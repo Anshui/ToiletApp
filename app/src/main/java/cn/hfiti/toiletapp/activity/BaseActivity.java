@@ -39,7 +39,7 @@ public class BaseActivity extends Activity {
 	}
 	
 	
-	  private SystemBarTintManager tintManager;
+	private SystemBarTintManager tintManager;
 	   @TargetApi(19)
 	   private void initWindow(){
 	        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
@@ -50,6 +50,6 @@ public class BaseActivity extends Activity {
 	            tintManager.setStatusBarTintEnabled(true);
 	            tintManager.setNavigationBarTintEnabled(false);
 	        }
-	    }
+	   }
 }
 

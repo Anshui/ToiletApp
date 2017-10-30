@@ -160,7 +160,7 @@ public class DeviceScanActivity extends ListActivity {
             mScanning = false;
         }
         startActivity(intent);
-//        finish();
+        finish();
     }
 
     

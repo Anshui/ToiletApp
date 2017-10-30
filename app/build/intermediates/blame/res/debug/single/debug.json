@@ -28,6 +28,10 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable\\selector_reg_corners_button.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_health_blue.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\health_blue.png"
     },
@@ -56,6 +60,10 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\anim\\text_scale_in.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_textview_corner.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable\\textview_corner.xml"
     },
@@ -80,12 +88,28 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\heart_rate.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_entry.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\entry.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_water_temp_green.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\water_temp_green.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_health_selector.xml.flat",
@@ -136,12 +160,28 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable\\ic_menu_archive.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_photo.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\activity_photo.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_health_button_corner_red.xml.flat",
@@ -162,6 +202,18 @@
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zw_tj.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\zw_tj.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zy26.png.flat",
@@ -196,8 +248,16 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\c_fgdk.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout-v21\\notification_action.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_ad_goal_weight.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\ad_goal_weight.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fun_settings.xml.flat",
@@ -220,6 +280,10 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\gr02.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_health_black.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\health_black.png"
     },
@@ -228,8 +292,16 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\icon_empty.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gr10.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\gr10.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_step_target_enter.xml.flat",
@@ -292,6 +364,14 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\gr05.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_sy_tj.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\sy_tj.png"
     },
@@ -320,6 +400,10 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\health_center.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_massage.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\massage.png"
     },
@@ -334,6 +418,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_ble_spp.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\ble_spp.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_chart.xml.flat",
@@ -356,6 +444,14 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\my_bn_select.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
@@ -368,8 +464,16 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\c_fx.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zdcs_tj.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\zdcs_tj.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_register.xml.flat",
@@ -398,6 +502,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_row.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\row.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_c_ydcs.png.flat",
@@ -440,12 +548,20 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\xml\\preferences.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_c_yd_on.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\c_yd_on.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_baby_icon.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\baby_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
@@ -488,6 +604,18 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\layout_tempseat.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_wind_temp_green.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\wind_temp_green.png"
     },
@@ -496,8 +624,16 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\c_xb.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_back.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\back.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_battery.png.flat",
@@ -508,12 +644,20 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\water_press_red.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_text_scale_out.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\anim\\text_scale_out.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_home_1.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\home_1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_demo_image.jpg.flat",
@@ -544,11 +688,23 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\custom_action_bar.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_water_press.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\water_press.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_wind_temp_red.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\wind_temp_red.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
+        "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.0.aar\\d19602d7209c20318fcc6e4dd8278b58\\res\\layout\\notification_template_big_media.xml"
     }
 ]

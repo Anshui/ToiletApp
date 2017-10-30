@@ -8,9 +8,11 @@ import java.util.GregorianCalendar;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -359,18 +361,28 @@ public class RegisterActivity extends Activity implements OnClickListener{
 			e.printStackTrace();
 		}
 
-		MyCustomDatePickerDialog datePickerDialog = new MyCustomDatePickerDialog(this, new OnDateSetListener() {
-
+		DatePickerDialog datePickerDialog = new DatePickerDialog(this, new OnDateSetListener() {
 			@Override
-			public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-				mTextBirth.setText(year + "-" + String.format("%02d", (monthOfYear + 1)) + "-"
-						+ String.format("%02d", dayOfMonth));
+			public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+				mTextBirth.setText(i + "-" + String.format("%02d", (i1 + 1)) + "-" + String.format("%02d", i2));
 			}
-		}, int_year, int_month - 1, int_day);
-		datePickerDialog.setDatePickerDividerColor(datePickerDialog.getDatePicker(), this);
+		}, int_year, int_month-1, int_day);
 		datePickerDialog.getDatePicker().setMaxDate(date.getTime());
 		datePickerDialog.getDatePicker().setMinDate(date.getTime() - (long) 47304 * 100000000);
 		datePickerDialog.show();
+
+//		MyCustomDatePickerDialog datePickerDialog = new MyCustomDatePickerDialog(this, new OnDateSetListener() {
+//
+//			@Override
+//			public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+//				mTextBirth.setText(year + "-" + String.format("%02d", (monthOfYear + 1)) + "-"
+//						+ String.format("%02d", dayOfMonth));
+//			}
+//		}, int_year, int_month - 1, int_day);
+//		datePickerDialog.setDatePickerDividerColor(datePickerDialog.getDatePicker(), this);
+//		datePickerDialog.getDatePicker().setMaxDate(date.getTime());
+//		datePickerDialog.getDatePicker().setMinDate(date.getTime() - (long) 47304 * 100000000);
+//		datePickerDialog.show();
 	}
 
 }

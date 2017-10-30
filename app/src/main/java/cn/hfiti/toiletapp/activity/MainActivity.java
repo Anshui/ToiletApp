@@ -318,7 +318,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		switch (v.getId()) {
 		case R.id.bn_health:
 			Log.d("yuhao", "bn_weight----Define.LOGIN_SUCCESS-="+Define.LOGIN_SUCCESS);
-			if (mConnected) {
+//			if (mConnected) {
 				if (Define.LOGIN_SUCCESS) {
 					Log.d("yuhao", "bn_weight---switchToUser---");
 					switchToHealth();
@@ -327,10 +327,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 					Log.d("yuhao", "bn_weight---switchToLogin---");
 					switchToLogin();
 				}
-			}
-			else {
-				Toast.makeText(MainActivity.this, "请先连接马桶！", Toast.LENGTH_SHORT).show();
-			}
+//			}
+//			else {
+//				Toast.makeText(MainActivity.this, "请先连接马桶！", Toast.LENGTH_SHORT).show();
+//			}
 			break;
 		case R.id.bn_connect:
 			Log.d("yuhao", "mConnected=------0-------"+mConnected);
@@ -339,9 +339,15 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				connectFlag = true;
 			}
 			else {
-				progressDialog.show();
-				mBluetoothLeService.connect(mDeviceAddress);
-				connectFlag = false;
+				if (mDeviceAddress == null){
+					Intent intent = new Intent(this,DeviceScanActivity.class);
+					startActivity(intent);
+                    finish();
+                } else {
+					progressDialog.show();
+					mBluetoothLeService.connect(mDeviceAddress);
+					connectFlag = false;
+				}
 			}
 			Log.d("yuhao", "mConnected=------1-------"+mConnected);
 			break;

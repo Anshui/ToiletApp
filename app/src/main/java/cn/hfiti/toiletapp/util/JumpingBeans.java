@@ -16,6 +16,7 @@
 
 package cn.hfiti.toiletapp.util;
 
+
 import android.support.annotation.FloatRange;
 import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
