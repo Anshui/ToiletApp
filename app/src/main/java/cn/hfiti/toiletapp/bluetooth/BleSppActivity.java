@@ -466,5 +466,4 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                 break;
         }
     }
-
 }
