@@ -1,8 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,18 +48,23 @@
 	            android:src="@drawable/user"/>
         </RelativeLayout>
     </LinearLayout>
-    <TextView 
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#e9e7ef"/>    
+    -->
+
+	<cn.hfiti.toiletapp.view.CustomActionBar
+		android:id="@+id/main_action_bar"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		app:title_text="智能马桶"
+		app:left_button_drawable="@drawable/home_1"
+		app:right_button_drawable="@drawable/user"
+		app:title_background_color="@color/blue_new"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:id="@+id/main_frag"
         android:orientation="vertical"
-        android:layout_weight="0.3"
+        android:layout_weight="7.8"
         android:background="#f0f0f4">
         <ImageView
             android:layout_width="match_parent"
@@ -66,9 +74,9 @@
     </LinearLayout>   
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1.2">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -141,7 +149,7 @@
 	            android:layout_width="match_parent"
 	            android:layout_height="match_parent"
 	            android:id="@+id/bn_quit"
-	            android:layout_weight="0.7"
+	            android:layout_weight="0.6"
 	            android:src="@drawable/quit_icon"/>
             <TextView
                 android:layout_width="match_parent"

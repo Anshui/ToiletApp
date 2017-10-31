@@ -6,13 +6,13 @@
     <ImageView 
         android:contentDescription="@string/about_description"
         android:id="@+id/action_bar_left_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="10dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:maxHeight="40dp"
-        android:maxWidth="40dp"/>
+        android:maxHeight="24dp"
+        android:maxWidth="24dp"/>
     
     <TextView 
         android:id="@+id/action_bar_title"
@@ -25,13 +25,13 @@
     
     <Button 
         android:id="@+id/action_bar_right_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
         android:layout_margin="10dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:maxHeight="40dp"
-        android:maxWidth="40dp"
+        android:maxHeight="24dp"
+        android:maxWidth="24dp"
         android:background="@null"
         android:textSize="12sp"/>
 

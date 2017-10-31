@@ -22,9 +22,9 @@ public class CustomActionBar extends RelativeLayout {
 	public CustomActionBar(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		LayoutInflater.from(context).inflate(R.layout.custom_action_bar, this, true);
-		actionBarLeftBtn = (ImageView) findViewById(R.id.action_bar_left_button);
-		actionBarRightBtn = (Button) findViewById(R.id.action_bar_right_button);
-		actionBarTitle = (TextView) findViewById(R.id.action_bar_title);
+		actionBarLeftBtn =  findViewById(R.id.action_bar_left_button);
+		actionBarRightBtn = findViewById(R.id.action_bar_right_button);
+		actionBarTitle =  findViewById(R.id.action_bar_title);
 
 		TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.CustomActionBar);
 		if (attributes != null) {

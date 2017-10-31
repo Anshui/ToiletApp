@@ -57,7 +57,6 @@ public class RemoteFragment extends Fragment {
 			R.drawable.cs,
 			R.drawable.tz,
 			R.drawable.search_temp,
-			R.drawable.search_weight,
 			R.drawable.power,
 			R.drawable.baby_icon,
 			R.drawable.bath,
@@ -108,7 +107,6 @@ public class RemoteFragment extends Fragment {
 			"功能设置",
 			"停止",
 			"查询座温",
-			"查询体重",
 			"电源 ",
 			"儿童清洗",
 			"坐浴",
@@ -196,7 +194,7 @@ public class RemoteFragment extends Fragment {
 					viewTag.mIcon.setImageResource(icon_yd[1]);
 				}
 				break;
-			case 17:
+			case 16:
 				Log.d("yuhao", "waterTempFlag=------------------"+waterTempFlag);
 				switch (waterTempFlag) {
 				case 1:
@@ -215,7 +213,7 @@ public class RemoteFragment extends Fragment {
 					break;
 				}
 				break;
-			case 18:
+			case 17:
 				Log.d("yuhao", "windTempFlag=------------------"+windTempFlag);
 				switch (windTempFlag) {
 				case 1:
@@ -235,7 +233,7 @@ public class RemoteFragment extends Fragment {
 					break;
 				}
 				break;
-			case 19:
+			case 18:
 				Log.d("yuhao", "waterPressFlag=------------------"+waterPressFlag);
 				switch (waterPressFlag) {
 				case 1:
@@ -255,7 +253,7 @@ public class RemoteFragment extends Fragment {
 					break;
 				}
 				break;
-			case 20:
+			case 19:
 				Log.d("yuhao", "seatTempFlag=------------------"+seatTempFlag);
 				switch (seatTempFlag) {
 				case 1:
@@ -424,24 +422,24 @@ public class RemoteFragment extends Fragment {
 					String seatTemp = mActivity.searchSeatTemp();
 //					mTextSeatTemp.setText(seatTemp);
 					break;
+//				case 12:
+//					mWeightData = mActivity.searchWeight();
+//					Toast.makeText(mActivity, "正在查询，请稍后...", Toast.LENGTH_LONG).show();
+//
+//					break;
 				case 12:
-					mWeightData = mActivity.searchWeight();
-					Toast.makeText(mActivity, "正在查询，请稍后...", Toast.LENGTH_LONG).show();
-					
-					break;
-				case 13:
 					mActivity.powerControl();
 					break;
-				case 14:
+				case 13:
 					mActivity.childrenClean();
 					break;
-				case 15:
+				case 14:
 					mActivity.hipBath();
 					break;
-				case 16:
+				case 15:
 					mActivity.hipMassage();
 					break;
-				case 17:
+				case 16:
 					ImageView img17 = (ImageView)view.findViewById(R.id.remote_image);
 					if (waterTempFlag == 3) {
 						img17.setImageDrawable(getResources().getDrawable(R.drawable.water_temp_red));
@@ -465,7 +463,7 @@ public class RemoteFragment extends Fragment {
 					}
 					
 					break;
-				case 18:
+				case 17:
 					ImageView img18 = (ImageView)view.findViewById(R.id.remote_image);
 					if (windTempFlag == 3) {
 						img18.setImageDrawable(getResources().getDrawable(R.drawable.wind_temp_red));
@@ -488,7 +486,7 @@ public class RemoteFragment extends Fragment {
 						mActivity.setDryTemp_3();
 					}
 					break;
-				case 19:
+				case 18:
 					ImageView img19 = (ImageView)view.findViewById(R.id.remote_image);
 					if (waterPressFlag == 3) {
 						img19.setImageDrawable(getResources().getDrawable(R.drawable.water_press_red));
@@ -511,7 +509,7 @@ public class RemoteFragment extends Fragment {
 						mActivity.setWaterPress_3();
 					}
 					break;
-				case 20:
+				case 19:
 					ImageView img20 = (ImageView)view.findViewById(R.id.remote_image);
 					if (seatTempFlag == 3) {
 						img20.setImageDrawable(getResources().getDrawable(R.drawable.seat_temp_red));

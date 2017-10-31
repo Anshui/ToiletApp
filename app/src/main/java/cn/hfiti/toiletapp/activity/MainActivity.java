@@ -30,6 +30,7 @@ import cn.hfiti.toiletapp.bluetooth.DeviceScanActivity;
 import cn.hfiti.toiletapp.db.DBManager;
 import cn.hfiti.toiletapp.util.CustomProgressDialog;
 import cn.hfiti.toiletapp.util.Define;
+import cn.hfiti.toiletapp.view.CustomActionBar;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 	
@@ -37,11 +38,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	private ImageView mImgConnect;
 	private ImageView mImgQuit;
 	private ImageView mImgRemote;
-	private ImageView mImgUser;
-	private ImageView mImgHome;
+//	private ImageView mImgUser;
+//	private ImageView mImgHome;
 	private ImageView mXuanchuan;
 	private TextView mTextConnect;
 	private CustomProgressDialog progressDialog;
+
+	private CustomActionBar mainActionbar;
 	
 	private FragmentTransaction beginTransaction;
 	private FragmentManager mFragmrentManager;
@@ -279,14 +282,17 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
 	private void init() {
 		// TODO Auto-generated method stub
-		mImgWeight = (ImageView) findViewById(R.id.bn_health);
-		mImgConnect = (ImageView) findViewById(R.id.bn_connect);
-		mImgRemote = (ImageView) findViewById(R.id.bn_remote);
-		mImgQuit = (ImageView) findViewById(R.id.bn_quit);
-		mImgUser = (ImageView) findViewById(R.id.img_user);
-		mImgHome = (ImageView) findViewById(R.id.img_home1);
-		mXuanchuan = (ImageView) findViewById(R.id.xuanchuan);
-		mTextConnect = (TextView) findViewById(R.id.text_connect);
+		mImgWeight =  findViewById(R.id.bn_health);
+		mImgConnect =  findViewById(R.id.bn_connect);
+		mImgRemote =  findViewById(R.id.bn_remote);
+		mImgQuit =  findViewById(R.id.bn_quit);
+//		mImgUser =  findViewById(R.id.img_user);
+//		mImgHome =  findViewById(R.id.img_home1);
+		mXuanchuan =  findViewById(R.id.xuanchuan);
+		mTextConnect =  findViewById(R.id.text_connect);
+
+		mainActionbar = findViewById(R.id.main_action_bar);
+
 		mRemoteFragment = new RemoteFragment();
 		mFragmrentManager = getSupportFragmentManager();
 		Define.dbManager = new DBManager(this);
@@ -301,8 +307,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		mImgConnect.setOnClickListener(this);
 		mImgRemote.setOnClickListener(this);
 		mImgQuit.setOnClickListener(this);
-		mImgUser.setOnClickListener(this);
-		mImgHome.setOnClickListener(this);
+		mainActionbar.setTitleClickListener(this);
+//		mImgUser.setOnClickListener(this);
+//		mImgHome.setOnClickListener(this);
 		
 		//获取蓝牙的名字和地址
         final Intent intent = getIntent();
@@ -342,7 +349,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				if (mDeviceAddress == null){
 					Intent intent = new Intent(this,DeviceScanActivity.class);
 					startActivity(intent);
-                    finish();
+					finish();
                 } else {
 					progressDialog.show();
 					mBluetoothLeService.connect(mDeviceAddress);
@@ -373,7 +380,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	                }
 	            }).show();
 			break;
-		case R.id.img_user:
+		case R.id.action_bar_right_button:
 			Log.d("yuhao", "img_user----Define.LOGIN_SUCCESS-="+Define.LOGIN_SUCCESS);
 			if (Define.LOGIN_SUCCESS) {
 				switchToUser();
@@ -382,7 +389,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				switchToLogin();
 			}
 			break;
-		case R.id.img_home1:
+		case R.id.action_bar_left_button:
 			mXuanchuan.setVisibility(View.VISIBLE);
 			break;
 		
