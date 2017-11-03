@@ -46,7 +46,7 @@ public class DeviceScanActivity extends ListActivity {
 
     BluetoothLeScanner btScanner;
 
-        //Android 6.0需要开启定位
+    //Android 6.0需要开启定位
     private static final int REQUEST_FINE_LOCATION=0;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -185,8 +185,8 @@ public class DeviceScanActivity extends ListActivity {
         invalidateOptionsMenu();
     }
         
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//	private void scanLeDevice(final boolean enable) {
+//      @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//	    private void scanLeDevice(final boolean enable) {
 //    	Log.d("yuhao", "scanLeDevice----------------------");
 //        if (enable) {
 //        	Log.d("yuhao", "enable----------------");
