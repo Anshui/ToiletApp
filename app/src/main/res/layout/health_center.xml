@@ -40,7 +40,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    style="?android:attr/buttonBarButtonStyle"
                     android:src="@drawable/weight"/>
 
                 <TextView
@@ -48,7 +47,9 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="@string/weight_manager"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
 
             </LinearLayout>
 
@@ -65,7 +66,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    style="?android:attr/buttonBarButtonStyle"
                     android:src="@drawable/heart"/>
 
                 <TextView
@@ -73,7 +73,9 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="@string/heart_rate"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
 
             </LinearLayout>
 
@@ -97,15 +99,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:src="@drawable/weight"/>
+                    android:src="@drawable/body"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="@string/body_composition_detection"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="@color/green_text"/>
 
             </LinearLayout>
 
@@ -120,7 +123,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    style="?android:attr/buttonBarButtonStyle"
                     android:src="@drawable/urine_test"/>
 
                 <TextView
@@ -128,7 +130,9 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:text="@string/urine_test"
-                    android:gravity="center_horizontal"/>
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="@color/yellow_new"/>
 
             </LinearLayout>
             

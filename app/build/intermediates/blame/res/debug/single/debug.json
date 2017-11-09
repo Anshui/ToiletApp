@@ -172,6 +172,10 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\activity_photo.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_urine_test.png.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\urine_test.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\settings.xml"
     },
@@ -252,6 +256,10 @@
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\layout-v21\\notification_action.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_body.png.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\body.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_ad_goal_weight.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\ad_goal_weight.xml"
     },
@@ -314,6 +322,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_my_bn.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\my_bn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_weight.png.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\weight.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gr08.png.flat",
@@ -562,6 +574,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.0.aar\\17d3878dad344ffc7e8ba911e8473a6e\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_heart.png.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\heart.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
