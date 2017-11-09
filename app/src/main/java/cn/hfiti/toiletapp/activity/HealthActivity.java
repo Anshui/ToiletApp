@@ -7,13 +7,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import cn.hfiti.toiletapp.R;
 import cn.hfiti.toiletapp.view.CustomActionBar;
 
 public class HealthActivity extends Activity implements OnClickListener{
 	
-	private Button weightButton,urineButton,bodyComposition,heartRate;
+	private ImageView weightButton,urineButton,bodyComposition,heartRate;
 	private CustomActionBar mActionBar;
 	
 	@Override
@@ -38,11 +39,11 @@ public class HealthActivity extends Activity implements OnClickListener{
 
 	private void initView() {
 		
-		weightButton = (Button) findViewById(R.id.weight_button);
-		urineButton = (Button) findViewById(R.id.urine_button);
-		bodyComposition = (Button) findViewById(R.id.body_composition_button);
-		heartRate = (Button) findViewById(R.id.heart_rate_button);
-		mActionBar = (CustomActionBar) findViewById(R.id.health_center_action_bar);
+		weightButton = findViewById(R.id.weight_button);
+		urineButton = findViewById(R.id.urine_button);
+		bodyComposition = findViewById(R.id.body_composition_button);
+		heartRate = findViewById(R.id.heart_rate_button);
+		mActionBar = findViewById(R.id.health_center_action_bar);
 		
 	}
 

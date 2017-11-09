@@ -345,7 +345,6 @@ public class DeviceScanActivity extends ListActivity {
         }
     };
 
-
     static class ViewHolder {
         TextView deviceName;
         TextView deviceAddress;

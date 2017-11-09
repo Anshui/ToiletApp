@@ -29,33 +29,53 @@
             android:layout_weight="1"
             android:orientation="horizontal" >
 
-            <Button
-                android:id="@+id/weight_button"
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginStart="50dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/health_button_corner_green"
-                android:text="@string/weight_manager"
-                style="?android:attr/buttonBarButtonStyle"  
-                android:textSize="24sp"/>
-            
-            <Button
-                android:id="@+id/heart_rate_button"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/weight_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:src="@drawable/weight"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/weight_manager"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_marginStart="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/health_button_corner_red"
-                android:text="@string/heart_rate" 
-                style="?android:attr/buttonBarButtonStyle" 
-                android:textSize="24sp"/>
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/heart_rate_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:src="@drawable/heart"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/heart_rate"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
 
             
         </LinearLayout>
@@ -66,33 +86,51 @@
             android:layout_weight="1"
             android:orientation="horizontal" >
 
-            <Button
-                android:id="@+id/body_composition_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="50dp"
-                android:layout_marginBottom="50dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/health_button_corner_blue"
-                android:text="@string/body_composition_detection"
-                android:textSize="24sp" />
-            
-            <Button
-                android:id="@+id/urine_button"
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-				android:layout_marginStart="20dp"
-                android:layout_marginBottom="50dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/health_button_corner_yellow"
-                android:text="@string/urine_test" 
-                style="?android:attr/buttonBarButtonStyle" 
-                android:textSize="24sp"/>
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/body_composition_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:src="@drawable/weight"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/body_composition_detection"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/urine_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:src="@drawable/urine_test"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/urine_test"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
             
         </LinearLayout>
     </LinearLayout>
