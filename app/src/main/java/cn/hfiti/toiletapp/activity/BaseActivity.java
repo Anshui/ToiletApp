@@ -28,7 +28,6 @@ public class BaseActivity extends Activity {
 		initWindow();
 	}
 	
-	
 	@Override
 	public Resources getResources() {
 		Resources res = super.getResources();
