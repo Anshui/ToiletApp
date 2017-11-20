@@ -18,7 +18,7 @@ public class BaseActivity extends Activity {
 	/*
 	 * 使App界面文字大小不会随系统变化而变化。
 	 * 
-	 * @see android.view.ContextThemeWrapper#getResources()
+	 * @see android.view.ContextThemeWrapper#getResources(
 	 */
 	
 	@Override

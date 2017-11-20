@@ -153,7 +153,7 @@ public class UserActivity extends Activity implements OnClickListener {
 		} else {
 			Toast.makeText(UserActivity.this, "数据异常！", Toast.LENGTH_SHORT).show();
 		}
-		Log.i("yuhao--initInfo--WeightInfo--", result);
+		Log.i("yuhao--WeightInfo--", result);
 	}
 
 	protected void invalidate() {

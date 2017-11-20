@@ -50,11 +50,11 @@ public class LoginActivity extends Activity implements OnClickListener{
 	private void init() {
 		// TODO Auto-generated method stub
 		instance = this;
-		mImgBack = (ImageView) findViewById(R.id.login_back);
-		mTextRegist = (TextView) findViewById(R.id.login_regist);
-		mTextLogin = (TextView) findViewById(R.id.login_in);
-		mInputName = (EditText) findViewById(R.id.login_name);
-		mInputPwd = (EditText) findViewById(R.id.login_password);
+		mImgBack = findViewById(R.id.login_back);
+		mTextRegist = findViewById(R.id.login_regist);
+		mTextLogin = findViewById(R.id.login_in);
+		mInputName = findViewById(R.id.login_name);
+		mInputPwd = findViewById(R.id.login_password);
 		mImgBack.setOnClickListener(this);
 		mTextRegist.setOnClickListener(this);
 		mTextLogin.setOnClickListener(this);
