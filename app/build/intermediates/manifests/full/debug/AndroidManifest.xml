@@ -24,6 +24,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
     <application
+        android:name="cn.hfiti.toiletapp.MyApplication"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"

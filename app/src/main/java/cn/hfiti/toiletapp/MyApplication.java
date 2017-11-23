@@ -1,4 +1,4 @@
-package cn.hfiti.toiletapp.activity;
+package cn.hfiti.toiletapp;
 
 import android.app.Application;
 import android.util.Log;
