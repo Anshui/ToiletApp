@@ -9,10 +9,11 @@ public class MyApplication extends Application {
 	     
 	@Override
     public final void onCreate() {
-		Log.d("yuhao", "MyApplication-------onCreate----------");
-		super.onCreate();
+        Log.d("yuhao", "MyApplication-------onCreate----------");
+        super.onCreate();
 		singleton = this;
     }
+
     public static MyApplication getInstance(){
         return singleton;
     }
