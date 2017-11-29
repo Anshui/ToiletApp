@@ -175,8 +175,8 @@
 							android:textSize="18sp" />
 					</LinearLayout>
 				</LinearLayout>
-			    
-		    </LinearLayout>	    
+
+			</LinearLayout>
         </LinearLayout>
                
     </LinearLayout>

@@ -79,16 +79,16 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.urine_text);
-		
-		final Intent intent = getIntent();
+        setContentView(R.layout.urine_test);
+
+        final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
         mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
-        
-		initView();
-		intiData();
-		
-		Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
+
+        //initView();
+        //intiData();
+
+        Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 	}
 
@@ -104,11 +104,11 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 	}
 
 	private void initView() {
-		startTest = (Button) findViewById(R.id.start_test);
-		testResult = (TextView) findViewById(R.id.test_result);
-		lifeAdvice = (TextView) findViewById(R.id.life_advice);
-		urineTest = (CustomActionBar) findViewById(R.id.urine_test_action_bar);
-	}
+        startTest = findViewById(R.id.start_test);
+        testResult = findViewById(R.id.test_result);
+        lifeAdvice = findViewById(R.id.life_advice);
+        urineTest = findViewById(R.id.urine_test_action_bar);
+    }
 
 	@Override
 	public void onClick(View v) {

@@ -656,6 +656,10 @@
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\battery.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_urine_test.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\layout\\urine_test.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_water_press_red.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\water_press_red.png"
     },
