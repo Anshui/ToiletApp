@@ -30,7 +30,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:gravity="center_horizontal"
-            android:text="尿液检测分析报告" />
+            android:text="@string/Analysis_report_of_urine_test" />
 
         <View
             android:background="@color/black"
@@ -52,21 +52,21 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="成分" />
+                android:text="@string/component" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="正常指标" />
+                android:text="@string/normal" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="检测结果" />
+                android:text="@string/test_result" />
 
         </LinearLayout>
 
@@ -112,6 +112,13 @@
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <View
@@ -142,11 +149,11 @@
             android:id="@+id/advice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="指导意见："
+            android:text="@string/life_advice"
             android:textStyle="italic"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="16dp" />
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
 
         <TextView
             android:layout_width="match_parent"

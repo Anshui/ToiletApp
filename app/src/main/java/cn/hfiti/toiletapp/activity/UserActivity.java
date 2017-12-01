@@ -300,8 +300,8 @@ public class UserActivity extends Activity implements OnClickListener {
 		} else {
 			Toast.makeText(UserActivity.this, "数据异常！", Toast.LENGTH_SHORT).show();
 		}
-		Log.i("yuhao--initInfo--UserInfo--", result);
-	}
+        Log.i("yuhao--UserInfo--", result);
+    }
 
 	private String getAdvice() {
 		// TODO Auto-generated method stub

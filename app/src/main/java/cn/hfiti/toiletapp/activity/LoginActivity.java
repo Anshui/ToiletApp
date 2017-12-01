@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 import cn.hfiti.toiletapp.R;
 import cn.hfiti.toiletapp.entity.UserInfo;
 import cn.hfiti.toiletapp.util.Define;
+import cn.hfiti.toiletapp.util.SharedTool;
 
 public class LoginActivity extends Activity implements OnClickListener{
 	
@@ -25,8 +28,11 @@ public class LoginActivity extends Activity implements OnClickListener{
 	private TextView mTextLogin;
 	private EditText mInputName;
 	private EditText mInputPwd;
-	private String user_id_name = null;
-	private String password = null;
+    private CheckBox autoLogin;
+
+    private SharedTool sharedTool;
+    private String user_id_name = null;
+    private String password = null;
 	public static LoginActivity instance;
 //	private static DBManager dbManager;
 
@@ -50,13 +56,24 @@ public class LoginActivity extends Activity implements OnClickListener{
 	private void init() {
 		// TODO Auto-generated method stub
 		instance = this;
-		mImgBack = findViewById(R.id.login_back);
-		mTextRegist = findViewById(R.id.login_regist);
+        sharedTool = new SharedTool(this);
+        mImgBack = findViewById(R.id.login_back);
+        mTextRegist = findViewById(R.id.login_regist);
 		mTextLogin = findViewById(R.id.login_in);
 		mInputName = findViewById(R.id.login_name);
 		mInputPwd = findViewById(R.id.login_password);
-		mImgBack.setOnClickListener(this);
-		mTextRegist.setOnClickListener(this);
+        autoLogin = findViewById(R.id.auto_login);
+
+        autoLogin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (autoLogin.isChecked()) {
+
+                }
+            }
+        });
+        mImgBack.setOnClickListener(this);
+        mTextRegist.setOnClickListener(this);
 		mTextLogin.setOnClickListener(this);
 //		dbManager = new DBManager(this);
 		Log.d("yuhao", "LoginActivity-----dbManager---");

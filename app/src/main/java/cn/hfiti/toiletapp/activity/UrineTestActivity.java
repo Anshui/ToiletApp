@@ -85,28 +85,20 @@ public class UrineTestActivity extends Activity implements OnClickListener{
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
         mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
 
-        //initView();
-        //intiData();
+        initView();
+        intiData();
 
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 	}
 
 	private void intiData() {
-		
-		mData = new StringBuilder();
-		testResult.setMovementMethod(ScrollingMovementMethod.getInstance());
-		
 		startTest.setOnClickListener(this);
 		urineTest.setTitleClickListener(this);
-		testResult.setText("正在检测...");
-		lifeAdvice.setText("生活愉快！");
 	}
 
 	private void initView() {
         startTest = findViewById(R.id.start_test);
-        testResult = findViewById(R.id.test_result);
-        lifeAdvice = findViewById(R.id.life_advice);
         urineTest = findViewById(R.id.urine_test_action_bar);
     }
 

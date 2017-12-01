@@ -22,8 +22,8 @@
     <string name="urine_test">尿检单元</string>
     <string name="heart_rate">心率监测</string>
     <string name="start_test">开始检测</string>
-    <string name="test_result">检测结果:</string>
-    <string name="life_advice">生活建议:</string>
+    <string name="test_result">检测结果</string>
+    <string name="life_advice">指导意见:</string>
     <string name="zhidaoyijian"></string>
 
     <!-- Menu items -->
@@ -187,6 +187,9 @@
     <string name="weight_st" formatted="false">%d st %.1f lb</string>
     <string name="weight_st_legend">First weight of the day (st)</string>
     <string name="weight_unit">Weight unit</string>
+    <string name="normal">正常指标</string>
+    <string name="component">成分</string>
+    <string name="Analysis_report_of_urine_test">尿液检测分析报告</string>
 
     <string-array name="weight_unit_labels">
         <item>kilogram</item>
