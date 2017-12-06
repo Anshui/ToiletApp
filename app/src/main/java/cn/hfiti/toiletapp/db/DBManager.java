@@ -140,14 +140,14 @@ public class DBManager {
      * 
      * @param name
      */
-    public ArrayList<UserInfo> searchData(final String name) {
-    	Log.d("yuhao", "searchData--------UserInfo--------");
+    public ArrayList<UserInfo> searchData(String name) {
+        Log.d("yuhao", "searchData--------UserInfo--------");
         String sql = "SELECT * FROM userinfo WHERE user_id_name =" + "'" + name + "'";
         return ExecSQLForUserInfo(sql);
     }
-    
-    public ArrayList<WeightInfo> searchData1(final String name) {
-    	Log.d("yuhao", "searchData--------WeightInfo--------");
+
+    public ArrayList<WeightInfo> searchData1(String name) {
+        Log.d("yuhao", "searchData--------WeightInfo--------");
     	String sql = "SELECT * FROM weightinfo WHERE user_id_name =" + "'" + name + "'";
         return ExecSQLForWeightInfo(sql);
     }

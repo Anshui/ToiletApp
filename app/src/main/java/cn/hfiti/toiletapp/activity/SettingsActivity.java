@@ -17,6 +17,7 @@ import android.widget.TextView;
 import cn.hfiti.toiletapp.R;
 import cn.hfiti.toiletapp.util.Define;
 import cn.hfiti.toiletapp.util.MyCustomPicker;
+import cn.hfiti.toiletapp.util.SharedTool;
 
 public class SettingsActivity extends Activity implements OnClickListener{
 	
@@ -31,6 +32,7 @@ public class SettingsActivity extends Activity implements OnClickListener{
 	private TextView mTempWaterValue;
 	private TextView mPressWaterValue;
 	private TextView mTempDryValue;
+    private SharedTool sharedTool;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +66,9 @@ public class SettingsActivity extends Activity implements OnClickListener{
 		mTempDry.setOnClickListener(this);
 		mImgSettingsBack.setOnClickListener(this);
 		mConfirm.setOnClickListener(this);
-	}
+
+        sharedTool = new SharedTool(this);
+    }
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {

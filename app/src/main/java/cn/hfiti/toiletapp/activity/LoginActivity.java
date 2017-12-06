@@ -68,7 +68,9 @@ public class LoginActivity extends Activity implements OnClickListener{
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (autoLogin.isChecked()) {
-
+                    sharedTool.setSharedBoolean("auto_login", true);
+                } else {
+                    sharedTool.setSharedBoolean("auto_login", false);
                 }
             }
         });
@@ -114,7 +116,15 @@ public class LoginActivity extends Activity implements OnClickListener{
                         	Define.USER_ID_NAME = info.userIdName;
                         	Define.USER_NAME = info.userName;
                         	Define.LOGIN_SUCCESS = true;
-                        	Log.d("yuhao", "Define.DB_ID_NAMES=--------"+Define.USER_ID_NAME);
+                            sharedTool.setSharedString("userName", info.userName);
+                            sharedTool.setSharedString("userPwd", info.userPwd);
+                            sharedTool.setSharedString("userIdName", info.userIdName);
+                            if (autoLogin.isChecked()) {
+                                sharedTool.setSharedBoolean("auto_login", true);
+                            } else {
+                                sharedTool.setSharedBoolean("auto_login", false);
+                            }
+                            Log.d("yuhao", "Define.DB_ID_NAMES=--------"+Define.USER_ID_NAME);
                         	Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_SHORT).show();
         				}
         				else {

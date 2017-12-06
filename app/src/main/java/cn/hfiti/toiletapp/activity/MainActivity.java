@@ -30,6 +30,7 @@ import cn.hfiti.toiletapp.bluetooth.DeviceScanActivity;
 import cn.hfiti.toiletapp.db.DBManager;
 import cn.hfiti.toiletapp.util.CustomProgressDialog;
 import cn.hfiti.toiletapp.util.Define;
+import cn.hfiti.toiletapp.util.SharedTool;
 import cn.hfiti.toiletapp.view.CustomActionBar;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
@@ -64,6 +65,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
     private StringBuilder mData , mWeightData,mTempData;
     
     private Handler handler ;
+
+    private SharedTool sharedTool;
     
     public static MainActivity mMainActivity;
     // Code to manage Service lifecycle.
@@ -310,8 +313,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		mainActionbar.setTitleClickListener(this);
 //		mImgUser.setOnClickListener(this);
 //		mImgHome.setOnClickListener(this);
-		
-		//获取蓝牙的名字和地址
+
+        sharedTool = new SharedTool(this);
+
+        //获取蓝牙的名字和地址
         final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
         mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
@@ -325,20 +330,19 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		switch (v.getId()) {
 		case R.id.bn_health:
 			Log.d("yuhao", "bn_weight----Define.LOGIN_SUCCESS-="+Define.LOGIN_SUCCESS);
-//			if (mConnected) {
-				if (Define.LOGIN_SUCCESS) {
-					Log.d("yuhao", "bn_weight---switchToUser---");
-					switchToHealth();
-				}
-				else {
-					Log.d("yuhao", "bn_weight---switchToLogin---");
-					switchToLogin();
-				}
-//			}
-//			else {
+            if (sharedTool.getSharedBoolean("auto_login", false)) {
+                switchToHealth();
+            } else {
 //				Toast.makeText(MainActivity.this, "请先连接马桶！", Toast.LENGTH_SHORT).show();
-//			}
-			break;
+                if (Define.LOGIN_SUCCESS) {
+                    Log.d("yuhao", "bn_weight---switchToUser---");
+                    switchToHealth();
+                } else {
+                    Log.d("yuhao", "bn_weight---switchToLogin---");
+                    switchToLogin();
+                }
+            }
+            break;
 		case R.id.bn_connect:
 			Log.d("yuhao", "mConnected=------0-------"+mConnected);
 			if (mConnected) {
@@ -382,8 +386,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			break;
 		case R.id.action_bar_right_button:
 			Log.d("yuhao", "img_user----Define.LOGIN_SUCCESS-="+Define.LOGIN_SUCCESS);
-			if (Define.LOGIN_SUCCESS) {
-				switchToUser();
+            if (sharedTool.getSharedBoolean("auto_login", false) || Define.LOGIN_SUCCESS) {
+                switchToUser();
 			}
 			else {
 				switchToLogin();

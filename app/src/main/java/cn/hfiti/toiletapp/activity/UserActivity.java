@@ -38,6 +38,7 @@ import cn.hfiti.toiletapp.entity.UserInfo;
 import cn.hfiti.toiletapp.entity.WeightInfo;
 import cn.hfiti.toiletapp.util.Define;
 import cn.hfiti.toiletapp.util.MyCustomDatePickerDialog;
+import cn.hfiti.toiletapp.util.SharedTool;
 import es.senselesssolutions.gpl.weightchart.ChartDraw;
 import es.senselesssolutions.gpl.weightchart.ChartView;
 import es.senselesssolutions.gpl.weightchart.Database;
@@ -76,6 +77,8 @@ public class UserActivity extends Activity implements OnClickListener {
 	private GestureDetector mGestureDetector;
 	private HeightDialog mHeightDialog;
 	private Toast mToast;
+
+    private SharedTool sharedTool;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -139,8 +142,8 @@ public class UserActivity extends Activity implements OnClickListener {
 	private void initWeightInfo() {
 		// TODO Auto-generated method stub
 		ArrayList<WeightInfo> infoListName = new ArrayList<WeightInfo>();
-		infoListName = Define.dbManager.searchData1(Define.USER_ID_NAME);
-		Log.d("yuhao", "initWeightInfo-----infoListName=--------" + infoListName);
+        infoListName = Define.dbManager.searchData1(sharedTool.getSharedString("userIdName", null));
+        Log.d("yuhao", "initWeightInfo-----infoListName=--------" + infoListName);
 		String result = "";
 		Log.d("yuhao", "size=----------------" + infoListName.size());
 		if (infoListName.size() != 0) {
@@ -279,8 +282,8 @@ public class UserActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		ArrayList<UserInfo> infoListName = new ArrayList<UserInfo>();
 		// infoListName = dbManager.searchData(Define.DB_NAMES);
-		infoListName = Define.dbManager.searchData(Define.USER_ID_NAME);
-		Log.d("yuhao", "initUserInfo-----infoListName=--------" + infoListName);
+        infoListName = Define.dbManager.searchData(sharedTool.getSharedString("userIdName", null));
+        Log.d("yuhao", "initUserInfo-----infoListName=--------" + infoListName);
 		String result = "";
 		if (infoListName.size() != 0) {
 			for (UserInfo info : infoListName) {
@@ -342,6 +345,8 @@ public class UserActivity extends Activity implements OnClickListener {
 		mEndDate.setOnClickListener(this);
 		mSearch.setOnClickListener(this);
 		dbManager = new DBManager(this);
+
+        sharedTool = new SharedTool(this);
 
 		mDatabase = new Database(this);
 		mDraw = new ChartDraw(this, mDatabase, new GregorianCalendar());

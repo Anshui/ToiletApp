@@ -99,5 +99,6 @@ public class Define {
 	public static String SEARCH_SEAT_TEMP="550203aa";
 	public static String SEARCH_WEIGHT="550201aa";
 	public static String SEARCH_HEART_RATE="550204aa";
-	
+
+
 }

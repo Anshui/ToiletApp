@@ -13,12 +13,14 @@ import android.widget.LinearLayout;
 
 import cn.hfiti.toiletapp.R;
 import cn.hfiti.toiletapp.util.Define;
+import cn.hfiti.toiletapp.util.SharedTool;
 
 public class UserSetupActivity extends Activity implements OnClickListener{
 	
 	private ImageView mImgUserSettingsBack;
 	private LinearLayout mLayoutCustom;
 	private LinearLayout mLayoutLogOut;;
+    private SharedTool sharedTool;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,8 @@ public class UserSetupActivity extends Activity implements OnClickListener{
 		if (Define.LOGIN_SUCCESS) {
 			mLayoutLogOut.setVisibility(View.VISIBLE);
 		}
-	}
+        sharedTool = new SharedTool(this);
+    }
 
 	@Override
 	public void onClick(View v) {
@@ -80,7 +83,11 @@ public class UserSetupActivity extends Activity implements OnClickListener{
 		startActivity(intent);
 		Define.LOGIN_SUCCESS = false;
 		Define.USER_ID_NAME = null;
-		mLayoutLogOut.setVisibility(View.INVISIBLE);
+        sharedTool.setSharedString("userName", null);
+        sharedTool.setSharedString("userPwd", null);
+        sharedTool.setSharedString("userIdName", null);
+        sharedTool.setSharedBoolean("whether_login", false);
+        mLayoutLogOut.setVisibility(View.INVISIBLE);
 		UserActivity.instance.finish();
 		finish();
 	}

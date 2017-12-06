@@ -35,8 +35,13 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.preference.PreferenceManager;
 import android.util.Log;
+
+import cn.hfiti.toiletapp.MyApplication;
 import cn.hfiti.toiletapp.R;
+import cn.hfiti.toiletapp.activity.HealthActivity;
+import cn.hfiti.toiletapp.activity.MainActivity;
 import cn.hfiti.toiletapp.util.Define;
+import cn.hfiti.toiletapp.util.SharedTool;
 
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
@@ -64,6 +69,9 @@ public class ChartDraw {
     private final Paint mTextBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Paint mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private String[] mWeekdays;
+    private MyApplication app = MyApplication.getInstance();
+
+    private SharedTool sharedTool = new SharedTool(app);
    
     /* Added by aitorthered@senselesssolutions */
     private float mMaxWeight = 0;
@@ -183,14 +191,14 @@ public class ChartDraw {
     		endDate = (GregorianCalendar)startDate.clone();
     		Log.d("yuhao", "endDate=--------------------"+endDate);
     		while (cursor.moveToNext()) {
-    			if (cursor.getString(2).equals(Define.USER_ID_NAME)) {
-    				long time = 1000L * cursor.getInt(1);
+                if (cursor.getString(2).equals(sharedTool.getSharedString("userIdName", null))) {
+                    long time = 1000L * cursor.getInt(1);
         			Log.d("yuhao", "cursor.getString(2)=------------"+cursor.getString(2));
-        			if (endDate.getTimeInMillis() <= time && cursor.getString(2).equals(Define.USER_ID_NAME)) {
-        				endDate.add(GregorianCalendar.DATE, 1);
+                    if (endDate.getTimeInMillis() <= time && cursor.getString(2).equals(sharedTool.getSharedString("userIdName", null))) {
+                        endDate.add(GregorianCalendar.DATE, 1);
 
-        				while (endDate.getTimeInMillis() <= time && cursor.getString(2).equals(Define.USER_ID_NAME)) {
-        					ordinal++;
+                        while (endDate.getTimeInMillis() <= time && cursor.getString(2).equals(sharedTool.getSharedString("userIdName", null))) {
+                            ordinal++;
         					endDate.add(GregorianCalendar.DATE, 1);
         				}
 
