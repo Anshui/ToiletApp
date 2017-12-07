@@ -24,6 +24,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.androidannotations.annotations.OnActivityResult;
+
 import cn.hfiti.toiletapp.R;
 import cn.hfiti.toiletapp.bluetooth.BluetoothLeService;
 import cn.hfiti.toiletapp.bluetooth.DeviceScanActivity;
@@ -67,6 +69,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
     private Handler handler ;
 
     private SharedTool sharedTool;
+
+    private static final int REQUEST_DEVICE_ADDRESS = 100;
     
     public static MainActivity mMainActivity;
     // Code to manage Service lifecycle.
@@ -251,7 +255,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         }
 	}
 
-	private static IntentFilter makeGattUpdateIntentFilter() {
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mDeviceName = data.getExtras().getString(EXTRAS_DEVICE_NAME);//得到新Activity 关闭后返回的数据
+        mDeviceAddress = data.getExtras().getString(EXTRAS_DEVICE_ADDRESS);
+    }
+
+    private static IntentFilter makeGattUpdateIntentFilter() {
         final IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTED);
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_DISCONNECTED);
@@ -348,12 +358,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			if (mConnected) {
 				mBluetoothLeService.disconnect();
 				connectFlag = true;
-			}
-			else {
-				if (mDeviceAddress == null){
+            } else {
+                if (mDeviceAddress == null){
 					Intent intent = new Intent(this,DeviceScanActivity.class);
-					startActivity(intent);
-					finish();
+                    startActivityForResult(intent, REQUEST_DEVICE_ADDRESS);
                 } else {
 					progressDialog.show();
 					mBluetoothLeService.connect(mDeviceAddress);
