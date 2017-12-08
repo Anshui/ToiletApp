@@ -278,4 +278,40 @@
         <attr name="right_button_drawable" format="reference|integer" />
         <attr name="left_button_drawable" format="reference|integer" />
     </declare-styleable>
+
+    <declare-styleable name="Urine_report_item">
+        <attr name="tv1_text" format="string" />
+        <attr name="tv2_text" format="string" />
+        <attr name="tv3_text" format="string" />
+        <attr name="tv4_text" format="string" />
+        <attr name="tv5_text" format="string" />
+        <attr name="tv6_text" format="string" />
+        <attr name="tv7_text" format="string" />
+        <attr name="tv8_text" format="string" />
+        <attr name="tv9_text" format="string" />
+        <attr name="tv10_text" format="string" />
+        <attr name="tv11_text" format="string" />
+        <attr name="tv1_text_color" format="color" />
+        <attr name="tv2_text_color" format="color" />
+        <attr name="tv3_text_color" format="color" />
+        <attr name="tv4_text_color" format="color" />
+        <attr name="tv5_text_color" format="color" />
+        <attr name="tv6_text_color" format="color" />
+        <attr name="tv7_text_color" format="color" />
+        <attr name="tv8_text_color" format="color" />
+        <attr name="tv9_text_color" format="color" />
+        <attr name="tv10_text_color" format="color" />
+        <attr name="tv11_text_color" format="color" />
+        <attr name="iv1_drawable" format="reference|integer" />
+        <attr name="iv2_drawable" format="reference|integer" />
+        <attr name="iv3_drawable" format="reference|integer" />
+        <attr name="iv4_drawable" format="reference|integer" />
+        <attr name="iv5_drawable" format="reference|integer" />
+        <attr name="iv6_drawable" format="reference|integer" />
+        <attr name="iv7_drawable" format="reference|integer" />
+        <attr name="iv8_drawable" format="reference|integer" />
+        <attr name="iv9_drawable" format="reference|integer" />
+        <attr name="iv10_drawable" format="reference|integer" />
+        <attr name="iv11_drawable" format="reference|integer" />
+    </declare-styleable>
 </resources>

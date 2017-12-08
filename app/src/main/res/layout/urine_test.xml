@@ -88,36 +88,52 @@
             android:paddingBottom="5dp"
             android:weightSum="3">
 
-            <LinearLayout
+            <cn.hfiti.toiletapp.view.UrineReportItem
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="match_parent">
-
-            </LinearLayout>
+                android:layout_height="match_parent"
+                app:tv1_text="@string/pH"
+                app:tv2_text="@string/NIT"
+                app:tv3_text="@string/GLU"
+                app:tv4_text="@string/VC"
+                app:tv5_text="@string/SG"
+                app:tv6_text="@string/BLD"
+                app:tv7_text="@string/PRO"
+                app:tv8_text="@string/BIL"
+                app:tv9_text="@string/URO"
+                app:tv10_text="@string/KET"
+                app:tv11_text="@string/WBC" />
 
             <View
                 android:background="@color/black"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
 
-            <LinearLayout
+            <cn.hfiti.toiletapp.view.UrineReportItem
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="match_parent">
-
-            </LinearLayout>
+                android:layout_height="match_parent"
+                app:tv1_text="@string/pH_standard"
+                app:tv2_text="@string/NIT_standard"
+                app:tv3_text="@string/GLU_standard"
+                app:tv4_text="@string/VC_standard"
+                app:tv5_text="@string/SG_standard"
+                app:tv6_text="@string/BLD_standard"
+                app:tv7_text="@string/PRO_standard"
+                app:tv8_text="@string/BIL_standard"
+                app:tv9_text="@string/URO_standard"
+                app:tv10_text="@string/KET_standard"
+                app:tv11_text="@string/WBC_standard" />
 
             <View
                 android:background="@color/black"
                 android:layout_width="1dp"
                 android:layout_height="match_parent" />
 
-            <LinearLayout
+            <cn.hfiti.toiletapp.view.UrineReportItem
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="match_parent">
-
-            </LinearLayout>
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 

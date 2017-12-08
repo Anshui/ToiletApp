@@ -285,10 +285,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
             		Toast.makeText(MainActivity.this, "连接成功！", Toast.LENGTH_SHORT).show();
 				}
             	else {
-            		mImgConnect.setImageResource(R.drawable.bluetooth_icon1);
-            		Toast.makeText(MainActivity.this, "断开！", Toast.LENGTH_SHORT).show();
-				}
-				
+                    mImgConnect.setImageResource(R.drawable.bluetooth_icon1);
+                    Toast.makeText(MainActivity.this, "断开！", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -338,76 +337,75 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
-		case R.id.bn_health:
-			Log.d("yuhao", "bn_weight----Define.LOGIN_SUCCESS-="+Define.LOGIN_SUCCESS);
-            if (sharedTool.getSharedBoolean("auto_login", false)) {
-                switchToHealth();
-            } else {
-//				Toast.makeText(MainActivity.this, "请先连接马桶！", Toast.LENGTH_SHORT).show();
-                if (Define.LOGIN_SUCCESS) {
-                    Log.d("yuhao", "bn_weight---switchToUser---");
+            case R.id.bn_health:
+                Log.d("yuhao", "bn_weight----Define.LOGIN_SUCCESS-=" + Define.LOGIN_SUCCESS);
+                if (sharedTool.getSharedBoolean("auto_login", false)) {
                     switchToHealth();
                 } else {
-                    Log.d("yuhao", "bn_weight---switchToLogin---");
+//				Toast.makeText(MainActivity.this, "请先连接马桶！", Toast.LENGTH_SHORT).show();
+                    if (Define.LOGIN_SUCCESS) {
+                        Log.d("yuhao", "bn_weight---switchToUser---");
+                        switchToHealth();
+                    } else {
+                        Log.d("yuhao", "bn_weight---switchToLogin---");
+                        switchToLogin();
+                    }
+                }
+                break;
+            case R.id.bn_connect:
+                Log.d("yuhao", "mConnected=------0-------" + mConnected);
+                if (mConnected) {
+                    mBluetoothLeService.disconnect();
+                    connectFlag = true;
+                } else {
+                    if (mDeviceAddress == null) {
+                        Intent intent = new Intent(this, DeviceScanActivity.class);
+                        startActivityForResult(intent, REQUEST_DEVICE_ADDRESS);
+                    } else {
+                        progressDialog.show();
+                        mBluetoothLeService.connect(mDeviceAddress);
+                        connectFlag = false;
+                    }
+                }
+                Log.d("yuhao", "mConnected=------1-------" + mConnected);
+                break;
+            case R.id.bn_remote:
+                mXuanchuan.setVisibility(View.GONE);
+                switchToRemote();
+                break;
+            case R.id.bn_quit:
+                new AlertDialog.Builder(this).setTitle("确认退出？")
+                        .setIcon(android.R.drawable.ic_dialog_info)
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                MainActivity.this.finish();
+                                DeviceScanActivity.instance.finish();
+                                clearData();
+                            }
+                        })
+                        .setNegativeButton("返回", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        }).show();
+                break;
+            case R.id.action_bar_right_button:
+                Log.d("yuhao", "img_user----Define.LOGIN_SUCCESS-=" + Define.LOGIN_SUCCESS);
+                if (sharedTool.getSharedBoolean("auto_login", false) || Define.LOGIN_SUCCESS) {
+                    switchToUser();
+                } else {
                     switchToLogin();
                 }
-            }
-            break;
-		case R.id.bn_connect:
-			Log.d("yuhao", "mConnected=------0-------"+mConnected);
-			if (mConnected) {
-				mBluetoothLeService.disconnect();
-				connectFlag = true;
-            } else {
-                if (mDeviceAddress == null){
-					Intent intent = new Intent(this,DeviceScanActivity.class);
-                    startActivityForResult(intent, REQUEST_DEVICE_ADDRESS);
-                } else {
-					progressDialog.show();
-					mBluetoothLeService.connect(mDeviceAddress);
-					connectFlag = false;
-				}
-			}
-			Log.d("yuhao", "mConnected=------1-------"+mConnected);
-			break;
-		case R.id.bn_remote:
-			mXuanchuan.setVisibility(View.GONE);
-			switchToRemote();
-			break;
-		case R.id.bn_quit:
-			new AlertDialog.Builder(this).setTitle("确认退出？")
-	            .setIcon(android.R.drawable.ic_dialog_info) 
-	            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-	                @Override 
-	                public void onClick(DialogInterface dialog, int which) {
-	                    MainActivity.this.finish();
-	                    DeviceScanActivity.instance.finish();
-	                    clearData();
-	                }
-	            })
-	            .setNegativeButton("返回", new DialogInterface.OnClickListener() {         
-	                @Override
-	                public void onClick(DialogInterface dialog, int which) {
-	
-	                }
-	            }).show();
-			break;
-		case R.id.action_bar_right_button:
-			Log.d("yuhao", "img_user----Define.LOGIN_SUCCESS-="+Define.LOGIN_SUCCESS);
-            if (sharedTool.getSharedBoolean("auto_login", false) || Define.LOGIN_SUCCESS) {
-                switchToUser();
-			}
-			else {
-				switchToLogin();
-			}
-			break;
-		case R.id.action_bar_left_button:
-			mXuanchuan.setVisibility(View.VISIBLE);
-			break;
-		
-		default:
-			break;
-		}
+                break;
+            case R.id.action_bar_left_button:
+                mXuanchuan.setVisibility(View.VISIBLE);
+                break;
+
+            default:
+                break;
+        }
 	}
 
 	private void switchToHealth() {
