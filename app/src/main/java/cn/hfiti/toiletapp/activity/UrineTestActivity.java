@@ -9,6 +9,7 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.TestLooperManager;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
@@ -18,10 +19,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 import cn.hfiti.toiletapp.R;
 import cn.hfiti.toiletapp.bluetooth.BluetoothLeService;
 import cn.hfiti.toiletapp.util.CustomProgressDialog;
+import cn.hfiti.toiletapp.util.Define;
 import cn.hfiti.toiletapp.view.CustomActionBar;
+import cn.hfiti.toiletapp.view.UrineReportItem;
 
 public class UrineTestActivity extends Activity implements OnClickListener{
 	
@@ -31,9 +36,9 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
 	
 	private Button startTest;
-	private TextView testResult,lifeAdvice,mDataRecvFormat,mRecvBytes,
-					 mSendBytes;
-	private CustomActionBar urineTest;
+    private TextView advice;
+    private UrineReportItem testResult;
+    private CustomActionBar urineTest;
 	
 	static long recv_cnt = 0;
 	
@@ -49,7 +54,10 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 	private long recvBytes=0;
     private long lastSecondBytes=0;
     private long sendBytes;
-    private StringBuilder mData;
+    private StringBuilder lifeAdvice;
+    private int overproofCount = 0;
+    private int greatOverproofCount = 0;
+    private int[] result = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     
     int sendIndex = 0;
     int sendDataLen=0;
@@ -75,10 +83,10 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     };
     
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
-		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+    protected void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.urine_test);
 
         final Intent intent = getIntent();
@@ -87,36 +95,83 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 
         initView();
         intiData();
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
-	}
+    }
 
-	private void intiData() {
-		startTest.setOnClickListener(this);
+    private void intiData() {
+        startTest.setOnClickListener(this);
 		urineTest.setTitleClickListener(this);
-	}
+        lifeAdvice = new StringBuilder();
+    }
 
 	private void initView() {
         startTest = findViewById(R.id.start_test);
         urineTest = findViewById(R.id.urine_test_action_bar);
+        testResult = findViewById(R.id.test_result);
+        advice = findViewById(R.id.life_advice);
     }
 
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.action_bar_left_button:
-			finish();
-			
-			break;
+            case R.id.action_bar_left_button:
+                finish();
+                break;
+            case R.id.start_test:
+                getSendBuf(Define.HIP_CLEAN);
+                onSendBtnClicked();
 
 		default:
 			break;
 		}
 		
 	}
-	
-	private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
+
+    private void getSendBuf(String command) {
+        // TODO Auto-generated method stub
+        Log.d("yuhao", "getSendBuf---------------------");
+        sendIndex = 0;
+        sendBuf = stringToBytes(getHexString(command));
+        Log.d("yuhao", "sendBuf=--------------" + sendBuf);
+        sendDataLen = sendBuf.length;
+    }
+
+    private byte[] stringToBytes(String s) {
+        byte[] buf = new byte[s.length() / 2];
+        for (int i = 0; i < buf.length; i++) {
+            try {
+                buf[i] = (byte) Integer.parseInt(s.substring(i * 2, i * 2 + 2), 16);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+        }
+        return buf;
+    }
+
+    private String getHexString(String command) {
+        String s = command;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (('0' <= c && c <= '9') || ('a' <= c && c <= 'f') ||
+                    ('A' <= c && c <= 'F')) {
+                sb.append(c);
+            }
+        }
+        if ((sb.length() % 2) != 0) {
+            sb.deleteCharAt(sb.length());
+        }
+        return sb.toString();
+    }
+
+
+    private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
@@ -140,9 +195,9 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 //                 for(byte byteChar : data)
 //                      stringBuilder.append(String.format("%02X ", byteChar));
 //                Log.v("log",stringBuilder.toString());
-                displayData(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
+                displayResult(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
+                Log.d(TAG, "zzh: " + Arrays.toString(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA)));
             }else if (BluetoothLeService.ACTION_WRITE_SUCCESSFUL.equals(action)) {
-                mSendBytes.setText(sendBytes + " ");
                 if (sendDataLen>0)
                 {
                     Log.v("log","Write OK,Send again");
@@ -204,30 +259,427 @@ public class UrineTestActivity extends Activity implements OnClickListener{
             	else {
             		Toast.makeText(UrineTestActivity.this, "断开！", Toast.LENGTH_SHORT).show();
 				}
-				
+
             }
         });
     }
-    
-    private void displayData(byte[] buf) {
-        recvBytes += buf.length;
-        recv_cnt += buf.length;
 
-        if (recv_cnt>=1024)
-        {
-            recv_cnt = 0;
-            mData.delete(0,mData.length()/2); //UI界面只保留512个字节，免得APP卡顿
+    private void displayResult(byte[] buf) {
+        String result_value = bytesToString(buf);
+        result = getTestResult(result_value);
+        setTestResult();
+    }
+
+    private void setTestResult() {
+        setpHResult();
+        setNITResult();
+        setGLUResult();
+        setVCResult();
+        setSGReault();
+        setBLDResult();
+        setPROResult();
+        setBILResult();
+        setUROResult();
+        setKETResult();
+        setWBCResult();
+        giveAdvice();
+    }
+
+    private void giveAdvice() {
+        Log.d(TAG, "giveAdvice: " + overproofCount);
+        Log.d(TAG, "giveAdvice: " + greatOverproofCount);
+        if (greatOverproofCount == 0) {
+            if (overproofCount <= 2) {
+                lifeAdvice.append("尿检结果未出现明显异常，健康状况基本良好!\n");
+            } else if (overproofCount > 2 && overproofCount <= 5) {
+                lifeAdvice.append("部分指标存在一些异常，注意观察身体状况变化!\n");
+            } else if (overproofCount > 5) {
+                lifeAdvice.append("多项指标出现异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+        } else {
+            if (result[2] > 4) {
+                lifeAdvice.append("葡萄糖检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[3] > 4) {
+                lifeAdvice.append("维生素C检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[4] > 6 || result[4] < 3) {
+                lifeAdvice.append("尿比重检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[5] == 5) {
+                lifeAdvice.append("隐血检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[6] == 5) {
+                lifeAdvice.append("蛋白质检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[7] == 4) {
+                lifeAdvice.append("胆红素检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[8] == 4) {
+                lifeAdvice.append("尿胆原检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[9] == 5) {
+                lifeAdvice.append("酮体检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
+            if (result[10] == 5) {
+                lifeAdvice.append("白细胞检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            }
         }
+        advice.setText(lifeAdvice);
+        lifeAdvice = new StringBuilder();
+    }
 
-//        if (mDataRecvFormat.getText().equals("Ascii")) {
-            String s =asciiToString(buf);
-            mData.append(s);
-//        } else {
-//            String s = bytesToString(buf);
-//            mData.append(s);
-//        }
-        testResult.setText(mData.toString());
-//        mRecvBytes.setText(recvBytes + " ");
+    private void setWBCResult() {
+        switch (result[10]) {
+            case 1:
+                testResult.getTv11().setText("-(0)CELL/μL");
+                testResult.getIv11().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv11().setText("±(15)CELL/μL");
+                testResult.getIv11().setImageResource(R.drawable.keep);
+                break;
+            case 3:
+                testResult.getTv11().setText("+(70)CELL/μL");
+                testResult.getIv11().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv11().setText("++(125)CELL/μL");
+                testResult.getIv11().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 5:
+                testResult.getTv11().setText("+++(500)CELL/μL");
+                testResult.getIv11().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setKETResult() {
+        switch (result[9]) {
+            case 1:
+                testResult.getTv10().setText("-(0)mmol/L");
+                testResult.getIv10().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv10().setText("±(0.5)mmol/L");
+                testResult.getIv10().setImageResource(R.drawable.keep);
+                break;
+            case 3:
+                testResult.getTv10().setText("+(1.5)mmol/L");
+                testResult.getIv10().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv10().setText("++(4.0)mmol/L");
+                testResult.getIv10().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 5:
+                testResult.getTv10().setText("+++(≥8.0)mmol/L");
+                testResult.getIv10().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setUROResult() {
+        switch (result[8]) {
+            case 1:
+                testResult.getTv9().setText("Normal");
+                testResult.getIv9().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv9().setText("+(33)μmol/L");
+                testResult.getIv9().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 3:
+                testResult.getTv9().setText("++(66)μmol/L");
+                testResult.getIv9().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv9().setText("+++(≥131)μmol/L");
+                testResult.getIv9().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setBILResult() {
+        switch (result[7]) {
+            case 1:
+                testResult.getTv8().setText("-(0)μmol/L");
+                testResult.getIv8().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv8().setText("+(8.6)μmol/L");
+                testResult.getIv8().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 3:
+                testResult.getTv8().setText("++(33)μmol/L");
+                testResult.getIv8().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv8().setText("+++(100)μmol/L");
+                testResult.getIv8().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+
+        }
+    }
+
+    private void setPROResult() {
+        switch (result[6]) {
+            case 1:
+                testResult.getTv7().setText("-(0)g/L");
+                testResult.getIv7().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv7().setText("±(0.15)g/L");
+                testResult.getIv7().setImageResource(R.drawable.keep);
+                break;
+            case 3:
+                testResult.getTv7().setText("+(0.3)g/L");
+                testResult.getIv7().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv7().setText("++(1.0)g/L");
+                testResult.getIv7().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 5:
+                testResult.getTv7().setText("+++(≥3.0)g/L");
+                testResult.getIv7().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setBLDResult() {
+        switch (result[5]) {
+            case 1:
+                testResult.getTv6().setText("-(0)CELL/μL");
+                testResult.getIv6().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv6().setText("±(10)CELL/μL");
+                testResult.getIv6().setImageResource(R.drawable.keep);
+                break;
+            case 3:
+                testResult.getTv6().setText("溶血 +(25)");
+                testResult.getIv6().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv6().setText("溶血 ++(80)");
+                testResult.getIv6().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 5:
+                testResult.getTv6().setText("溶血 +++(200)");
+                testResult.getIv6().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            case 6:
+                testResult.getTv6().setText("非溶血 +");
+                testResult.getIv6().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 7:
+                testResult.getTv6().setText("非溶血 ++");
+                testResult.getIv6().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+        }
+    }
+
+    private void setSGReault() {
+        switch (result[4]) {
+            case 1:
+                testResult.getTv5().setText("1.000");
+                testResult.getIv5().setImageResource(R.drawable.down3);
+                greatOverproofCount++;
+                break;
+            case 2:
+                testResult.getTv5().setText("1.005");
+                testResult.getIv5().setImageResource(R.drawable.down2);
+                overproofCount++;
+                break;
+            case 3:
+                testResult.getTv5().setText("1.010");
+                testResult.getIv5().setImageResource(R.drawable.down1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv5().setText("1.015");
+                testResult.getIv5().setImageResource(R.drawable.keep);
+                break;
+            case 5:
+                testResult.getTv5().setText("1.020");
+                testResult.getIv5().setImageResource(R.drawable.keep);
+                break;
+            case 6:
+                testResult.getTv5().setText("1.025");
+                testResult.getIv5().setImageResource(R.drawable.keep);
+                break;
+            case 7:
+                testResult.getTv5().setText("1.030");
+                testResult.getIv5().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setVCResult() {
+        switch (result[3]) {
+            case 1:
+                testResult.getTv4().setText("-(0)mmol/L");
+                testResult.getIv4().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv4().setText("±(0.6)mmol/L");
+                testResult.getIv4().setImageResource(R.drawable.keep);
+                break;
+            case 3:
+                testResult.getTv4().setText("+(1.4)mmol/L");
+                testResult.getIv4().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv4().setText("++(2.8)mmol/L");
+                testResult.getIv4().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 5:
+                testResult.getTv4().setText("+++(5.6)mmol/L");
+                testResult.getIv4().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+
+        }
+    }
+
+    private void setGLUResult() {
+        switch (result[2]) {
+            case 1:
+                testResult.getTv3().setText("-(0)mmol/L");
+                testResult.getIv3().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv3().setText("±(2.8)mmol/L");
+                testResult.getIv3().setImageResource(R.drawable.keep);
+                break;
+            case 3:
+                testResult.getTv3().setText("+(5.6)mmol/L");
+                testResult.getIv3().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            case 4:
+                testResult.getTv3().setText("++(14)mmol/L");
+                testResult.getIv3().setImageResource(R.drawable.up2);
+                overproofCount++;
+                break;
+            case 5:
+                testResult.getTv3().setText("+++(28)mmol/L");
+                testResult.getIv3().setImageResource(R.drawable.up3);
+                greatOverproofCount++;
+                break;
+            case 6:
+                testResult.getTv3().setText("++++(≥55)mmol/L");
+                testResult.getIv3().setImageResource(R.drawable.up4);
+                greatOverproofCount++;
+                break;
+            default:
+                break;
+
+        }
+    }
+
+    private void setNITResult() {
+        switch (result[1]) {
+            case 1:
+                testResult.getTv2().setText("-");
+                testResult.getIv2().setImageResource(R.drawable.keep);
+                break;
+            case 2:
+                testResult.getTv2().setText("+");
+                testResult.getIv2().setImageResource(R.drawable.up1);
+                overproofCount++;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void setpHResult() {
+        testResult.getTv1().setText(String.valueOf(result[0] + 4));
+        if (result[0] > 4) {
+            testResult.getIv1().setImageResource(R.drawable.up1);
+            overproofCount++;
+        } else {
+            testResult.getIv1().setImageResource(R.drawable.keep);
+        }
+    }
+
+    private int[] getTestResult(String string) {
+        // TODO Auto-generated method stub
+        Log.d("zzh", "string=----------------" + string);
+        char a1 = 0;
+        char a2 = 0;
+        char a3 = 0;
+        char a4 = 0;
+        char a5 = 0;
+        char a6 = 0;
+        StringBuilder data = new StringBuilder();
+        Log.d("zzh", "string.length()=--------" + string.length());
+        for (int i = 0; i < string.length(); i++) {
+            a1 = string.charAt(0);
+            a2 = string.charAt(1);
+            a3 = string.charAt(string.length() - 6);
+            a4 = string.charAt(string.length() - 5);
+            a5 = string.charAt(string.length() - 3);
+            a6 = string.charAt(string.length() - 2);
+        }
+        Log.d("zzh", "a1=-----------" + a1);
+        Log.d("zzh", "a2=-----------" + a2);
+        Log.d("zzh", "a3=-----------" + a3);
+        Log.d("zzh", "a4=-----------" + a4);
+        if (a1 == 'A' && a2 == 'A' && a3 == '0' && a4 == 'D' && a5 == '0' && a6 == 'A') {
+            result[0] = Integer.parseInt(string.substring(3, 5), 16);
+            result[1] = Integer.parseInt(string.substring(6, 8), 16);
+            result[2] = Integer.parseInt(string.substring(9, 11), 16);
+            result[3] = Integer.parseInt(string.substring(12, 14), 16);
+            result[4] = Integer.parseInt(string.substring(15, 17), 16);
+            result[5] = Integer.parseInt(string.substring(18, 20), 16);
+            result[6] = Integer.parseInt(string.substring(21, 23), 16);
+            result[7] = Integer.parseInt(string.substring(24, 26), 16);
+            result[8] = Integer.parseInt(string.substring(27, 29), 16);
+            result[9] = Integer.parseInt(string.substring(30, 32), 16);
+            result[10] = Integer.parseInt(string.substring(33, 35), 16);
+        }
+        Log.d(TAG, "zzh: 数组 result " + Arrays.toString(result));
+        return result;
     }
     
     public String asciiToString(byte[] bytes) {

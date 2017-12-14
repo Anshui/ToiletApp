@@ -131,6 +131,7 @@
                 android:layout_height="match_parent" />
 
             <cn.hfiti.toiletapp.view.UrineReportItem
+                android:id="@+id/test_result"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent" />
@@ -172,6 +173,9 @@
             android:layout_marginStart="16dp" />
 
         <TextView
+            android:padding="16dp"
+            android:id="@+id/life_advice"
+            android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/advice"

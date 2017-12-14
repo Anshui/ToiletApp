@@ -131,6 +131,18 @@ public class DeviceScanActivity extends ListActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        DeviceScanActivity.this.setResult(RESULT_CANCELED);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // User chose not to enable Bluetooth.
         if (requestCode == REQUEST_ENABLE_BT && resultCode == Activity.RESULT_CANCELED) {

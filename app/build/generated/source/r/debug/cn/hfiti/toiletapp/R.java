@@ -1431,93 +1431,102 @@ public final class R {
     public static final int default_image=0x7f070013;
     public static final int demo_image=0x7f070014;
     public static final int demo_image_circle=0x7f070015;
-    public static final int edit_box_bg=0x7f070016;
-    public static final int fw_tj=0x7f070017;
-    public static final int gr02=0x7f070018;
-    public static final int gr04=0x7f070019;
-    public static final int gr05=0x7f07001a;
-    public static final int gr06=0x7f07001b;
-    public static final int gr08=0x7f07001c;
-    public static final int gr09=0x7f07001d;
-    public static final int gr10=0x7f07001e;
-    public static final int health_black=0x7f07001f;
-    public static final int health_blue=0x7f070020;
-    public static final int health_button_corner_blue=0x7f070021;
-    public static final int health_button_corner_green=0x7f070022;
-    public static final int health_button_corner_red=0x7f070023;
-    public static final int health_button_corner_yellow=0x7f070024;
-    public static final int health_selector=0x7f070025;
-    public static final int heart=0x7f070026;
-    public static final int heart_rate=0x7f070027;
-    public static final int home_1=0x7f070028;
-    public static final int honggan=0x7f070029;
-    public static final int ic_launcher=0x7f07002a;
-    public static final int ic_menu_archive=0x7f07002b;
-    public static final int icon_empty=0x7f07002c;
-    public static final int jianyi=0x7f07002d;
-    public static final int loading_image=0x7f07002e;
-    public static final int massage=0x7f07002f;
-    public static final int message_no=0x7f070030;
-    public static final int my_bn=0x7f070031;
-    public static final int my_bn_select=0x7f070032;
-    public static final int my_select=0x7f070033;
-    public static final int normal_btn_bg=0x7f070034;
-    public static final int notification_action_background=0x7f070035;
-    public static final int notification_bg=0x7f070036;
-    public static final int notification_bg_low=0x7f070037;
-    public static final int notification_bg_low_normal=0x7f070038;
-    public static final int notification_bg_low_pressed=0x7f070039;
-    public static final int notification_bg_normal=0x7f07003a;
-    public static final int notification_bg_normal_pressed=0x7f07003b;
-    public static final int notification_icon_background=0x7f07003c;
-    public static final int notification_template_icon_bg=0x7f07003d;
-    public static final int notification_template_icon_low_bg=0x7f07003e;
-    public static final int notification_tile_bg=0x7f07003f;
-    public static final int notify_panel_notification_icon_bg=0x7f070040;
-    public static final int password=0x7f070041;
-    public static final int power=0x7f070042;
-    public static final int power_close=0x7f070043;
-    public static final int publicity=0x7f070044;
-    public static final int quit_icon=0x7f070045;
-    public static final int remote_icon=0x7f070046;
-    public static final int remote_item_selector=0x7f070047;
-    public static final int search_icon=0x7f070048;
-    public static final int search_temp=0x7f070049;
-    public static final int search_weight=0x7f07004a;
-    public static final int seat_temp=0x7f07004b;
-    public static final int seat_temp_blue=0x7f07004c;
-    public static final int seat_temp_green=0x7f07004d;
-    public static final int seat_temp_red=0x7f07004e;
-    public static final int selector_reg_corners_button=0x7f07004f;
-    public static final int shape_info_entering_edit=0x7f070050;
-    public static final int shape_reg_corners_button=0x7f070051;
-    public static final int shape_reg_corners_button_pressed=0x7f070052;
-    public static final int submit_circle_shape_sel=0x7f070053;
-    public static final int sw_tj=0x7f070054;
-    public static final int sy_tj=0x7f070055;
-    public static final int textview_corner=0x7f070056;
-    public static final int tz=0x7f070057;
-    public static final int urine_test=0x7f070058;
-    public static final int user=0x7f070059;
-    public static final int username=0x7f07005a;
-    public static final int water_press=0x7f07005b;
-    public static final int water_press_blue=0x7f07005c;
-    public static final int water_press_green=0x7f07005d;
-    public static final int water_press_red=0x7f07005e;
-    public static final int water_temp=0x7f07005f;
-    public static final int water_temp_blue=0x7f070060;
-    public static final int water_temp_green=0x7f070061;
-    public static final int water_temp_red=0x7f070062;
-    public static final int weight=0x7f070063;
-    public static final int weight_icon=0x7f070064;
-    public static final int wind_temp=0x7f070065;
-    public static final int wind_temp_blue=0x7f070066;
-    public static final int wind_temp_green=0x7f070067;
-    public static final int wind_temp_red=0x7f070068;
-    public static final int zdcs_tj=0x7f070069;
-    public static final int zdfg_tj=0x7f07006a;
-    public static final int zw_tj=0x7f07006b;
-    public static final int zy26=0x7f07006c;
+    public static final int down1=0x7f070016;
+    public static final int down2=0x7f070017;
+    public static final int down3=0x7f070018;
+    public static final int down4=0x7f070019;
+    public static final int edit_box_bg=0x7f07001a;
+    public static final int fw_tj=0x7f07001b;
+    public static final int gr02=0x7f07001c;
+    public static final int gr04=0x7f07001d;
+    public static final int gr05=0x7f07001e;
+    public static final int gr06=0x7f07001f;
+    public static final int gr08=0x7f070020;
+    public static final int gr09=0x7f070021;
+    public static final int gr10=0x7f070022;
+    public static final int health_black=0x7f070023;
+    public static final int health_blue=0x7f070024;
+    public static final int health_button_corner_blue=0x7f070025;
+    public static final int health_button_corner_green=0x7f070026;
+    public static final int health_button_corner_red=0x7f070027;
+    public static final int health_button_corner_yellow=0x7f070028;
+    public static final int health_selector=0x7f070029;
+    public static final int heart=0x7f07002a;
+    public static final int heart_rate=0x7f07002b;
+    public static final int home_1=0x7f07002c;
+    public static final int honggan=0x7f07002d;
+    public static final int ic_launcher=0x7f07002e;
+    public static final int ic_menu_archive=0x7f07002f;
+    public static final int icon_empty=0x7f070030;
+    public static final int jianyi=0x7f070031;
+    public static final int keep=0x7f070032;
+    public static final int loading_image=0x7f070033;
+    public static final int massage=0x7f070034;
+    public static final int message_no=0x7f070035;
+    public static final int my_bn=0x7f070036;
+    public static final int my_bn_select=0x7f070037;
+    public static final int my_select=0x7f070038;
+    public static final int normal_btn_bg=0x7f070039;
+    public static final int notification_action_background=0x7f07003a;
+    public static final int notification_bg=0x7f07003b;
+    public static final int notification_bg_low=0x7f07003c;
+    public static final int notification_bg_low_normal=0x7f07003d;
+    public static final int notification_bg_low_pressed=0x7f07003e;
+    public static final int notification_bg_normal=0x7f07003f;
+    public static final int notification_bg_normal_pressed=0x7f070040;
+    public static final int notification_icon_background=0x7f070041;
+    public static final int notification_template_icon_bg=0x7f070042;
+    public static final int notification_template_icon_low_bg=0x7f070043;
+    public static final int notification_tile_bg=0x7f070044;
+    public static final int notify_panel_notification_icon_bg=0x7f070045;
+    public static final int password=0x7f070046;
+    public static final int power=0x7f070047;
+    public static final int power_close=0x7f070048;
+    public static final int publicity=0x7f070049;
+    public static final int quit_icon=0x7f07004a;
+    public static final int remote_icon=0x7f07004b;
+    public static final int remote_item_selector=0x7f07004c;
+    public static final int search_icon=0x7f07004d;
+    public static final int search_temp=0x7f07004e;
+    public static final int search_weight=0x7f07004f;
+    public static final int seat_temp=0x7f070050;
+    public static final int seat_temp_blue=0x7f070051;
+    public static final int seat_temp_green=0x7f070052;
+    public static final int seat_temp_red=0x7f070053;
+    public static final int selector_reg_corners_button=0x7f070054;
+    public static final int shape_info_entering_edit=0x7f070055;
+    public static final int shape_reg_corners_button=0x7f070056;
+    public static final int shape_reg_corners_button_pressed=0x7f070057;
+    public static final int submit_circle_shape_sel=0x7f070058;
+    public static final int sw_tj=0x7f070059;
+    public static final int sy_tj=0x7f07005a;
+    public static final int textview_corner=0x7f07005b;
+    public static final int tz=0x7f07005c;
+    public static final int up1=0x7f07005d;
+    public static final int up2=0x7f07005e;
+    public static final int up3=0x7f07005f;
+    public static final int up4=0x7f070060;
+    public static final int urine_test=0x7f070061;
+    public static final int user=0x7f070062;
+    public static final int username=0x7f070063;
+    public static final int water_press=0x7f070064;
+    public static final int water_press_blue=0x7f070065;
+    public static final int water_press_green=0x7f070066;
+    public static final int water_press_red=0x7f070067;
+    public static final int water_temp=0x7f070068;
+    public static final int water_temp_blue=0x7f070069;
+    public static final int water_temp_green=0x7f07006a;
+    public static final int water_temp_red=0x7f07006b;
+    public static final int weight=0x7f07006c;
+    public static final int weight_icon=0x7f07006d;
+    public static final int wind_temp=0x7f07006e;
+    public static final int wind_temp_blue=0x7f07006f;
+    public static final int wind_temp_green=0x7f070070;
+    public static final int wind_temp_red=0x7f070071;
+    public static final int zdcs_tj=0x7f070072;
+    public static final int zdfg_tj=0x7f070073;
+    public static final int zw_tj=0x7f070074;
+    public static final int zy26=0x7f070075;
   }
   public static final class id {
     public static final int ET_max_weight=0x7f080000;
@@ -1735,74 +1744,73 @@ public final class R {
     public static final int switch_power_save=0x7f0800d4;
     public static final int switch_smell_clean=0x7f0800d5;
     public static final int symmetry=0x7f0800d6;
-    public static final int tag_transition_group=0x7f0800d7;
-    public static final int test_report_tile=0x7f0800d8;
-    public static final int test_result=0x7f0800d9;
-    public static final int text=0x7f0800da;
-    public static final int text2=0x7f0800db;
-    public static final int text_connect=0x7f0800dc;
-    public static final int tilt=0x7f0800dd;
-    public static final int time=0x7f0800de;
-    public static final int title=0x7f0800df;
-    public static final int top=0x7f0800e0;
-    public static final int transparency=0x7f0800e1;
-    public static final int tv1=0x7f0800e2;
-    public static final int tv10=0x7f0800e3;
-    public static final int tv11=0x7f0800e4;
-    public static final int tv2=0x7f0800e5;
-    public static final int tv3=0x7f0800e6;
-    public static final int tv4=0x7f0800e7;
-    public static final int tv5=0x7f0800e8;
-    public static final int tv6=0x7f0800e9;
-    public static final int tv7=0x7f0800ea;
-    public static final int tv8=0x7f0800eb;
-    public static final int tv9=0x7f0800ec;
-    public static final int tv_dialog_edit=0x7f0800ed;
-    public static final int tv_dialog_title=0x7f0800ee;
-    public static final int tv_webview_title=0x7f0800ef;
-    public static final int twirl=0x7f0800f0;
-    public static final int uploadImage=0x7f0800f1;
-    public static final int urine_button=0x7f0800f2;
-    public static final int urine_test_action_bar=0x7f0800f3;
-    public static final int user_my_birthday=0x7f0800f4;
-    public static final int user_my_bmi=0x7f0800f5;
-    public static final int user_my_high=0x7f0800f6;
-    public static final int user_my_name=0x7f0800f7;
-    public static final int user_my_sex=0x7f0800f8;
-    public static final int user_my_weight=0x7f0800f9;
-    public static final int user_settings_about=0x7f0800fa;
-    public static final int user_settings_back=0x7f0800fb;
-    public static final int user_settings_bluetooth=0x7f0800fc;
-    public static final int user_settings_chpwd=0x7f0800fd;
-    public static final int user_settings_custom=0x7f0800fe;
-    public static final int value_presswater=0x7f0800ff;
-    public static final int value_tempdry=0x7f080100;
-    public static final int value_tempseat=0x7f080101;
-    public static final int value_tempwater=0x7f080102;
-    public static final int view1=0x7f080103;
-    public static final int view2=0x7f080104;
-    public static final int view3=0x7f080105;
-    public static final int view_14_days=0x7f080106;
-    public static final int view_21_days=0x7f080107;
-    public static final int view_30_days=0x7f080108;
-    public static final int view_60_days=0x7f080109;
-    public static final int view_7_days=0x7f08010a;
-    public static final int view_90_days=0x7f08010b;
-    public static final int visible=0x7f08010c;
-    public static final int wave=0x7f08010d;
-    public static final int weight=0x7f08010e;
-    public static final int weight_button=0x7f08010f;
-    public static final int weight_major=0x7f080110;
-    public static final int weight_minor=0x7f080111;
-    public static final int weight_unit_major=0x7f080112;
-    public static final int weight_unit_minor=0x7f080113;
-    public static final int weight_value=0x7f080114;
-    public static final int xuanchuan=0x7f080115;
-    public static final int zipper=0x7f080116;
-    public static final int zoom=0x7f080117;
-    public static final int zoomCenter=0x7f080118;
-    public static final int zoomFade=0x7f080119;
-    public static final int zoomStack=0x7f08011a;
+    public static final int test_report_tile=0x7f0800d7;
+    public static final int test_result=0x7f0800d8;
+    public static final int text=0x7f0800d9;
+    public static final int text2=0x7f0800da;
+    public static final int text_connect=0x7f0800db;
+    public static final int tilt=0x7f0800dc;
+    public static final int time=0x7f0800dd;
+    public static final int title=0x7f0800de;
+    public static final int top=0x7f0800df;
+    public static final int transparency=0x7f0800e0;
+    public static final int tv1=0x7f0800e1;
+    public static final int tv10=0x7f0800e2;
+    public static final int tv11=0x7f0800e3;
+    public static final int tv2=0x7f0800e4;
+    public static final int tv3=0x7f0800e5;
+    public static final int tv4=0x7f0800e6;
+    public static final int tv5=0x7f0800e7;
+    public static final int tv6=0x7f0800e8;
+    public static final int tv7=0x7f0800e9;
+    public static final int tv8=0x7f0800ea;
+    public static final int tv9=0x7f0800eb;
+    public static final int tv_dialog_edit=0x7f0800ec;
+    public static final int tv_dialog_title=0x7f0800ed;
+    public static final int tv_webview_title=0x7f0800ee;
+    public static final int twirl=0x7f0800ef;
+    public static final int uploadImage=0x7f0800f0;
+    public static final int urine_button=0x7f0800f1;
+    public static final int urine_test_action_bar=0x7f0800f2;
+    public static final int user_my_birthday=0x7f0800f3;
+    public static final int user_my_bmi=0x7f0800f4;
+    public static final int user_my_high=0x7f0800f5;
+    public static final int user_my_name=0x7f0800f6;
+    public static final int user_my_sex=0x7f0800f7;
+    public static final int user_my_weight=0x7f0800f8;
+    public static final int user_settings_about=0x7f0800f9;
+    public static final int user_settings_back=0x7f0800fa;
+    public static final int user_settings_bluetooth=0x7f0800fb;
+    public static final int user_settings_chpwd=0x7f0800fc;
+    public static final int user_settings_custom=0x7f0800fd;
+    public static final int value_presswater=0x7f0800fe;
+    public static final int value_tempdry=0x7f0800ff;
+    public static final int value_tempseat=0x7f080100;
+    public static final int value_tempwater=0x7f080101;
+    public static final int view1=0x7f080102;
+    public static final int view2=0x7f080103;
+    public static final int view3=0x7f080104;
+    public static final int view_14_days=0x7f080105;
+    public static final int view_21_days=0x7f080106;
+    public static final int view_30_days=0x7f080107;
+    public static final int view_60_days=0x7f080108;
+    public static final int view_7_days=0x7f080109;
+    public static final int view_90_days=0x7f08010a;
+    public static final int visible=0x7f08010b;
+    public static final int wave=0x7f08010c;
+    public static final int weight=0x7f08010d;
+    public static final int weight_button=0x7f08010e;
+    public static final int weight_major=0x7f08010f;
+    public static final int weight_minor=0x7f080110;
+    public static final int weight_unit_major=0x7f080111;
+    public static final int weight_unit_minor=0x7f080112;
+    public static final int weight_value=0x7f080113;
+    public static final int xuanchuan=0x7f080114;
+    public static final int zipper=0x7f080115;
+    public static final int zoom=0x7f080116;
+    public static final int zoomCenter=0x7f080117;
+    public static final int zoomFade=0x7f080118;
+    public static final int zoomStack=0x7f080119;
   }
   public static final class integer {
     public static final int cancel_button_image_alpha=0x7f090000;
@@ -3052,62 +3060,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamilyFont_android_font android:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_android_fontWeight android:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_font cn.hfiti.toiletapp:font}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_fontStyle cn.hfiti.toiletapp:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_fontWeight cn.hfiti.toiletapp:fontWeight}</code></td><td></td></tr>
      * </table>
-     * @see #FontFamilyFont_android_font
-     * @see #FontFamilyFont_android_fontWeight
-     * @see #FontFamilyFont_android_fontStyle
      * @see #FontFamilyFont_font
      * @see #FontFamilyFont_fontStyle
      * @see #FontFamilyFont_fontWeight
      */
     public static final int[] FontFamilyFont={
-        0x01010532, 0x01010533, 0x0101053f, 0x7f03001d, 
-        0x7f030024, 0x7f030025
+        0x7f03001d, 0x7f030024, 0x7f030025
       };
-    /**
-     * <p>This symbol is the offset where the {@link android.R.attr#font}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name android:font
-     */
-    public static final int FontFamilyFont_android_font=0;
-    /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>italic</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
-     * </table>
-     *
-     * @attr name android:fontStyle
-     */
-    public static final int FontFamilyFont_android_fontStyle=2;
-    /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fontWeight}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name android:fontWeight
-     */
-    public static final int FontFamilyFont_android_fontWeight=1;
     /**
      * <p>This symbol is the offset where the {@link cn.hfiti.toiletapp.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
@@ -3119,7 +3082,7 @@ public final class R {
      *
      * @attr name cn.hfiti.toiletapp:font
      */
-    public static final int FontFamilyFont_font=3;
+    public static final int FontFamilyFont_font=0;
     /**
      * <p>This symbol is the offset where the {@link cn.hfiti.toiletapp.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
@@ -3136,7 +3099,7 @@ public final class R {
      *
      * @attr name cn.hfiti.toiletapp:fontStyle
      */
-    public static final int FontFamilyFont_fontStyle=4;
+    public static final int FontFamilyFont_fontStyle=1;
     /**
      * <p>This symbol is the offset where the {@link cn.hfiti.toiletapp.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
@@ -3145,7 +3108,7 @@ public final class R {
      *
      * @attr name cn.hfiti.toiletapp:fontWeight
      */
-    public static final int FontFamilyFont_fontWeight=5;
+    public static final int FontFamilyFont_fontWeight=2;
     /**
      * <p>This symbol is the offset where the {@link cn.hfiti.toiletapp.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.

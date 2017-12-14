@@ -96,27 +96,38 @@ public class UrineReportItem extends LinearLayout {
         tv11.setTextColor(tv11_text_colot);
 
         int iv1_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv1_drawable, -1);
-        iv1.setImageResource(iv1_drawable);
+        if (iv1_drawable != -1)
+            iv1.setImageResource(iv1_drawable);
         int iv2_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv2_drawable, -1);
-        iv2.setImageResource(iv2_drawable);
+        if (iv2_drawable != -1)
+            iv2.setImageResource(iv2_drawable);
         int iv3_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv3_drawable, -1);
-        iv3.setImageResource(iv3_drawable);
+        if (iv3_drawable != -1)
+            iv3.setImageResource(iv3_drawable);
         int iv4_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv4_drawable, -1);
-        iv4.setImageResource(iv4_drawable);
+        if (iv4_drawable != -1)
+            iv4.setImageResource(iv4_drawable);
         int iv5_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv5_drawable, -1);
-        iv5.setImageResource(iv5_drawable);
+        if (iv5_drawable != -1)
+            iv5.setImageResource(iv5_drawable);
         int iv6_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv6_drawable, -1);
-        iv6.setImageResource(iv6_drawable);
+        if (iv6_drawable != -1)
+            iv6.setImageResource(iv6_drawable);
         int iv7_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv7_drawable, -1);
-        iv7.setImageResource(iv7_drawable);
+        if (iv7_drawable != -1)
+            iv7.setImageResource(iv7_drawable);
         int iv8_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv8_drawable, -1);
-        iv8.setImageResource(iv8_drawable);
+        if (iv8_drawable != -1)
+            iv8.setImageResource(iv8_drawable);
         int iv9_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv9_drawable, -1);
-        iv9.setImageResource(iv9_drawable);
+        if (iv9_drawable != -1)
+            iv9.setImageResource(iv9_drawable);
         int iv10_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv10_drawable, -1);
-        iv10.setImageResource(iv10_drawable);
+        if (iv10_drawable != -1)
+            iv10.setImageResource(iv10_drawable);
         int iv11_drawable = attributes.getResourceId(R.styleable.Urine_report_item_iv11_drawable, -1);
-        iv11.setImageResource(iv11_drawable);
+        if (iv11_drawable != -1)
+            iv11.setImageResource(iv11_drawable);
 
         attributes.recycle();
     }

@@ -100,7 +100,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
             final String action = intent.getAction();
             if (BluetoothLeService.ACTION_GATT_CONNECTED.equals(action)) {
             	Log.d("yuhao", "ACTION_GATT_CONNECTED-------------------");
-
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                 mConnected = false;
                 updateConnectionState(R.string.disconnected);
@@ -248,17 +247,26 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		// TODO Auto-generated method stub
 		super.onResume();
 		registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
-        if (mBluetoothLeService != null) {
-        	Log.d("yuhao", "connect-------------------4");
-            final boolean result = mBluetoothLeService.connect(mDeviceAddress);
-            Log.d("yuhao", "Connect request result=" + result);
+        if (!mConnected) {
+            if (mBluetoothLeService != null) {
+                Log.d("yuhao", "connect-------------------4");
+                final boolean result = mBluetoothLeService.connect(mDeviceAddress);
+                Log.d("yuhao", "Connect request result=" + result);
+            }
         }
 	}
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        mDeviceName = data.getExtras().getString(EXTRAS_DEVICE_NAME);//得到新Activity 关闭后返回的数据
-        mDeviceAddress = data.getExtras().getString(EXTRAS_DEVICE_ADDRESS);
+        switch (resultCode) {
+            case RESULT_OK:
+                mDeviceName = data.getExtras().getString(EXTRAS_DEVICE_NAME);//得到新Activity 关闭后返回的数据
+                mDeviceAddress = data.getExtras().getString(EXTRAS_DEVICE_ADDRESS);
+                break;
+            case RESULT_CANCELED:
+                Toast.makeText(this, "未选择连接设备！", Toast.LENGTH_LONG).show();
+        }
+
     }
 
     private static IntentFilter makeGattUpdateIntentFilter() {
@@ -325,10 +333,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
         sharedTool = new SharedTool(this);
 
-        //获取蓝牙的名字和地址
-        final Intent intent = getIntent();
-        mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
-        mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
+//        获取蓝牙的名字和地址
+//        final Intent intent = getIntent();
+//        mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
+//        mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 	}
@@ -363,9 +371,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
                         startActivityForResult(intent, REQUEST_DEVICE_ADDRESS);
                     } else {
                         progressDialog.show();
+                        Log.d("zzh", "mDeviceName : " + mDeviceName + "mDeviceAddress : " + mDeviceAddress);
                         mBluetoothLeService.connect(mDeviceAddress);
-                        connectFlag = false;
                     }
+                    connectFlag = false;
                 }
                 Log.d("yuhao", "mConnected=------1-------" + mConnected);
                 break;

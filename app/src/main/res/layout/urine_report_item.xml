@@ -15,12 +15,13 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv1"
             android:gravity="center" />
 
         <ImageView
             android:contentDescription="@string/compare_with_standard"
             android:id="@+id/iv1"
-            android:layout_toEndOf="@+id/tv1"
+            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -37,13 +38,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv2"
             android:gravity="center" />
 
         <ImageView
             android:contentDescription="@string/compare_with_standard"
             android:id="@+id/iv2"
-            android:layout_toEndOf="@+id/tv2"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -59,13 +61,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv3"
             android:gravity="center" />
 
         <ImageView
             android:contentDescription="@string/compare_with_standard"
             android:id="@+id/iv3"
-            android:layout_toEndOf="@+id/tv3"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -81,13 +84,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv4"
             android:gravity="center" />
 
         <ImageView
             android:contentDescription="@string/compare_with_standard"
             android:id="@+id/iv4"
-            android:layout_toEndOf="@+id/tv4"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -103,13 +107,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv5"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/iv5"
             android:contentDescription="@string/compare_with_standard"
-            android:layout_toEndOf="@+id/tv5"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -125,13 +130,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv6"
             android:gravity="center" />
 
         <ImageView
             android:contentDescription="@string/compare_with_standard"
             android:id="@+id/iv6"
-            android:layout_toEndOf="@+id/tv6"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -147,13 +153,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv7"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/iv7"
             android:contentDescription="@string/compare_with_standard"
-            android:layout_toEndOf="@+id/tv7"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -169,13 +176,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv8"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/iv8"
             android:contentDescription="@string/compare_with_standard"
-            android:layout_toEndOf="@+id/tv8"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -191,12 +199,13 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv9"
             android:gravity="center" />
 
         <ImageView
             android:contentDescription="@string/compare_with_standard"
             android:id="@+id/iv9"
-            android:layout_toEndOf="@+id/tv9"
+            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -213,13 +222,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv10"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/iv10"
             android:contentDescription="@string/compare_with_standard"
-            android:layout_toEndOf="@+id/tv10"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -235,13 +245,14 @@
             android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/iv11"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/iv11"
             android:contentDescription="@string/compare_with_standard"
-            android:layout_toEndOf="@+id/tv11"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
