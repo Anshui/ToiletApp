@@ -68,6 +68,10 @@
         "source": "C:\\Users\\static\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\a99964be4712f0eaa8db9ddf821a78a6\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_remote_icon_selector.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable\\remote_icon_selector.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_health_selector.xml.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable\\health_selector.xml"
     },
@@ -262,6 +266,10 @@
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_username.png.flat",
         "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\username.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_remote_icon_pressed.png.flat",
+        "source": "D:\\AndroidStudioProjects\\ToiletApp\\app\\src\\main\\res\\drawable-hdpi\\remote_icon_pressed.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ToiletApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_my_bn_select.png.flat",

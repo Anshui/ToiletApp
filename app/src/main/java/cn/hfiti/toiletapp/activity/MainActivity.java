@@ -389,7 +389,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 MainActivity.this.finish();
-                                DeviceScanActivity.instance.finish();
                                 clearData();
                             }
                         })

@@ -111,7 +111,7 @@
 		        android:layout_height="match_parent"
 		        android:layout_weight="0.6"
 		        android:id="@+id/bn_remote"
-		        android:src="@drawable/remote_icon"/>
+                android:src="@drawable/remote_icon_selector" />
             <TextView 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
