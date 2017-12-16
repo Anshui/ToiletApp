@@ -7,18 +7,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
 import android.os.IBinder;
-import android.os.TestLooperManager;
-import android.text.method.ScrollingMovementMethod;
+import android.os.Message;
+import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.Arrays;
 
 import cn.hfiti.toiletapp.R;
@@ -34,10 +39,9 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 	
 	public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
-	
-	private Button startTest;
+
     private TextView advice;
-    private UrineReportItem testResult;
+    private UrineReportItem name, testResult;
     private CustomActionBar urineTest;
 	
 	static long recv_cnt = 0;
@@ -50,8 +54,10 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 	
 	private String mDeviceName;
 	protected String mDeviceAddress;
-	
-	private long recvBytes=0;
+
+    public static final int RESULT_SET = 100;
+
+    private long recvBytes=0;
     private long lastSecondBytes=0;
     private long sendBytes;
     private StringBuilder lifeAdvice;
@@ -62,6 +68,8 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     int sendIndex = 0;
     int sendDataLen=0;
     byte[] sendBuf;
+
+    private Handler handler;
     
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -105,14 +113,27 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     }
 
     private void intiData() {
-        startTest.setOnClickListener(this);
 		urineTest.setTitleClickListener(this);
         lifeAdvice = new StringBuilder();
+        name.getTv6().setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+        name.getTv7().setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+
+        handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                switch (msg.what) {
+                    case RESULT_SET:
+                        screenshot();
+                        break;
+                }
+            }
+        };
     }
 
 	private void initView() {
-        startTest = findViewById(R.id.start_test);
         urineTest = findViewById(R.id.urine_test_action_bar);
+        name = findViewById(R.id.name);
         testResult = findViewById(R.id.test_result);
         advice = findViewById(R.id.life_advice);
     }
@@ -196,7 +217,6 @@ public class UrineTestActivity extends Activity implements OnClickListener{
 //                      stringBuilder.append(String.format("%02X ", byteChar));
 //                Log.v("log",stringBuilder.toString());
                 displayResult(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
-                Log.d(TAG, "zzh: " + Arrays.toString(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA)));
             }else if (BluetoothLeService.ACTION_WRITE_SUCCESSFUL.equals(action)) {
                 if (sendDataLen>0)
                 {
@@ -283,6 +303,40 @@ public class UrineTestActivity extends Activity implements OnClickListener{
         setKETResult();
         setWBCResult();
         giveAdvice();
+        saveScreen();
+    }
+
+    private void saveScreen() {
+        if (!TextUtils.isEmpty(advice.getText())) {
+            handler.sendEmptyMessageDelayed(RESULT_SET, 100);
+        }
+    }
+
+
+    private void screenshot() {
+        // 获取屏幕
+        View dView = this.getWindow().getDecorView();
+        dView.setDrawingCacheEnabled(true);
+        dView.buildDrawingCache();
+        Bitmap bmp = dView.getDrawingCache();
+        Log.d(TAG, "screenshot: " + bmp);
+        if (bmp != null) {
+            try {
+                // 获取内置SD卡路径
+                String sdCardPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath();
+                // 图片文件路径
+                String filePath = sdCardPath + File.separator + "Screenshots" + File.separator + System.currentTimeMillis() + ".png";
+                Log.d(TAG, "screenshot: " + filePath);
+
+                File file = new File(filePath);
+                FileOutputStream os = new FileOutputStream(file);
+                bmp.compress(Bitmap.CompressFormat.PNG, 100, os);
+                os.flush();
+                os.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void giveAdvice() {
@@ -332,25 +386,25 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setWBCResult() {
         switch (result[10]) {
             case 1:
-                testResult.getTv11().setText("-(0)CELL/μL");
+                testResult.getTv11().setText("—");
                 testResult.getIv11().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv11().setText("±(15)CELL/μL");
+                testResult.getTv11().setText("±");
                 testResult.getIv11().setImageResource(R.drawable.keep);
                 break;
             case 3:
-                testResult.getTv11().setText("+(70)CELL/μL");
+                testResult.getTv11().setText("+");
                 testResult.getIv11().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv11().setText("++(125)CELL/μL");
+                testResult.getTv11().setText("++");
                 testResult.getIv11().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 5:
-                testResult.getTv11().setText("+++(500)CELL/μL");
+                testResult.getTv11().setText("+++");
                 testResult.getIv11().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -362,25 +416,25 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setKETResult() {
         switch (result[9]) {
             case 1:
-                testResult.getTv10().setText("-(0)mmol/L");
+                testResult.getTv10().setText("—");
                 testResult.getIv10().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv10().setText("±(0.5)mmol/L");
+                testResult.getTv10().setText("±");
                 testResult.getIv10().setImageResource(R.drawable.keep);
                 break;
             case 3:
-                testResult.getTv10().setText("+(1.5)mmol/L");
+                testResult.getTv10().setText("+");
                 testResult.getIv10().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv10().setText("++(4.0)mmol/L");
+                testResult.getTv10().setText("++");
                 testResult.getIv10().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 5:
-                testResult.getTv10().setText("+++(≥8.0)mmol/L");
+                testResult.getTv10().setText("+++");
                 testResult.getIv10().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -392,21 +446,21 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setUROResult() {
         switch (result[8]) {
             case 1:
-                testResult.getTv9().setText("Normal");
+                testResult.getTv9().setText("—");
                 testResult.getIv9().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv9().setText("+(33)μmol/L");
+                testResult.getTv9().setText("+");
                 testResult.getIv9().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 3:
-                testResult.getTv9().setText("++(66)μmol/L");
+                testResult.getTv9().setText("++");
                 testResult.getIv9().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv9().setText("+++(≥131)μmol/L");
+                testResult.getTv9().setText("+++");
                 testResult.getIv9().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -418,21 +472,21 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setBILResult() {
         switch (result[7]) {
             case 1:
-                testResult.getTv8().setText("-(0)μmol/L");
+                testResult.getTv8().setText("—");
                 testResult.getIv8().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv8().setText("+(8.6)μmol/L");
+                testResult.getTv8().setText("+");
                 testResult.getIv8().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 3:
-                testResult.getTv8().setText("++(33)μmol/L");
+                testResult.getTv8().setText("++");
                 testResult.getIv8().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv8().setText("+++(100)μmol/L");
+                testResult.getTv8().setText("+++");
                 testResult.getIv8().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -445,25 +499,25 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setPROResult() {
         switch (result[6]) {
             case 1:
-                testResult.getTv7().setText("-(0)g/L");
+                testResult.getTv7().setText("—");
                 testResult.getIv7().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv7().setText("±(0.15)g/L");
+                testResult.getTv7().setText("±");
                 testResult.getIv7().setImageResource(R.drawable.keep);
                 break;
             case 3:
-                testResult.getTv7().setText("+(0.3)g/L");
+                testResult.getTv7().setText("+");
                 testResult.getIv7().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv7().setText("++(1.0)g/L");
+                testResult.getTv7().setText("++");
                 testResult.getIv7().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 5:
-                testResult.getTv7().setText("+++(≥3.0)g/L");
+                testResult.getTv7().setText("+++");
                 testResult.getIv7().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -475,25 +529,25 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setBLDResult() {
         switch (result[5]) {
             case 1:
-                testResult.getTv6().setText("-(0)CELL/μL");
+                testResult.getTv6().setText("—");
                 testResult.getIv6().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv6().setText("±(10)CELL/μL");
+                testResult.getTv6().setText("±");
                 testResult.getIv6().setImageResource(R.drawable.keep);
                 break;
             case 3:
-                testResult.getTv6().setText("溶血 +(25)");
+                testResult.getTv6().setText("溶血 +");
                 testResult.getIv6().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv6().setText("溶血 ++(80)");
+                testResult.getTv6().setText("溶血 ++");
                 testResult.getIv6().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 5:
-                testResult.getTv6().setText("溶血 +++(200)");
+                testResult.getTv6().setText("溶血 +++");
                 testResult.getIv6().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -552,25 +606,25 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setVCResult() {
         switch (result[3]) {
             case 1:
-                testResult.getTv4().setText("-(0)mmol/L");
+                testResult.getTv4().setText("—");
                 testResult.getIv4().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv4().setText("±(0.6)mmol/L");
+                testResult.getTv4().setText("±");
                 testResult.getIv4().setImageResource(R.drawable.keep);
                 break;
             case 3:
-                testResult.getTv4().setText("+(1.4)mmol/L");
+                testResult.getTv4().setText("+");
                 testResult.getIv4().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv4().setText("++(2.8)mmol/L");
+                testResult.getTv4().setText("++");
                 testResult.getIv4().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 5:
-                testResult.getTv4().setText("+++(5.6)mmol/L");
+                testResult.getTv4().setText("+++");
                 testResult.getIv4().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
@@ -583,30 +637,30 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setGLUResult() {
         switch (result[2]) {
             case 1:
-                testResult.getTv3().setText("-(0)mmol/L");
+                testResult.getTv3().setText("—");
                 testResult.getIv3().setImageResource(R.drawable.keep);
                 break;
             case 2:
-                testResult.getTv3().setText("±(2.8)mmol/L");
+                testResult.getTv3().setText("±");
                 testResult.getIv3().setImageResource(R.drawable.keep);
                 break;
             case 3:
-                testResult.getTv3().setText("+(5.6)mmol/L");
+                testResult.getTv3().setText("+");
                 testResult.getIv3().setImageResource(R.drawable.up1);
                 overproofCount++;
                 break;
             case 4:
-                testResult.getTv3().setText("++(14)mmol/L");
+                testResult.getTv3().setText("++");
                 testResult.getIv3().setImageResource(R.drawable.up2);
                 overproofCount++;
                 break;
             case 5:
-                testResult.getTv3().setText("+++(28)mmol/L");
+                testResult.getTv3().setText("+++");
                 testResult.getIv3().setImageResource(R.drawable.up3);
                 greatOverproofCount++;
                 break;
             case 6:
-                testResult.getTv3().setText("++++(≥55)mmol/L");
+                testResult.getTv3().setText("++++");
                 testResult.getIv3().setImageResource(R.drawable.up4);
                 greatOverproofCount++;
                 break;
@@ -619,7 +673,7 @@ public class UrineTestActivity extends Activity implements OnClickListener{
     private void setNITResult() {
         switch (result[1]) {
             case 1:
-                testResult.getTv2().setText("-");
+                testResult.getTv2().setText("—");
                 testResult.getIv2().setImageResource(R.drawable.keep);
                 break;
             case 2:

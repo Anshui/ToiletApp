@@ -39,6 +39,7 @@ import cn.hfiti.toiletapp.entity.WeightInfo;
 import cn.hfiti.toiletapp.util.Define;
 import cn.hfiti.toiletapp.util.MyCustomDatePickerDialog;
 import cn.hfiti.toiletapp.util.SharedTool;
+import cn.hfiti.toiletapp.view.CustomActionBar;
 import es.senselesssolutions.gpl.weightchart.ChartDraw;
 import es.senselesssolutions.gpl.weightchart.ChartView;
 import es.senselesssolutions.gpl.weightchart.Database;
@@ -49,10 +50,9 @@ import es.senselesssolutions.gpl.weightchart.LegendActivity;
 
 public class UserActivity extends Activity implements OnClickListener {
 
-	private ImageView mImgUserBack;
-	private ImageView mSearch;
+    private CustomActionBar userActionBar;
+    private ImageView mSearch;
 	private LinearLayout mUserInformation;
-	private TextView mMySettings;
 	private TextView mUserName;
 	private TextView mSex;
 	private TextView mBirth;
@@ -324,9 +324,8 @@ public class UserActivity extends Activity implements OnClickListener {
 	private void init() {
 		// TODO Auto-generated method stub
 		instance = this;
-		mImgUserBack = (ImageView) findViewById(R.id.my_back);
-		mUserInformation = (LinearLayout) findViewById(R.id.home_my_to_my_information);
-		mMySettings = (TextView) findViewById(R.id.my_settingst);
+        userActionBar = findViewById(R.id.user_action_bar);
+        mUserInformation = (LinearLayout) findViewById(R.id.home_my_to_my_information);
 		mUserName = (TextView) findViewById(R.id.user_my_name);
 		mSex = (TextView) findViewById(R.id.user_my_sex);
 		mBirth = (TextView) findViewById(R.id.user_my_birthday);
@@ -338,9 +337,9 @@ public class UserActivity extends Activity implements OnClickListener {
 		mBMIAdvice = (TextView) findViewById(R.id.bmi_advice);
 		acharWeight = (LinearLayout) findViewById(R.id.achar);
 		mSearch = (ImageView) findViewById(R.id.history_search);
-		mImgUserBack.setOnClickListener(this);
-		mUserInformation.setOnClickListener(this);
-		mMySettings.setOnClickListener(this);
+
+        userActionBar.setTitleClickListener(this);
+        mUserInformation.setOnClickListener(this);
 		mStartDate.setOnClickListener(this);
 		mEndDate.setOnClickListener(this);
 		mSearch.setOnClickListener(this);
@@ -389,14 +388,14 @@ public class UserActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
-		case R.id.my_back:
-			finish();
+            case R.id.action_bar_left_button:
+                finish();
 			break;
 		case R.id.home_my_to_my_information:
 			switchToMyInfo();
 			break;
-		case R.id.my_settingst:
-			switchToMySettings();
+            case R.id.action_bar_right_button:
+                switchToMySettings();
 			break;
 		case R.id.start_date:
 			try {

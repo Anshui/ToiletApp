@@ -13,7 +13,7 @@
         android:layout_weight="1"
         app:left_button_drawable="@drawable/back"
         app:right_button_visible="false"
-        app:title_background_color="@color/blue_new"
+        app:title_background_color="@drawable/face_top"
         app:title_text="@string/urine_test" />
 
     <RelativeLayout
@@ -89,6 +89,7 @@
             android:weightSum="3">
 
             <cn.hfiti.toiletapp.view.UrineReportItem
+                android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
@@ -97,7 +98,9 @@
                 app:tv3_text="@string/GLU"
                 app:tv4_text="@string/VC"
                 app:tv5_text="@string/SG"
+                app:iv6_drawable="@drawable/important"
                 app:tv6_text="@string/BLD"
+                app:iv7_drawable="@drawable/important"
                 app:tv7_text="@string/PRO"
                 app:tv8_text="@string/BIL"
                 app:tv9_text="@string/URO"
@@ -145,15 +148,70 @@
             android:layout_height="1dp"
             android:layout_above="@+id/start_test" />
 
-        <Button
+        <RelativeLayout
             android:id="@+id/start_test"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:text="@string/start_test" />
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text="@string/start_test">
+
+            <ImageView
+                android:contentDescription="@string/compare_with_standard"
+                android:id="@+id/important"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/important_text"
+                android:src="@drawable/important" />
+
+            <TextView
+                android:text="@string/improtant"
+                android:id="@+id/important_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/up1"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:contentDescription="@string/compare_with_standard"
+                android:id="@+id/up1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/up1_text"
+                android:layout_centerVertical="true"
+                android:src="@drawable/up1" />
+
+            <TextView
+                android:id="@+id/up1_text"
+                android:text="@string/up1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/down1"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:contentDescription="@string/compare_with_standard"
+                android:id="@+id/down1"
+                android:layout_toStartOf="@+id/down1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/down1" />
+
+            <TextView
+                android:id="@+id/down1_text"
+                android:text="@string/down1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
@@ -180,8 +238,8 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/advice"
             android:background="@drawable/textview_corner"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp" />
     </RelativeLayout>
 </LinearLayout>

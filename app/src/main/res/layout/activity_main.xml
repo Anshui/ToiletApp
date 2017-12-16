@@ -58,7 +58,7 @@
 		app:title_text="智能马桶"
 		app:left_button_drawable="@drawable/home_1"
 		app:right_button_drawable="@drawable/user"
-		app:title_background_color="@color/blue_new"/>
+        app:title_background_color="@drawable/face_top" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -70,13 +70,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/xuanchuan"
-            android:src="@drawable/publicity"/>
+            android:background="@drawable/face" />
     </LinearLayout>   
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:layout_weight="1.2">
+        android:layout_weight="1.2"
+        android:background="@drawable/face_down">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

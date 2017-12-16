@@ -31,8 +31,9 @@ public class CustomActionBar extends RelativeLayout {
 			// 处理titleBar背景色
 			int titleBarBackGround = attributes.getResourceId(R.styleable.CustomActionBar_title_background_color,
 					Color.GREEN);
-			setBackgroundResource(titleBarBackGround);
-			// 先处理左边按钮
+
+            setBackgroundResource(titleBarBackGround);
+            // 先处理左边按钮
 			// 获取是否要显示左边按钮
 			boolean leftButtonVisible = attributes.getBoolean(R.styleable.CustomActionBar_left_button_visible, true);
 			if (leftButtonVisible) {

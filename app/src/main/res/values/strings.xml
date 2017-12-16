@@ -196,25 +196,28 @@
     <string name="pH">酸碱度(pH)</string>
     <string name="pH_standard">4.5~8.0</string>
     <string name="NIT">亚硝酸盐(NIT)</string>
-    <string name="NIT_standard">-  阴性</string>
+    <string name="NIT_standard">—  阴性</string>
     <string name="GLU">葡萄糖(GLU)</string>
-    <string name="GLU_standard">-  阴性</string>
+    <string name="GLU_standard">—  阴性</string>
     <string name="VC">维生素C(VC)</string>
-    <string name="VC_standard">-  阴性</string>
+    <string name="VC_standard">—  阴性</string>
     <string name="SG">尿比重(SG)</string>
     <string name="SG_standard">1.015~1.025</string>
     <string name="BLD">隐血(BLD)</string>
-    <string name="BLD_standard">-  阴性</string>
+    <string name="BLD_standard">—  阴性</string>
     <string name="PRO">蛋白质(PRO)</string>
-    <string name="PRO_standard">-  阴性</string>
+    <string name="PRO_standard">—  阴性</string>
     <string name="BIL">胆红素(BIL)</string>
-    <string name="BIL_standard">-  阴性</string>
+    <string name="BIL_standard">—  阴性</string>
     <string name="URO">尿胆原(URO)</string>
-    <string name="URO_standard">-  阴性(或弱阳性)</string>
+    <string name="URO_standard">—  阴性(或弱阳性)</string>
     <string name="KET">酮体(KET)</string>
-    <string name="KET_standard">-  阴性</string>
+    <string name="KET_standard">—  阴性</string>
     <string name="WBC">白细胞(WBC)</string>
-    <string name="WBC_standard">-  阴性</string>
+    <string name="WBC_standard">—  阴性</string>
+    <string name="improtant">重要指标</string>
+    <string name="up1">高于标准</string>
+    <string name="down1">低于标准</string>
 
     <string-array name="weight_unit_labels">
         <item>kilogram</item>

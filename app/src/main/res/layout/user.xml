@@ -2,13 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 原始ActionBar
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.5"
         android:gravity="center_vertical"
-        android:background="#44cef6"
+        android:background="@drawable/face_top"
         android:orientation="horizontal">
         <RelativeLayout
 	        android:layout_width="match_parent"
@@ -40,11 +43,21 @@
               android:layout_centerVertical="true"
               android:text="设置"/>
         </RelativeLayout>
-    </LinearLayout>        
+    </LinearLayout>
+        -->
+    <cn.hfiti.toiletapp.view.CustomActionBar
+        android:id="@+id/user_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:title_text="我的"
+        app:left_button_drawable="@drawable/back"
+        app:right_button_text="设置"
+        app:title_background_color="@drawable/face_top" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.15"
+        android:layout_height="0dp"
+        android:layout_weight="9"
         android:orientation="vertical">
 	    <LinearLayout
 	        android:layout_width="match_parent"

@@ -14,7 +14,7 @@
         android:layout_weight="1"
         app:left_button_drawable="@drawable/back"
         app:right_button_visible="false"
-        app:title_background_color="@color/blue_new"
+        app:title_background_color="@drawable/face_top"
         app:title_text="@string/heart_rate"/>
     
     <LinearLayout
@@ -173,8 +173,7 @@
                android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:clickable="false"
-               android:layout_weight="1"
-               android:background="@drawable/jianyi">
+               android:layout_weight="1">
                
            </ImageView>
            <ImageView
