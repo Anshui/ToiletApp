@@ -283,8 +283,8 @@ public class UserActivity extends Activity implements OnClickListener {
 		ArrayList<UserInfo> infoListName = new ArrayList<UserInfo>();
 		// infoListName = dbManager.searchData(Define.DB_NAMES);
         infoListName = Define.dbManager.searchData(sharedTool.getSharedString("userIdName", null));
-        Log.d("yuhao", "initUserInfo-----infoListName=--------" + infoListName);
-		String result = "";
+        Log.d("yuhao", "initUserInfo-----infoListName=--------" + infoListName.toString());
+        String result = "";
 		if (infoListName.size() != 0) {
 			for (UserInfo info : infoListName) {
 				result = result + info.userIdName + "|" + info.userPwd + "|" + info.userName + "|" + info.userSex + "|"

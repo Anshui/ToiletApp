@@ -119,6 +119,7 @@ public class LoginActivity extends Activity implements OnClickListener{
                             sharedTool.setSharedString("userName", info.userName);
                             sharedTool.setSharedString("userPwd", info.userPwd);
                             sharedTool.setSharedString("userIdName", info.userIdName);
+                            Log.d("userIdName", "userIdName: " + info.userIdName);
                             if (autoLogin.isChecked()) {
                                 sharedTool.setSharedBoolean("auto_login", true);
                             } else {

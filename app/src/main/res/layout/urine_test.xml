@@ -45,6 +45,7 @@
             android:layout_height="30dp"
             android:orientation="horizontal"
             android:weightSum="3"
+            android:background="#30008B45"
             android:layout_below="@+id/view1">
 
             <TextView
@@ -222,22 +223,26 @@
 
         <TextView
             android:id="@+id/advice"
+            android:textColor="@color/red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/life_advice"
             android:textStyle="italic"
+            android:textSize="18sp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:layout_marginStart="16dp" />
 
         <TextView
             android:padding="16dp"
+            android:textSize="16sp"
             android:id="@+id/life_advice"
-            android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/advice"
-            android:background="@drawable/textview_corner"
+            android:background="@drawable/advice_back"
+            android:maxLines="6"
+            android:scrollbars="vertical"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp" />

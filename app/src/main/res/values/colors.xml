@@ -2,8 +2,8 @@
 <resources>
    <color name="backgound_blue">#0FC6DC</color>
    <color name="transparent">#00000000</color>
-   
-   <color name="white">#ffffffff</color>
+
+    <color name="white">#ffffffff</color>
     <color name="black">#000000</color>
     <color name="grayblack">#EEEEEE</color>
     <color name="black_text">#373737</color>
@@ -75,7 +75,7 @@
     <color name="viewfinder_mask">#60000000</color>
     <color name="lightgreen">#90ee90</color>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#929ff2</color>
     <color name="colorAccent">#FF4081</color>
     <color name="text_normal">#FF4081</color>
     <color name="text_press">#bbFF4081</color>
@@ -99,7 +99,10 @@
     <color name="background_gray">#F8F8F8</color>
     <color name="que_line">#e9e9e9</color>
     <color name="que_background">#f5f5f5</color>
-    
+
+    <color name="urine_report_item_background1">#E6EFEC</color>
+    <color name="urine_report_item_background2">#FAFAFA</color>
+
     <integer-array name="material_colors">
         <item>@color/material_red</item>
         <item>@color/material_green</item>

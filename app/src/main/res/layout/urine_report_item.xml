@@ -8,6 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background1"
         android:layout_weight="1">
 
         <TextView
@@ -31,6 +32,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background2"
         android:layout_weight="1">
 
         <TextView
@@ -54,6 +56,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background1"
         android:layout_weight="1">
 
         <TextView
@@ -77,6 +80,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background2"
         android:layout_weight="1">
 
         <TextView
@@ -100,6 +104,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background1"
         android:layout_weight="1">
 
         <TextView
@@ -123,6 +128,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background2"
         android:layout_weight="1">
 
         <TextView
@@ -146,6 +152,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background1"
         android:layout_weight="1">
 
         <TextView
@@ -169,6 +176,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background2"
         android:layout_weight="1">
 
         <TextView
@@ -192,6 +200,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background1"
         android:layout_weight="1">
 
         <TextView
@@ -215,6 +224,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background2"
         android:layout_weight="1">
 
         <TextView
@@ -238,6 +248,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/urine_report_item_background1"
         android:layout_weight="1">
 
         <TextView

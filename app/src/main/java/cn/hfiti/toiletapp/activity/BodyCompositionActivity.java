@@ -35,10 +35,10 @@ public class BodyCompositionActivity extends Activity implements OnClickListener
 	}
 
 	private void initView() {
-		startTest = (Button) findViewById(R.id.start_test);
-		lifeAdvice = (TextView) findViewById(R.id.life_advice);
-		urineTest = (CustomActionBar) findViewById(R.id.body_composition_action_bar);
-	}
+        startTest = findViewById(R.id.start_test);
+        lifeAdvice = findViewById(R.id.life_advice);
+        urineTest = findViewById(R.id.body_composition_action_bar);
+    }
 
 	@Override
 	public void onClick(View v) {

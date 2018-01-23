@@ -14,11 +14,13 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.text.TextUtils;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.Scroller;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -136,6 +138,7 @@ public class UrineTestActivity extends Activity implements OnClickListener{
         name = findViewById(R.id.name);
         testResult = findViewById(R.id.test_result);
         advice = findViewById(R.id.life_advice);
+        advice.setMovementMethod(ScrollingMovementMethod.getInstance());
     }
 
 	@Override
@@ -303,7 +306,40 @@ public class UrineTestActivity extends Activity implements OnClickListener{
         setKETResult();
         setWBCResult();
         giveAdvice();
+        giveAdviceReason();
         saveScreen();
+    }
+
+    private void giveAdviceReason() {
+        if (result[2] > 3) {
+            lifeAdvice.append(Define.GLU);
+        }
+        if (result[3] > 3) {
+            lifeAdvice.append(Define.VC);
+        }
+        if (result[4] < 3) {
+            lifeAdvice.append(Define.SG);
+        }
+        if (result[5] > 3) {
+            lifeAdvice.append(Define.BLD);
+        }
+        if (result[6] > 3) {
+            lifeAdvice.append(Define.PRO);
+        }
+        if (result[7] > 2) {
+            lifeAdvice.append(Define.BIL);
+        }
+        if (result[8] > 2) {
+            lifeAdvice.append(Define.URO);
+        }
+        if (result[9] > 3) {
+            lifeAdvice.append(Define.KET);
+        }
+        if (result[10] > 3) {
+            lifeAdvice.append(Define.WBC);
+        }
+        advice.setText(lifeAdvice);
+        lifeAdvice = new StringBuilder();
     }
 
     private void saveScreen() {
@@ -344,43 +380,41 @@ public class UrineTestActivity extends Activity implements OnClickListener{
         Log.d(TAG, "giveAdvice: " + greatOverproofCount);
         if (greatOverproofCount == 0) {
             if (overproofCount <= 2) {
-                lifeAdvice.append("尿检结果未出现明显异常，健康状况基本良好!\n");
+                lifeAdvice.append("    尿检结果未出现明显异常，健康状况基本良好!\n\n");
             } else if (overproofCount > 2 && overproofCount <= 5) {
-                lifeAdvice.append("部分指标存在一些异常，注意观察身体状况变化!\n");
+                lifeAdvice.append("    部分指标存在一些异常，注意观察身体状况变化!\n\n");
             } else if (overproofCount > 5) {
-                lifeAdvice.append("多项指标出现异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    多项指标出现异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
         } else {
             if (result[2] > 4) {
-                lifeAdvice.append("葡萄糖检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    葡萄糖检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[3] > 4) {
-                lifeAdvice.append("维生素C检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    维生素C检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
-            if (result[4] > 6 || result[4] < 3) {
-                lifeAdvice.append("尿比重检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+            if (result[4] < 2) {
+                lifeAdvice.append("    尿比重检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[5] == 5) {
-                lifeAdvice.append("隐血检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    隐血检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[6] == 5) {
-                lifeAdvice.append("蛋白质检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    蛋白质检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[7] == 4) {
-                lifeAdvice.append("胆红素检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    胆红素检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[8] == 4) {
-                lifeAdvice.append("尿胆原检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    尿胆原检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[9] == 5) {
-                lifeAdvice.append("酮体检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    酮体检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
             if (result[10] == 5) {
-                lifeAdvice.append("白细胞检测结果异常，请多次测试，并依据具体情况就医复查!\n");
+                lifeAdvice.append("    白细胞检测结果异常，请多次测试，并依据具体情况就医复查!\n\n");
             }
         }
-        advice.setText(lifeAdvice);
-        lifeAdvice = new StringBuilder();
     }
 
     private void setWBCResult() {
@@ -630,7 +664,6 @@ public class UrineTestActivity extends Activity implements OnClickListener{
                 break;
             default:
                 break;
-
         }
     }
 
@@ -787,5 +820,4 @@ public class UrineTestActivity extends Activity implements OnClickListener{
             sendIndex = 0;
         }
     }
-
 }

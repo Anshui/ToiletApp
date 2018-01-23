@@ -734,7 +734,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		}
 		
 	}
-	
 	private String getTempValue(String string) {
 		// TODO Auto-generated method stub
 		Log.d("yuhao", "string=----------------"+string);

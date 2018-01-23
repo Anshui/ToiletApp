@@ -40,6 +40,7 @@ import cn.hfiti.toiletapp.util.Define;
 import cn.hfiti.toiletapp.util.ImageUtil;
 import cn.hfiti.toiletapp.util.MyCustomDatePickerDialog;
 import cn.hfiti.toiletapp.util.MyCustomPicker;
+import cn.hfiti.toiletapp.util.SharedTool;
 
 public class UserInfoActivity extends Activity implements OnClickListener{
 	
@@ -72,8 +73,10 @@ public class UserInfoActivity extends Activity implements OnClickListener{
 			+ "/Toilet/image/";
 	private String cameraPhotoPath = ToiletImagePath + "CameraPhoto/";
 	private String albumPhotoTempPath = ToiletImagePath + "AlbumPhoto/";
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+    private SharedTool sharedTool;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -85,7 +88,7 @@ public class UserInfoActivity extends Activity implements OnClickListener{
 	private void initInfo() {
 		// TODO Auto-generated method stub
 		ArrayList<UserInfo> infoListName = new ArrayList<UserInfo>();
-		infoListName = Define.dbManager.searchData(Define.USER_ID_NAME);
+        infoListName = Define.dbManager.searchData(sharedTool.getSharedString("userIdName", null));
         Log.d("yuhao", "UserInfoActivity-----infoListName=--------"+infoListName);
         String result = "";
         if (infoListName.size()!=0) {
@@ -105,8 +108,8 @@ public class UserInfoActivity extends Activity implements OnClickListener{
         else {
         	Toast.makeText(UserInfoActivity.this, "数据异常！", Toast.LENGTH_SHORT).show();
 		}
-        Log.i("yuhao--initInfo--UserInfoActivity--", result);
-	}
+        Log.i("-UserInfoActivity--", result);
+    }
 
 	private void init() {
 		// TODO Auto-generated method stub
@@ -130,7 +133,9 @@ public class UserInfoActivity extends Activity implements OnClickListener{
 		mTextInfoHigh.setOnClickListener(this);
 		mTextInfoWeight.setOnClickListener(this);
 		mTextInfoSubmit.setOnClickListener(this);
-	}
+
+        sharedTool = new SharedTool(this);
+    }
 
 	@Override
 	public void onClick(View v) {
@@ -304,25 +309,37 @@ public class UserInfoActivity extends Activity implements OnClickListener{
 			e.printStackTrace();
 		}
 
-		MyCustomDatePickerDialog datePickerDialog = new MyCustomDatePickerDialog(instance,
-				new DatePickerDialog.OnDateSetListener() {
-
-					@Override
-					public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-//						提交数据库
-//						personalDetails.setUserBrithday(year + "-" + String.format("%02d", (monthOfYear + 1)) + "-"
-//								+ String.format("%02d", dayOfMonth));
-//						waitSubmit();
-						mTextInfoBirth.setText(year + "-" + String.format("%02d", (monthOfYear + 1)) + "-"
-								+ String.format("%02d", dayOfMonth));
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                mTextInfoBirth.setText(year + "-" + String.format("%02d", (month + 1)) + "-"
+                        + String.format("%02d", dayOfMonth));
 						mTextInfoSubmit.setVisibility(View.VISIBLE);
-					}
-				}, int_year, int_month - 1, int_day);
-		datePickerDialog.setDatePickerDividerColor(datePickerDialog.getDatePicker(), this);
-		datePickerDialog.getDatePicker().setMaxDate(date.getTime());
-		datePickerDialog.getDatePicker().setMinDate(date.getTime() - (long) 47304 * 100000000);
-		datePickerDialog.show();
-	}
+            }
+        }, int_year, int_month - 1, int_day);
+        datePickerDialog.getDatePicker().setMaxDate(date.getTime());
+        datePickerDialog.getDatePicker().setMinDate(date.getTime() - (long) 47304 * 100000000);
+        datePickerDialog.show();
+
+//		MyCustomDatePickerDialog datePickerDialog = new MyCustomDatePickerDialog(instance,
+//				new DatePickerDialog.OnDateSetListener() {
+//
+//					@Override
+//					public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+////						提交数据库
+////						personalDetails.setUserBrithday(year + "-" + String.format("%02d", (monthOfYear + 1)) + "-"
+////								+ String.format("%02d", dayOfMonth));
+////						waitSubmit();
+//						mTextInfoBirth.setText(year + "-" + String.format("%02d", (monthOfYear + 1)) + "-"
+//								+ String.format("%02d", dayOfMonth));
+//						mTextInfoSubmit.setVisibility(View.VISIBLE);
+//					}
+//				}, int_year, int_month - 1, int_day);
+//		datePickerDialog.setDatePickerDividerColor(datePickerDialog.getDatePicker(), this);
+//		datePickerDialog.getDatePicker().setMaxDate(date.getTime());
+//		datePickerDialog.getDatePicker().setMinDate(date.getTime() - (long) 47304 * 100000000);
+//		datePickerDialog.show();
+    }
 
 	private void selectsex() {
 		// TODO Auto-generated method stub
