@@ -5,6 +5,7 @@ INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xm
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\80ce8e6e51bb7710c686de8d8050c6e2\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\709780c0e55b41cec090d19782f6d944\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\951293536216bae69322c542f97c88df\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\4e1fa2f6837832374e796bb3c1b03000\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\75b14fdf592b61ae13665dad1a6e5542\AndroidManifest.xml:17:1-31:12
@@ -34,6 +35,8 @@ INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xm
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\80ce8e6e51bb7710c686de8d8050c6e2\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\80ce8e6e51bb7710c686de8d8050c6e2\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\709780c0e55b41cec090d19782f6d944\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\709780c0e55b41cec090d19782f6d944\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\951293536216bae69322c542f97c88df\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\951293536216bae69322c542f97c88df\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\4e1fa2f6837832374e796bb3c1b03000\AndroidManifest.xml:21:5-23:60

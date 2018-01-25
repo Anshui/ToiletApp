@@ -22,22 +22,15 @@ public class BodyCompositionActivity extends Activity implements OnClickListener
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.body_compositon);
-		initView();
+        setContentView(R.layout.body_fat);
+        initView();
 		intiData();
 	}
 
 	private void intiData() {
-		urineTest.getTitleBarTitle().setText("体成分检测");
-		startTest.setOnClickListener(this);
-		urineTest.setTitleClickListener(this);
-		lifeAdvice.setText("生活愉快！");
 	}
 
 	private void initView() {
-        startTest = findViewById(R.id.start_test);
-        lifeAdvice = findViewById(R.id.life_advice);
-        urineTest = findViewById(R.id.body_composition_action_bar);
     }
 
 	@Override

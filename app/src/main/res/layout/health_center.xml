@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/body_composition_detection"
+                    android:text="@string/body_fat"
                     android:gravity="center_horizontal"
                     android:textSize="20sp"
                     android:textColor="@color/green_text"/>
