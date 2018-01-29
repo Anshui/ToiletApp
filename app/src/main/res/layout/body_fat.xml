@@ -59,8 +59,7 @@
                 android:background="@drawable/circle"
                 android:gravity="center"
                 android:text="0.0"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-                android:textSize="24sp"
+                android:textSize="28sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -104,8 +103,130 @@
         <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/user_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/user_icon"
+                    android:textSize="10sp"
+                    android:text="个人信息" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/user_icon"
+                    android:textSize="14sp"
+                    android:text="用户" />
+
+                <TextView
+                    android:id="@+id/weight_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/height_text"
+                    android:text="体重(kg)："
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/weight_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/weight_text"
+                    android:layout_alignParentRight="true"
+                    android:hint="体重"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/age_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/weight_text"
+                    android:text="年龄："
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/age_text"
+                    android:layout_alignParentRight="true"
+                    android:hint="年龄"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/height_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_icon"
+                    android:text="身高(cm)："
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/height_text"
+                    android:layout_alignParentRight="true"
+                    android:hint="身高"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/age_text"
+                    android:text="性别："
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/sex_text"
+                    android:layout_alignParentRight="true"
+                    android:hint="性别"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:visibility="invisible"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:text="录入"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_press" />
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:text="保存"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_press" />
+
+            </RelativeLayout>
 
         </android.support.v7.widget.CardView>
 
@@ -116,6 +237,50 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_marginRight="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/male_text"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="男性体脂标准图"
+                    android:textSize="12sp"
+                    android:textColor="@color/blue_new" />
+
+                <ImageView
+                    android:id="@+id/male_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:layout_below="@id/male_text"
+                    android:src="@drawable/body_fat_levels_men" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/female_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="女性体脂标准图"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_press"
+                    android:layout_below="@id/male_image" />
+
+                <ImageView
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/female_text"
+                    android:src="@drawable/body_fat_percentage_women" />
+
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
 
@@ -128,6 +293,21 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="体脂变化曲线"
+            android:textSize="12sp"
+            android:textColor="@color/caolv_text" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/body_fat_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp" />
 
     </android.support.v7.widget.CardView>
 
