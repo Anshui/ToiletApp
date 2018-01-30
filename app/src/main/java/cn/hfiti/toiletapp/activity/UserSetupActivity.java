@@ -86,7 +86,7 @@ public class UserSetupActivity extends Activity implements OnClickListener{
         sharedTool.setSharedString("userName", null);
         sharedTool.setSharedString("userPwd", null);
         sharedTool.setSharedString("userIdName", null);
-        sharedTool.setSharedBoolean("whether_login", false);
+        sharedTool.setSharedBoolean("auto_login", false);
         mLayoutLogOut.setVisibility(View.INVISIBLE);
 		UserActivity.instance.finish();
 		finish();
