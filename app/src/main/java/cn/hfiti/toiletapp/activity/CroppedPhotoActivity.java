@@ -48,9 +48,8 @@ public class CroppedPhotoActivity extends Activity implements OnGestureListener,
 		// TODO 自动生成的方法存根
 		String imagePath = getIntent().getStringExtra("imagePath");
 		page = getIntent().getIntExtra("page", 0);
-		
-		
-		if(imagePath!=null&&imagePath!=""){//格式：/storage/sdcard0/Sunstar/Agronet/Image/AlbumPhoto/IMG_20150916_112347.png
+
+        if(imagePath!=null&&imagePath!=""){//格式：/storage/sdcard0/Sunstar/Agronet/Image/AlbumPhoto/IMG_20150916_112347.png
 			UniversalImageloaderTool.doSimpleImageLoadWithOptions("file://"+imagePath, croppedImageView);
 		}else {
 			Toast.makeText(CroppedPhotoActivity.this, "加载图片出错",Toast.LENGTH_SHORT).show();

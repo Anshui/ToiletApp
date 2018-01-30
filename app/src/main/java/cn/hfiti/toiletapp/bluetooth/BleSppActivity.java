@@ -425,7 +425,7 @@ public class BleSppActivity extends Activity implements View.OnClickListener {
                 if (mDataRecvFormat.getText().equals(getResources().getString(R.string.data_format_default))) {
                     convertText(mDataRecvFormat, R.string.data_format_hex);
                 } else {
-                  convertText(mDataRecvFormat,R.string.data_format_default);
+                    convertText(mDataRecvFormat, R.string.data_format_default);
                 }
                 break;
 

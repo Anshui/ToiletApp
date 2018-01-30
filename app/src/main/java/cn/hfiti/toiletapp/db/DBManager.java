@@ -190,7 +190,7 @@ public class DBManager {
         Cursor c = ExecSQLForCursor(sql);
         while (c.moveToNext()) {
         	UserInfo info = new UserInfo();
-//            info._id = c.getInt(c.getColumnIndex("_id"));
+//          info._id = c.getInt(c.getColumnIndex("_id"));
             info.userIdName = c.getString(c.getColumnIndex("user_id_name"));
             info.userPwd = c.getString(c.getColumnIndex("user_password"));
             info.userName = c.getString(c.getColumnIndex("user_name"));
@@ -210,7 +210,7 @@ public class DBManager {
         Cursor c = ExecSQLForCursor(sql);
         while (c.moveToNext()) {
         	WeightInfo info = new WeightInfo();
-//            info._id = c.getInt(c.getColumnIndex("_id"));
+//          info._id = c.getInt(c.getColumnIndex("_id"));
             info.userIdName = c.getString(c.getColumnIndex("user_id_name"));
             info.userName = c.getString(c.getColumnIndex("user_name"));
             info.userWeight = c.getFloat(c.getColumnIndex("user_weight"));

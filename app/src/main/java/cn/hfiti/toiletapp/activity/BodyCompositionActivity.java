@@ -9,17 +9,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import cn.hfiti.toiletapp.R;
+import cn.hfiti.toiletapp.util.SharedTool;
 import cn.hfiti.toiletapp.view.CustomActionBar;
 
 public class BodyCompositionActivity extends Activity implements OnClickListener{
-	
-	private Button startTest;
-	private TextView lifeAdvice;
-	private CustomActionBar urineTest;
-	
-	@Override
+
+    private TextView username, height, weight, age, sex, bmi, bmr, body_fat;
+    private CustomActionBar body_fat_actionbar;
+    private SharedTool sharedTool;
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.body_fat);
@@ -28,9 +28,25 @@ public class BodyCompositionActivity extends Activity implements OnClickListener
 	}
 
 	private void intiData() {
-	}
+        if (sharedTool.getSharedBoolean("auto_login", false)) {
+            String userIdName = sharedTool.getSharedString("userIdName", null);
+        }
+    }
 
 	private void initView() {
+        username = findViewById(R.id.user_name);
+        height = findViewById(R.id.height);
+        weight = findViewById(R.id.weight);
+        age = findViewById(R.id.age);
+        sex = findViewById(R.id.sex);
+        bmi = findViewById(R.id.body_fat_bmi);
+        bmr = findViewById(R.id.body_fat_bmr);
+        body_fat = findViewById(R.id.body_fat);
+
+        body_fat_actionbar = findViewById(R.id.body_fat_actionbar);
+        body_fat_actionbar.setOnClickListener(this);
+
+        sharedTool = new SharedTool(this);
     }
 
 	@Override
@@ -45,5 +61,4 @@ public class BodyCompositionActivity extends Activity implements OnClickListener
 			break;
 		}
 	}
-
 }
