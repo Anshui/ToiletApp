@@ -738,32 +738,36 @@ public class UrineTestActivity extends Activity implements OnClickListener{
         char a4 = 0;
         char a5 = 0;
         char a6 = 0;
+        char a7 = 0;
+        char a8 = 0;
         StringBuilder data = new StringBuilder();
         Log.d("zzh", "string.length()=--------" + string.length());
         for (int i = 0; i < string.length(); i++) {
             a1 = string.charAt(0);
             a2 = string.charAt(1);
-            a3 = string.charAt(string.length() - 6);
-            a4 = string.charAt(string.length() - 5);
-            a5 = string.charAt(string.length() - 3);
-            a6 = string.charAt(string.length() - 2);
+            a3 = string.charAt(3);
+            a4 = string.charAt(4);
+            a5 = string.charAt(string.length() - 6);
+            a6 = string.charAt(string.length() - 5);
+            a7 = string.charAt(string.length() - 3);
+            a8 = string.charAt(string.length() - 2);
         }
         Log.d("zzh", "a1=-----------" + a1);
         Log.d("zzh", "a2=-----------" + a2);
         Log.d("zzh", "a3=-----------" + a3);
         Log.d("zzh", "a4=-----------" + a4);
-        if (a1 == 'A' && a2 == 'A' && a3 == '0' && a4 == 'D' && a5 == '0' && a6 == 'A') {
-            result[0] = Integer.parseInt(string.substring(3, 5), 16);
-            result[1] = Integer.parseInt(string.substring(6, 8), 16);
-            result[2] = Integer.parseInt(string.substring(9, 11), 16);
-            result[3] = Integer.parseInt(string.substring(12, 14), 16);
-            result[4] = Integer.parseInt(string.substring(15, 17), 16);
-            result[5] = Integer.parseInt(string.substring(18, 20), 16);
-            result[6] = Integer.parseInt(string.substring(21, 23), 16);
-            result[7] = Integer.parseInt(string.substring(24, 26), 16);
-            result[8] = Integer.parseInt(string.substring(27, 29), 16);
-            result[9] = Integer.parseInt(string.substring(30, 32), 16);
-            result[10] = Integer.parseInt(string.substring(33, 35), 16);
+        if (a1 == 'A' && a2 == 'A' && a3 == '0' && a4 == '2' && a5 == '0' && a6 == 'D' && a7 == '0' && a8 == 'A') {
+            result[0] = Integer.parseInt(string.substring(6, 8), 16);
+            result[1] = Integer.parseInt(string.substring(9, 11), 16);
+            result[2] = Integer.parseInt(string.substring(12, 14), 16);
+            result[3] = Integer.parseInt(string.substring(15, 17), 16);
+            result[4] = Integer.parseInt(string.substring(18, 20), 16);
+            result[5] = Integer.parseInt(string.substring(21, 23), 16);
+            result[6] = Integer.parseInt(string.substring(24, 26), 16);
+            result[7] = Integer.parseInt(string.substring(27, 29), 16);
+            result[8] = Integer.parseInt(string.substring(30, 32), 16);
+            result[9] = Integer.parseInt(string.substring(33, 35), 16);
+            result[10] = Integer.parseInt(string.substring(36, 38), 16);
         }
         Log.d(TAG, "zzh: 数组 result " + Arrays.toString(result));
         return result;

@@ -100,6 +100,7 @@ public class Define {
 	public static String SEARCH_WEIGHT="550201aa";
 	public static String SEARCH_HEART_RATE="550204aa";
 
+
     public static final String PH = "    肾脏参与机体内酸碱平衡调节，这种调节能力可以通过尿液pH 反映出来。" +
             "由于内源性酸产生偏多，尿液pH 普遍偏酸，约为5.0～6.0。一般情况下，饭后会出现“碱潮”现象，尿液" +
             "偏碱；酸性尿多见于进食肉食过多和某些种类的水果（如酸果蔓果实）、代谢性酸中毒、呼吸性酸中毒以" +

@@ -126,7 +126,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 //                      stringBuilder.append(String.format("%02X ", byteChar));
 //                Log.v("log",stringBuilder.toString());
 //                displayTempData(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
-                displayWeight(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
+//                displayWeight(intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA));
             }else if (BluetoothLeService.ACTION_WRITE_SUCCESSFUL.equals(action)) {
             	Log.d("yuhao", "ACTION_WRITE_SUCCESSFUL--------------------");
 //                mSendBytes.setText(sendBytes + " ");
