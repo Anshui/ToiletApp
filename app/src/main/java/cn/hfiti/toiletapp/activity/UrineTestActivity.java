@@ -230,7 +230,6 @@ public class UrineTestActivity extends Activity implements OnClickListener{
                     Log.v("log","Write Finish");
                 }
             }
-
         }
     };
     

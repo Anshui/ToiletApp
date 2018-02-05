@@ -4,14 +4,14 @@ ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\5878f841900f97d556d547e763020ce0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\709780c0e55b41cec090d19782f6d944\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\16ef7ef522fbe351369d7477be6a7bdd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\a4f7c3ff60f96a6bd1d499c5e477359a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\cfd7d81398383b5c4123d5dd88ac7ff5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\ecfebc9167f7ed89608205bda7c9076f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\6b541d8eca69d5f16f3958c6b7de36d6\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\422366b1930f2dafd112c6bdceadce79\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\6ffab23c0389682caaa5dfee7ec8d313\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\b03b2e9279dd8a959e4cae09653cac6f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\ca78eb23af16aadc882bb494a46ecbd7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\cb837f8b4524b9c9d6b437d46ce0896f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\68f66e5917c30d13e7fe3d63a3aef4ae\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\08566b7061c6c5d60a11d61b8eb38782\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\d9d545863566cdb452dbba9a951bffde\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\a2f8f3b9f91fa22a1139a65b8cf9e68a\AndroidManifest.xml:17:1-24:12
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:2:1-59:12
@@ -33,22 +33,22 @@ uses-sdk
 ADDED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\5878f841900f97d556d547e763020ce0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\5878f841900f97d556d547e763020ce0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\709780c0e55b41cec090d19782f6d944\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\709780c0e55b41cec090d19782f6d944\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\16ef7ef522fbe351369d7477be6a7bdd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\16ef7ef522fbe351369d7477be6a7bdd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\a4f7c3ff60f96a6bd1d499c5e477359a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\a4f7c3ff60f96a6bd1d499c5e477359a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\cfd7d81398383b5c4123d5dd88ac7ff5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\cfd7d81398383b5c4123d5dd88ac7ff5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\ecfebc9167f7ed89608205bda7c9076f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\ecfebc9167f7ed89608205bda7c9076f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\6b541d8eca69d5f16f3958c6b7de36d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\6b541d8eca69d5f16f3958c6b7de36d6\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\422366b1930f2dafd112c6bdceadce79\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\422366b1930f2dafd112c6bdceadce79\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\6ffab23c0389682caaa5dfee7ec8d313\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\6ffab23c0389682caaa5dfee7ec8d313\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\b03b2e9279dd8a959e4cae09653cac6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\b03b2e9279dd8a959e4cae09653cac6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\ca78eb23af16aadc882bb494a46ecbd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\ca78eb23af16aadc882bb494a46ecbd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\cb837f8b4524b9c9d6b437d46ce0896f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\cb837f8b4524b9c9d6b437d46ce0896f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\68f66e5917c30d13e7fe3d63a3aef4ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\68f66e5917c30d13e7fe3d63a3aef4ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\08566b7061c6c5d60a11d61b8eb38782\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\08566b7061c6c5d60a11d61b8eb38782\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\d9d545863566cdb452dbba9a951bffde\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\static\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\d9d545863566cdb452dbba9a951bffde\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\a2f8f3b9f91fa22a1139a65b8cf9e68a\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\static\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\a2f8f3b9f91fa22a1139a65b8cf9e68a\AndroidManifest.xml:20:5-22:41
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
 INJECTED from D:\AndroidStudioProjects\ToiletApp\app\src\main\AndroidManifest.xml:6:5-8:41
 	android:targetSdkVersion
