@@ -21,7 +21,6 @@
  * Modified Source code: http://code.google.com/p/weight-chart/
  * Original Source code: http://fredrik.jemla.eu/weightchart
  */
-
 package es.senselesssolutions.gpl.weightchart;
 
 //import android.content.ContentValues;

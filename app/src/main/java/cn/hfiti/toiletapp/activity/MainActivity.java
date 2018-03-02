@@ -139,7 +139,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
                     Log.v("log","Write Finish");
                 }
             }
-
         }
     }; 
 	

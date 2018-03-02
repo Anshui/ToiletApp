@@ -416,12 +416,12 @@ public class BodyCompositionActivity extends DemoBase implements OnClickListener
 
     private int getAge(String date) {
         int age_ = 0;
-        SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-dd");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         try {
             Date birth = format.parse(date);
             Date now = new Date();
 
-            age_ = now.getYear() - birth.getYear() - 1;
+            age_ = now.getYear() - birth.getYear();
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -477,11 +477,11 @@ public class BodyCompositionActivity extends DemoBase implements OnClickListener
         xAxis.setDrawAxisLine(false);
         xAxis.setDrawGridLines(true);
         xAxis.setTextColor(Color.rgb(255, 192, 56));
-        xAxis.setCenterAxisLabels(true);
-        xAxis.setGranularity(1f); // one hour
+//        xAxis.setCenterAxisLabels(true);
+        xAxis.setGranularity(1f); // one day
         xAxis.setValueFormatter(new IAxisValueFormatter() {
 
-            private SimpleDateFormat mFormat = new SimpleDateFormat("dd MMM");
+            private SimpleDateFormat mFormat = new SimpleDateFormat("MMM dd");
 
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
@@ -498,7 +498,7 @@ public class BodyCompositionActivity extends DemoBase implements OnClickListener
         leftAxis.setGranularityEnabled(true);
         leftAxis.setAxisMinimum(0f);
         leftAxis.setAxisMaximum(40f);
-        leftAxis.setYOffset(-9f);
+        leftAxis.setYOffset(5f);
         leftAxis.setTextColor(Color.rgb(255, 192, 56));
 
         YAxis rightAxis = body_fat_chart.getAxisRight();
@@ -507,21 +507,21 @@ public class BodyCompositionActivity extends DemoBase implements OnClickListener
 
     private void setData(int count, float range) {
 
-        // now in hours
-        long now = TimeUnit.MILLISECONDS.toHours(System.currentTimeMillis());
+        // now in days
+        long now = TimeUnit.MILLISECONDS.toDays(System.currentTimeMillis());
 
         ArrayList<Entry> values = new ArrayList<Entry>();
 
         float from = now;
 
-        // count = hours
+        // count = day
         float to = now + count;
 
-        // increment by 1 hour
+        // increment by 1 day
         for (float x = from; x < to; x++) {
 
             float y = getRandom(range, 15);
-            values.add(new Entry(x, y)); // add one entry per hour
+            values.add(new Entry(x, y)); // add one entry per day
         }
 
         // create a dataset and give it a type
@@ -551,9 +551,7 @@ public class BodyCompositionActivity extends DemoBase implements OnClickListener
 		switch (v.getId()) {
 		case R.id.action_bar_left_button:
 			finish();
-			
 			break;
-
 		default:
 			break;
 		}

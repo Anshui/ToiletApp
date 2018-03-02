@@ -2,6 +2,7 @@ package cn.hfiti.toiletapp.util;
 
 /**
  * Created by static on 2018/02/05.
+ *
  */
 
 import android.graphics.Typeface;
@@ -26,7 +27,6 @@ public abstract class DemoBase extends FragmentActivity {
             "Party Q", "Party R", "Party S", "Party T", "Party U", "Party V", "Party W", "Party X",
             "Party Y", "Party Z"
     };
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
